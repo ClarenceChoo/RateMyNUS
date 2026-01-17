@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import SearchBar from "@/components/SearchBar";
@@ -10,9 +10,12 @@ import type { Entity } from "@/types";
 export default function Landing() {
   const [topRated, setTopRated] = useState<Entity[]>([]);
   const [loading, setLoading] = useState(true);
+  const location = useLocation();
 
+  // Refetch every time user navigates to this page
   useEffect(() => {
     (async () => {
+      setLoading(true);
       try {
         const data = await getTopRated(6);
         setTopRated(data);
@@ -20,7 +23,7 @@ export default function Landing() {
         setLoading(false);
       }
     })();
-  }, []);
+  }, [location.key]);
 
   return (
     <div className="space-y-10">

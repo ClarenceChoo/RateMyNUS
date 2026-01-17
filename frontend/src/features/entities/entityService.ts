@@ -95,18 +95,64 @@ function mapApiEntity(apiEntity: ApiEntity): Entity {
   return entity;
 }
 
-// Cached entities from API
-let cachedEntities: Entity[] | null = null;
-let cacheTimestamp = 0;
-const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+// LocalStorage keys
+const CACHE_KEY = "ratemynus_entities";
+const CACHE_TS_KEY = "ratemynus_entities_ts";
 
-// Fetch all entities from API
+// In-memory cache (faster than localStorage for same session)
+let cachedEntities: Entity[] | null = null;
+
+// Load from localStorage on init
+function loadFromLocalStorage(): Entity[] | null {
+  try {
+    const data = localStorage.getItem(CACHE_KEY);
+    if (data) {
+      return JSON.parse(data);
+    }
+  } catch (e) {
+    console.warn("Failed to load entities from localStorage:", e);
+  }
+  return null;
+}
+
+// Save to localStorage
+function saveToLocalStorage(entities: Entity[]) {
+  try {
+    localStorage.setItem(CACHE_KEY, JSON.stringify(entities));
+    localStorage.setItem(CACHE_TS_KEY, Date.now().toString());
+  } catch (e) {
+    console.warn("Failed to save entities to localStorage:", e);
+  }
+}
+
+// Clear the entity cache - call this after creating a review
+export function clearEntityCache() {
+  cachedEntities = null;
+  localStorage.removeItem(CACHE_KEY);
+  localStorage.removeItem(CACHE_TS_KEY);
+}
+
+// Force refresh from API (for manual refresh buttons)
+export async function forceRefreshEntities(): Promise<Entity[]> {
+  clearEntityCache();
+  return fetchAllEntities();
+}
+
+// Fetch all entities from API (uses localStorage cache)
 async function fetchAllEntities(): Promise<Entity[]> {
-  // Check cache
-  if (cachedEntities && Date.now() - cacheTimestamp < CACHE_DURATION) {
+  // Check in-memory cache first
+  if (cachedEntities && cachedEntities.length > 0) {
     return cachedEntities;
   }
 
+  // Check localStorage cache
+  const localData = loadFromLocalStorage();
+  if (localData && localData.length > 0) {
+    cachedEntities = localData;
+    return cachedEntities;
+  }
+
+  // Fetch from API only if no cache exists
   try {
     const response = await fetch(env.api.getEntities);
     if (!response.ok) {
@@ -128,7 +174,7 @@ async function fetchAllEntities(): Promise<Entity[]> {
     }
     
     cachedEntities = entities.map(mapApiEntity);
-    cacheTimestamp = Date.now();
+    saveToLocalStorage(cachedEntities);
     return cachedEntities;
   } catch (error) {
     console.error("Failed to fetch entities from API:", error);

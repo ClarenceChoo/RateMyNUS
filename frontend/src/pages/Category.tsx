@@ -111,18 +111,18 @@ export default function Category() {
         <>
           <div className="grid gap-4 sm:grid-cols-2">
             {entities.map((entity) => (
-              <Link key={entity.id} to={`/entity/${entity.id}`}>
-                <Card className="group h-full cursor-pointer transition hover:border-zinc-300 hover:shadow-sm">
+              <Link key={entity.id} to={`/entity/${entity.id}`} className="flex">
+                <Card className="group flex h-full min-h-[160px] w-full cursor-pointer flex-col transition hover:border-zinc-300 hover:shadow-sm">
                   <div className="flex items-start justify-between">
-                    <div className="flex-1">
+                    <div className="flex-1 pr-2">
                       <div className="font-semibold group-hover:text-zinc-700">
                         {entity.name}
                       </div>
-                      <div className="text-sm text-zinc-500">
+                      <div className="line-clamp-2 text-sm text-zinc-500">
                         {entity.subtitle}
                       </div>
                     </div>
-                    <div className="text-right">
+                    <div className="shrink-0 text-right">
                       {entity.avgRating ? (
                         <>
                           <div className="font-medium text-yellow-600">
@@ -133,14 +133,14 @@ export default function Category() {
                           </div>
                         </>
                       ) : (
-                        <div className="text-xs text-zinc-400">No ratings</div>
+                        <div className="text-xs text-zinc-400">No ratings yet · 0 reviews</div>
                       )}
                     </div>
                   </div>
 
                   {/* Tags */}
                   {entity.tags && entity.tags.length > 0 && (
-                    <div className="mt-3 flex flex-wrap gap-1">
+                    <div className="mt-auto flex flex-wrap gap-1 pt-3">
                       {entity.tags.slice(0, 4).map((tag) => (
                         <span
                           key={tag}

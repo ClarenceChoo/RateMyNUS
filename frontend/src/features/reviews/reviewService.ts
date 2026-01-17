@@ -1,13 +1,15 @@
 import type { Review, ImportedProfReview, Paginated } from "@/types";
 import { env } from "@/config/env";
 import { mockImportedProfReviews } from "@/features/entities/mockData";
+import { clearEntityCache } from "@/features/entities/entityService";
 
 // Helper for delays
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // API response type from backend
 type ApiReview = {
-  uuid: string;
+  id: string;
+  uuid?: string;
   authorName?: string;
   entityId: string;
   description: string;
@@ -22,7 +24,7 @@ type ApiReview = {
 // Convert API review to frontend Review type
 function mapApiReview(apiReview: ApiReview): Review {
   return {
-    id: apiReview.uuid,
+    id: apiReview.id,
     entityId: apiReview.entityId,
     rating: apiReview.rating,
     text: apiReview.description,
@@ -38,8 +40,8 @@ function mapApiReview(apiReview: ApiReview): Review {
 export async function createReview(review: Omit<Review, "id">) {
   try {
     const payload = {
-      authorName: review.authorName || undefined,
-      description: review.text,
+      authorName: review.authorName || "Anonymous",  // Default to "Anonymous" if not provided
+      description: review.text || "",  // Default to empty string if not provided
       entityId: review.entityId,
       rating: review.rating,
       tags: review.tags,
@@ -61,6 +63,13 @@ export async function createReview(review: Omit<Review, "id">) {
     }
 
     const data = await response.json();
+    
+    // Clear entity cache so ratings refresh on next fetch
+    clearEntityCache();
+    
+    // Clear reviews cache for this entity so new review shows
+    clearReviewsCache(review.entityId);
+    
     return {
       ...review,
       id: data.uuid || data.id || `rev-${Date.now()}`,
@@ -72,7 +81,33 @@ export async function createReview(review: Omit<Review, "id">) {
   }
 }
 
+// Reviews cache (per entity) - in-memory only, clears on page refresh
+let reviewsCache: Record<string, Review[]> = {};
+
+function getReviewsCache(): Record<string, Review[]> {
+  return reviewsCache;
+}
+
+function saveReviewsCache(cache: Record<string, Review[]>) {
+  reviewsCache = cache;
+}
+
+// Clear reviews cache for a specific entity (after creating/voting)
+export function clearReviewsCache(entityId?: string) {
+  if (entityId) {
+    delete reviewsCache[entityId];
+  } else {
+    reviewsCache = {};
+  }
+}
+
 export async function listReviewsForEntity(entityId: string, _take = 50): Promise<Review[]> {
+  // Check cache first
+  const cache = getReviewsCache();
+  if (cache[entityId] && cache[entityId].length >= 0) {
+    return cache[entityId];
+  }
+
   try {
     const response = await fetch(`${env.api.getReviews}?entityId=${encodeURIComponent(entityId)}`);
     
@@ -95,10 +130,18 @@ export async function listReviewsForEntity(entityId: string, _take = 50): Promis
       return [];
     }
     
-    return reviews.map(mapApiReview);
+    const mappedReviews = reviews.map(mapApiReview);
+    
+    // Save to cache
+    cache[entityId] = mappedReviews;
+    saveReviewsCache(cache);
+    
+    return mappedReviews;
   } catch (error) {
     console.error("Failed to fetch reviews:", error);
-    return []; // Return empty array on error
+    // Return cached data if available
+    if (cache[entityId]) return cache[entityId];
+    return [];
   }
 }
 
@@ -107,12 +150,28 @@ export async function deleteReview(_reviewId: string) {
   console.warn("Delete review API not yet implemented");
 }
 
-// Vote on a review (upvote only) - TODO: implement API
-export async function voteReview(_reviewId: string): Promise<number> {
-  await delay(150);
-  // TODO: Implement vote API when available
-  console.warn("Vote review API not yet implemented");
-  return 0;
+// Vote on a review (upvote only)
+export async function voteReview(reviewId: string, _entityId?: string): Promise<number> {
+  try {
+    const response = await fetch(`${env.api.voteReview}?id=${encodeURIComponent(reviewId)}`, {
+      method: "POST",
+    });
+
+    if (!response.ok) {
+      throw new Error(`Vote failed: ${response.status}`);
+    }
+
+    const data = await response.json();
+    
+    // Don't clear cache - we use optimistic updates for votes
+    // Cache only refreshes on page reload
+    
+    // Return updated vote count from API (or increment by 1 if not returned)
+    return data.voteCount ?? data.votes ?? 1;
+  } catch (error) {
+    console.error("Failed to vote on review:", error);
+    return 0;
+  }
 }
 
 // List AI-imported professor reviews (still using mock data)

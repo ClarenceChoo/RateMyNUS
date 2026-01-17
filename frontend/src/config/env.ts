@@ -11,5 +11,6 @@ export const env = {
     getEntities: "https://get-entities-y7jxj26qkq-as.a.run.app",
     createReview: "https://create-review-y7jxj26qkq-as.a.run.app",
     getReviews: "https://get-reviews-y7jxj26qkq-as.a.run.app",
+    voteReview: "https://vote-review-y7jxj26qkq-as.a.run.app",
   },
 };
