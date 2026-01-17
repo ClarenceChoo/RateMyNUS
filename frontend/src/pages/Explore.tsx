@@ -44,9 +44,9 @@ export default function Explore() {
         <div className="grid gap-3 md:grid-cols-2">
           {items.map((e) => (
             <Link key={e.id} to={`/entity/${e.id}`}>
-              <Card className="hover:bg-zinc-50">
+              <Card className="flex h-40 flex-col overflow-hidden hover:bg-zinc-50">
                 <div className="font-semibold">{e.name}</div>
-                <div className="text-sm text-zinc-600">{e.subtitle ?? e.type}</div>
+                <div className="line-clamp-3 text-sm text-zinc-600">{e.subtitle ?? e.type}</div>
                 <div className="mt-2 text-xs text-zinc-500">
                   {e.avgRating ? `${e.avgRating.toFixed(1)} ★` : "No ratings yet"} · {e.ratingCount ?? 0} reviews
                 </div>

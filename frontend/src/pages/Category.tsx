@@ -112,7 +112,7 @@ export default function Category() {
           <div className="grid gap-4 sm:grid-cols-2">
             {entities.map((entity) => (
               <Link key={entity.id} to={`/entity/${entity.id}`} className="flex">
-                <Card className="group flex h-full min-h-[160px] w-full cursor-pointer flex-col transition hover:border-zinc-300 hover:shadow-sm">
+                <Card className="group flex h-full w-full cursor-pointer flex-col transition hover:border-zinc-300 hover:shadow-sm" style={{ height: "220px" }}>
                   <div className="flex items-start justify-between">
                     <div className="flex-1 pr-2">
                       <div className="font-semibold group-hover:text-zinc-700">
