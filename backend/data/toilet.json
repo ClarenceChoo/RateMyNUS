@@ -1,0 +1,302 @@
+[
+  {
+    "id": "BIZ2-L2-TOILET",
+    "name": "BIZ2 Level 2 Toilet",
+    "building": "BIZ2",
+    "type": "Toilet",
+    "zone": "Business School",
+    "floor": 2,
+    "cubicles": 7,
+    "description": "A modern, generally clean toilet in BIZ2 with decent ventilation. Can get crowded between back-to-back classes, but the overall upkeep is solid.",
+    "tags": [
+      "toilet",
+      "male",
+      "female",
+      "modern",
+      "clean",
+      "aircon",
+      "near-classrooms",
+      "no-bidet"
+    ],
+    "location": {
+      "building_code": "BIZ2",
+      "campus": "Kent Ridge Campus",
+      "address": "15 Kent Ridge Drive, Singapore"
+    },
+    "avgRating": 4.1,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z"
+  },
+  {
+    "id": "UTOWN-STEPHEN-RIADY-L1-TOILET",
+    "name": "UTown Stephen Riady Centre Level 1 Toilet",
+    "building": "SRC",
+    "type": "Toilet",
+    "zone": "University Town",
+    "floor": 1,
+    "cubicles": 8,
+    "description": "A popular UTown toilet with strong overall cleanliness and consistent maintenance. High foot traffic during events and peak meal times, so timing matters.",
+    "tags": [
+      "toilet",
+      "male",
+      "female",
+      "clean",
+      "spacious",
+      "aircon",
+      "near-food",
+      "high-traffic",
+      "no-bidet"
+    ],
+    "location": {
+      "building_code": "SRC",
+      "campus": "Kent Ridge Campus",
+      "address": "University Town, Singapore"
+    },
+    "avgRating": 4.4,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z"
+  },
+  {
+    "id": "ENGINE-LT27-L1-TOILET",
+    "name": "Engineering LT27 Level 1 Toilet",
+    "building": "LT27",
+    "type": "Toilet",
+    "zone": "Engineering",
+    "floor": 1,
+    "cubicles": 6,
+    "description": "Convenient toilet near LT27 that’s great for quick stops before lectures. Cleanliness is decent, but crowds spike hard right before and after lectures.",
+    "tags": [
+      "toilet",
+      "male",
+      "female",
+      "near-lt",
+      "high-traffic",
+      "decent",
+      "no-bidet"
+    ],
+    "location": {
+      "building_code": "LT27",
+      "campus": "Kent Ridge Campus",
+      "address": "Engineering Drive, Singapore"
+    },
+    "avgRating": 3.6,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z"
+  },
+  {
+    "id": "FASS-AS1-L2-TOILET",
+    "name": "FASS AS1 Level 2 Toilet",
+    "building": "AS1",
+    "type": "Toilet",
+    "zone": "FASS",
+    "floor": 2,
+    "cubicles": 6,
+    "description": "A fairly standard toilet in AS1. Usually acceptable, but can feel a bit worn during peak hours. Best used between class blocks rather than during changeover rush.",
+    "tags": [
+      "toilet",
+      "male",
+      "female",
+      "old",
+      "standard",
+      "near-classrooms",
+      "no-bidet"
+    ],
+    "location": {
+      "building_code": "AS1",
+      "campus": "Kent Ridge Campus",
+      "address": "Arts Link, Singapore"
+    },
+    "avgRating": 3.3,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z"
+  },
+  {
+    "id": "FOS-S16-L4-TOILET",
+    "name": "S16 Level 4 Toilet",
+    "building": "S16",
+    "type": "Toilet",
+    "zone": "Science",
+    "floor": 4,
+    "cubicles": 5,
+    "description": "A quieter upper-floor toilet in S16 that’s usually less crowded. Cleanliness is generally good, and it’s a solid ‘hidden’ option if you’re in Science.",
+    "tags": [
+      "toilet",
+      "male",
+      "female",
+      "quiet",
+      "clean",
+      "science",
+      "hidden-gem",
+      "no-bidet"
+    ],
+    "location": {
+      "building_code": "S16",
+      "campus": "Kent Ridge Campus",
+      "address": "Science Drive, Singapore"
+    },
+    "avgRating": 4.0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z"
+  },
+  {
+    "id": "UCC-L1-TOILET",
+    "name": "UCC Level 1 Toilet",
+    "building": "UCC",
+    "type": "Toilet",
+    "zone": "UCC",
+    "floor": 1,
+    "cubicles": 7,
+    "description": "A generally clean toilet around UCC that sees spikes during performances and events. Off-peak it’s comfortable; peak timing can mean queues and reduced privacy.",
+    "tags": [
+      "toilet",
+      "male",
+      "female",
+      "clean",
+      "near-events",
+      "aircon",
+      "high-traffic",
+      "no-bidet"
+    ],
+    "location": {
+      "building_code": "UCC",
+      "campus": "Kent Ridge Campus",
+      "address": "50 Kent Ridge Crescent, Singapore"
+    },
+    "avgRating": 3.8,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z"
+  },
+  {
+    "id": "CLB-L6-TOILET",
+    "name": "CLB Level 6 Toilet",
+    "building": "CLB",
+    "type": "Toilet",
+    "zone": "Central Library",
+    "floor": 6,
+    "cubicles": 4,
+    "description": "A quiet library toilet option with lower traffic than lower floors. Good for privacy and quick refreshes during long study sessions, but fewer cubicles.",
+    "tags": [
+      "toilet",
+      "male",
+      "female",
+      "quiet",
+      "library",
+      "good-for-study-break",
+      "aircon",
+      "no-bidet"
+    ],
+    "location": {
+      "building_code": "CLB",
+      "campus": "Kent Ridge Campus",
+      "address": "12 Kent Ridge Crescent, Singapore"
+    },
+    "avgRating": 4.2,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z"
+  },
+  {
+    "id": "UTOWN-CINNAMON-L1-TOILET",
+    "name": "UTown Cinnamon College Level 1 Toilet",
+    "building": "Cinnamon",
+    "type": "Toilet",
+    "zone": "University Town",
+    "floor": 1,
+    "cubicles": 6,
+    "description": "A solid UTown toilet that’s generally clean and easy to access. Can be busy during meal peaks and RC activities, but overall comfort is good.",
+    "tags": [
+      "toilet",
+      "male",
+      "female",
+      "clean",
+      "aircon",
+      "near-food",
+      "residential",
+      "no-bidet"
+    ],
+    "location": {
+      "building_code": "Cinnamon",
+      "campus": "Kent Ridge Campus",
+      "address": "University Town, Singapore"
+    },
+    "avgRating": 4.1,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z"
+  },
+  {
+    "id": "PGP-HOUSE-L1-TOILET",
+    "name": "PGP House Level 1 Toilet",
+    "building": "PGP House",
+    "type": "Toilet",
+    "zone": "Prince George’s Park",
+    "floor": 1,
+    "cubicles": 6,
+    "description": "A practical residential-area toilet near PGP House that’s convenient for late-night use. Cleanliness is decent, though comfort varies depending on traffic.",
+    "tags": [
+      "toilet",
+      "male",
+      "female",
+      "residential",
+      "late-night",
+      "decent",
+      "no-bidet"
+    ],
+    "location": {
+      "building_code": "PGP House",
+      "campus": "Kent Ridge Campus",
+      "address": "Prince George's Park, Singapore"
+    },
+    "avgRating": 3.7,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z"
+  },
+  {
+    "id": "KR-MRT-L1-TOILET",
+    "name": "Kent Ridge MRT Toilet (Exit Area)",
+    "building": "Kent Ridge MRT",
+    "type": "Toilet",
+    "zone": "Transit",
+    "floor": 1,
+    "cubicles": 5,
+    "description": "A convenient stop if you’re entering/leaving campus via Kent Ridge MRT. Cleanliness is usually okay, but traffic can be unpredictable during peak commute hours.",
+    "tags": [
+      "toilet",
+      "male",
+      "female",
+      "near-mrt",
+      "high-traffic",
+      "convenient",
+      "no-bidet"
+    ],
+    "location": {
+      "building_code": "Kent Ridge MRT",
+      "campus": "Kent Ridge Campus",
+      "address": "Kent Ridge MRT Station, Singapore"
+    },
+    "avgRating": 3.5,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z"
+  },
+  {
+    "id": "SUTD-STYLE-DEMO-TOILET-01",
+    "name": "Demo Toilet (Hackathon Sample)",
+    "building": "Demo",
+    "type": "Toilet",
+    "zone": "Demo",
+    "floor": 1,
+    "cubicles": 3,
+    "description": "A sample entry used for hackathon testing and UI demos. Safe to delete anytime once your real dataset is ready.",
+    "tags": [
+      "toilet",
+      "demo",
+      "test-data"
+    ],
+    "location": {
+      "building_code": "Demo",
+      "campus": "Kent Ridge Campus",
+      "address": "NUS, Singapore"
+    },
+    "avgRating": 0.0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z"
+  }
+]

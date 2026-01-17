@@ -1,0 +1,1558 @@
+[
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Aaron Low Yi Rui",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA1512"
+    },
+    "type": "Professor",
+    "description": "I found Dr Aaron's lectures to be a bit lacking in clarity compared to prior experiences. However, I appreciated the structure of the module, even if the tutorial sessions ran by Christian provided a lot more clarity on topics. I didn't find the lectures particularly thrilling, but they were manageable. I felt that Dr Aaron's teaching style could definitely improve. Sometimes his explanations were unclear, and that made it hard to grasp some concepts. However, the tutorials conducted by Christian helped me catch up with the material and clarified my doubts."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Aaron Tan Tuck Choy",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1010",
+      "1": "CS1231",
+      "2": "CS1231S",
+      "3": "CS2100"
+    },
+    "type": "Professor",
+    "description": "I found Professor Aaron Tan Tuck Choy to be a warm, approachable lecturer who genuinely cares about helping students get the material. In CS1010, he laid a solid foundation and made the fundamentals feel doable, even if the course could be tough for those without a programming background. In CS1231, his sunny demeanor and clear explanations helped me grasp challenging ideas, especially alongside Terence Sim’s engaging style. He emphasizes logical reasoning, which strengthened my understanding, though I sometimes felt he rushed through topics toward the end, and the graph theory sections could be tough.\n\nCS1231S gave me a more mixed impression. On one hand, he was passionate and entertaining, keeping the lectures structured and sometimes interactive. On the other hand, some days felt focused on proofs rather than practical applications, and there were moments when explanations he deemed trivial were dismissed, making certain concepts harder to grasp. The assessments were quite tricky and exam pressure was real. Despite the tension, his approachable nature and willingness to help during tutorials kept me engaged, and I found the live Q&As and practical activities helpful. The slides were comprehensive, but you really needed to attend class to stay on top of the material.\n\nIn CS2100, I again found him to be kind and dedicated, with post-midterm lectures that were particularly engaging. He answered questions clearly, and tutorials were very interactive, which helped me manage the heavy content load. I did notice some content felt outdated and could use revision, and while his online engagement was solid, the overall workload required sustained effort. Across all modules, the common threads are that he’s approachable, enthusiastic, and clearly loves teaching, with a strong emphasis on logical thinking and active participation. The differences across modules mainly show up in pacing and depth: CS1010 and CS1231 can be demanding pace-wise, CS1231S is more variable in engagement and has tougher assessments, and CS2100 carries heavier, occasionally dated content."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Adi Yoga S. Prabawa",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2030S"
+    },
+    "type": "Professor",
+    "description": "I really appreciated Adi Yoga's depth of knowledge in Java and OOP. He is engaging and does a great job of making the material understandable, especially when he provides live examples. However, it sometimes felt like the focus was too much on Java instead of teaching OOP concepts more broadly. Overall, I think he is a solid lecturer."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Adi Yoga Sidi Prabawa",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2030S",
+      "1": "CS2102",
+      "2": "CS2100"
+    },
+    "type": "Professor",
+    "description": "I found Adi to be incredibly dedicated and genuinely caring across CS2030S, CS2102, and CS2100. He brings a good sense of humor and energy to class, and his lectures are often paired with engaging slides and live coding that helped me grasp tough concepts. I appreciated how responsive he was on forums and how much effort he put into motivating the material. Still, a few lectures could feel a bit dull, and at times explanations assumed prior knowledge, which made certain topics harder to follow. In CS2030S, the live coding was especially helpful for Java topics, though I would have liked more emphasis on broader OOP principles beyond Java specifics. There were moments when his accent made certain points harder to catch, but his passion for teaching came through.\n\nIn CS2030S, I valued his comprehensive notes and the clear effort he put into making material engaging. He’s clearly knowledgeable and cares about our learning, but lab documents sometimes contained errors, which added to the challenge. The thematic approach to assessments was interesting and made us think, even if it increased the workload. Overall, I felt the course benefited from his dedication and clarity, even if some explanations could be improved.\n\nIn CS2102, his humor and patience stood out, and he helped make technical topics more approachable, especially in the latter half of the module. He broke down difficult material and provided structured resources, which I found very helpful for staying on track with the project. The content could feel a bit dry at times, but his clear explanations and steady pace helped me manage the workload. In CS2100, his explanations were thorough and detailed, which I appreciated, even if he could be a touch slow at times. That depth was valuable for students at different levels and left me with a solid understanding.\n\nAcross all modules, the common themes that stood out are Adi’s genuine care for students, his accessibility and responsiveness, and his ability to make challenging material more approachable through organized notes, demonstrations, and humor. The differences in teaching quality mainly reflected pacing and emphasis: CS2030S leaned toward engaging live coding and broader OOP discussions but sometimes assumed prior knowledge; CS2102 offered strong structure with a slightly drier delivery but solid project support; CS2100 delivered thorough depth at a slower pace that benefited diverse learners. Overall, I left each course feeling supported and able to tackle the material with increased confidence."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Akiko Ishii",
+    "ratingCount": 0,
+    "tags": {
+      "0": "JS2230"
+    },
+    "type": "Professor",
+    "description": "I found Prof. Ishii to be quite a gentle and soft-spoken professor. While her teaching was okay, I sometimes felt she could have been a bit more assertive. However, the module itself was interesting and informative, especially with the hands-on elements like attending a tea ceremony. It was delightful to learn about Japanese food culture in a chill environment."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Akshay Narayan",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2103",
+      "1": "CS2103T"
+    },
+    "type": "Professor",
+    "description": "I found CS2103 was tough to connect with after the shift online—most of the content felt delivered by a bot, and we barely had time to interact face-to-face. That left the learning experience feeling a bit impersonal, which was a contrast to CS2103T.\n\nIn CS2103T, Akshay was approachable and engaging. He encouraged team collaboration and was always available to help, which made the project feel doable even when it was challenging. The module focused on learning git and teamwork, which were genuinely useful, and his support helped me navigate the complexities. He was straightforward about the workload, but I still ended up feeling it was higher than I expected. At times, the instructions could be vague, which left me feeling a bit lost.\n\nOverall, the common thread across both modules is Akshay’s accessibility and emphasis on practical, real-world skills. The teaching quality differed: CS2103 felt more impersonal due to the online, bot-driven delivery, while CS2103T offered more direct guidance and interaction, albeit with a heavier workload and some instruction gaps. I still walked away with stronger software development and Git abilities and better teamwork, and I’d appreciate more human-led interaction in CS2103 and clearer instructions in CS2103T to smooth out the experience for future cohorts."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Alan Cheng Ho Lun",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1010",
+      "1": "CS1010E",
+      "2": "CS2040C"
+    },
+    "type": "Professor",
+    "description": "I found that Alan Cheng Ho Lun brings a lot of energy and humor to his classes, which made learning feel approachable across modules. In CS1010, his lighthearted style and knack for simplifying concepts helped me, a beginner with very little programming experience, get up to speed without feeling overwhelmed. I appreciated how he could turn tough ideas into something manageable and engaging.\n\nIn CS1010E, I saw the same enthusiasm, and he was very helpful when I ran into a real-life snag (like when I lost my laptop). Still, his teaching style could feel a bit confusing at times, and while he made complex topics easier to grasp, I felt the course could have gone deeper into certain Python functions. Despite that, his engagement remained a strength and helped me stay motivated.\n\nCS2040C was where his energy really shone, with real-life examples and occasional references to games and anime that kept lectures enjoyable. I valued the clear explanations and the solid theoretical grounding, but the workload felt heavier and the assessments could be quite challenging, especially the C++ practical exam. I also found some quiz and finals formats a bit tedious and confusing. Overall, I think he’s a passionate, thoughtful lecturer who pushes us to connect theory with broader contexts, even if the delivery and assessment formats vary a bit by module."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Amirhassan Monajemi",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1010E"
+    },
+    "type": "Professor",
+    "description": "I struggled with Amirhassan’s lectures as they often rambled and veered off-topic. It made keeping up with the increasingly difficult content challenging for me, and I felt that I would have preferred a more straightforward teaching approach."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Amy Choong",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM3258",
+      "1": "LSM3259"
+    },
+    "type": "Professor",
+    "description": "I found Dr Amy Choong's teaching across LSM3258 and LSM3259 to be clear and student-centered. In LSM3258, her style was straightforward, and I appreciated how approachable she was. She also shared valuable insights that weren’t in the lecture notes, which helped me connect concepts more deeply. In LSM3259, I found her to be extremely knowledgeable and kind; she made the subject matter engaging and was always willing to help me understand complex concepts.\n\nAcross both modules, there are clear strengths: she is approachable, genuinely knowledgeable, and invested in our learning. I felt that she explains ideas in a way that makes tough material feel accessible, and she is patient when I need extra clarification. Her willingness to help with difficult topics consistently stood out.\n\nIf I had to note the differences, LSM3258 emphasizes a straightforward delivery with additional insights beyond the notes, which I found useful for context. LSM3259 emphasizes engagement and strong support for tackling challenging concepts, which made the learning experience feel more interactive. Overall, I came away with a solid understanding and appreciation for her teaching across both modules."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "An Xinliang",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2108"
+    },
+    "type": "Professor",
+    "description": "I found An to be quite nice and supportive throughout the module. The homework was manageable, and his hints were very helpful. I was pleasantly surprised by how the midterm and finals were structured, as they felt like giveaways compared to what I had anticipated. I thought An Xinliang taught the standard material well, but I wished there was more depth in following the structure of Rudin's book. Overall, the module structure was familiar if you have studied calculus before, but the finals felt relatively easier compared to previous years."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Anand Ramchand",
+    "ratingCount": 0,
+    "tags": {
+      "0": "IT3010"
+    },
+    "type": "Professor",
+    "description": "I took the class under Anand Ramchand and found the focus on database theory quite challenging but rewarding. The module had a mix of assignments and quizzes that kept me on my toes. However, I noticed some issues with timings of materials being released late, which affected the flow of the course. Despite these setbacks, I managed to learn a lot about SQL and databases."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Anandha Gopalan",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2100",
+      "1": "CS2106",
+      "2": "CS2040"
+    },
+    "type": "Professor",
+    "description": "I found Anandha to be approachable and genuinely invested in our learning. He was responsive to questions and seemed committed to broadening our understanding across all three modules. His passion for teaching came through in how he explained concepts and encouraged participation, and I appreciated that he was patient and willing to clarify doubts.\n\nIn CS2100, I felt he helped make complex material more digestible and his encouragement of class interaction was valuable. He also appeared to be involved in the module’s administration, which gave me a sense of solid course support. However, the CS2100 module itself lacked a tight structure, and I wished there had been more focus on the most relevant content to guide our study.\n\nFor CS2106, his lectures showed clear enthusiasm and featured interesting analogies, but I sometimes found it hard to follow his points and I often needed to supplement with additional resources. In CS2040, he was especially helpful—very patient and consistently willing to clarify doubts, which made a meaningful difference to my understanding. Overall, the recurring strengths across modules are his accessibility, responsiveness, and willingness to help; the differences mainly lie in delivery and organization—CS2100 felt more straightforward but structured differently, CS2106 could be uneven in pacing, and CS2040 stood out for its solid, supportive guidance."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Andrea Verry",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAG1201"
+    },
+    "type": "Professor",
+    "description": "I can't recommend Frau Andrea Verry's classes enough. Her passion for German teaching is palpable, and she creates an enjoyable environment where everyone participates. It truly was one of my favorite classes this semester."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Antonia Monteiro",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM1111"
+    },
+    "type": "Professor",
+    "description": "I found the professor to be very considerate and willing to adjust her lectures based on our feedback. She really engaged us despite the challenges of online learning, and I appreciated her efforts to make the content accessible."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Arnab Bhattacharyya",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2040S"
+    },
+    "type": "Professor",
+    "description": "I felt that Arnab Bhattacharyya's lectures were decent, but sometimes left me confused. He tried to explain concepts using simple analogies, which I appreciated, but I often found myself not fully grasping the material."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Ashish Dandekar",
+    "ratingCount": 0,
+    "tags": {
+      "0": "IT5006"
+    },
+    "type": "Professor",
+    "description": "I found Ashish to be a very thorough lecturer who explained concepts well, although some parts of the course were challenging without prior knowledge of data science. I appreciated the balance between theoretical learning and practical application, but I think the depth of the final exam went beyond what was covered in lectures."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Ashish Deepak Dandekar",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1010S",
+      "1": "CS1231S"
+    },
+    "type": "Professor",
+    "description": "I found Ashish Deepak Dandekar to be a capable and generally engaging lecturer across CS1010S and CS1231S. In CS1010S, his lectures were clear and the fundamentals easy to follow, and I appreciated the structured explanations. My experience with the exams, however, was disappointing—the practical test and the final had numerous errors, which made the assessment feel chaotic and unprofessional despite the quality of the lectures.\n\nMoving to CS1231S, the module content was challenging and I often felt overwhelmed. I did feel that his counting and probability explanations were reasonably good; he attempted to clarify tough topics and provide a helpful perspective during lessons. His teaching style was straightforward, which helped me grasp difficult ideas even when I didn’t enjoy the material, and I think he was fine overall as a lecturer. The teaching team had their moments, though Aaron's enthusiasm stood out and made the lectures more engaging at times.\n\nAcross both modules, common themes emerge: he tries to clarify complex concepts and explains ideas in an accessible way, but pacing and depth can vary, particularly in CS1231S. In CS1010S the friction was mostly with the assessment rather than the teaching itself, while the counting and probability segments in CS1231S benefited from his approach. Overall, I appreciated his efforts to make concepts clear and to offer practical perspectives, and while there were differences in how each module felt, his teaching remains solid with room for improvement."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Ayari Suhama",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAJ2203"
+    },
+    "type": "Professor",
+    "description": "Ms. Ayari Suhama brought a lot of joy to our classes. Her engaging activities and the fun stories she shared made learning enjoyable. I appreciated how she always encouraged us to participate and practice new grammar patterns."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Bao Huanchen",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2002",
+      "1": "MA2202S",
+      "2": "MA3201"
+    },
+    "type": "Professor",
+    "description": "I found Bao Huanchen to be engaging and genuinely enthusiastic across all three modules. He has a knack for keeping lectures lively and focused on understanding, rather than getting bogged down in every technical detail. In MA2202S, he emphasizes key ideas and uses interesting examples that link algebra to other areas, which helped me see the bigger picture and stay motivated even when concepts got tricky.\n\nFor MA2002, the finals were quite challenging with lots of computations, but I managed to do well by practicing with past-year papers. The course felt fair in that sense because the core ideas were well laid out and repeatable with practice. In MA3201, his teaching style made difficult topics feel more approachable, even though the lectures moved quickly. His insights were especially helpful for the Rational Canonical Form, and while the assessments and finals were tough, his approach made the module feel manageable and even enjoyable.\n\nAcross all modules, there are clear common themes: a clear emphasis on understanding, genuine enthusiasm, and a talent for connecting concepts to broader ideas. The teaching consistently encouraged active engagement and problem-solving beyond memorization. Differences across modules showed up in pace and focus—MA2202S leans toward conceptual clarity and real-world links, MA3201 is fast-paced but richly insightful, and MA2002 centers on computational practice. Overall, I felt supported and motivated, and the modules together gave me a well-rounded grasp of the material."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Ben Leong",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1010S",
+      "1": "CS1010X",
+      "2": "CS2109S",
+      "3": "IT2900"
+    },
+    "type": "Professor",
+    "description": "I found Prof Ben Leong to be an engaging lecturer who brings real-world insights into the classroom. His stories about leadership and the guest speakers he invites make the lectures interesting and relevant. I appreciated how he emphasizes self-reflection and personal growth throughout the module, which pushed me to understand my own leadership style better. I enjoyed taking Prof Ben Leong's course as it was a refreshing break from the typical coding-focused modules. His approach encourages us to think critically about our values and mindset in leadership roles. The interactive tutorials and reflective assignments were valuable for my personal development. Taking Prof Ben Leong's class was both interesting and enlightening. The way he integrates guest lectures from industry leaders really adds depth to the content. The role-playing elements in tutorials helped me apply concepts to real-life scenarios, boosting my confidence in leadership situations. I found the module taught by Prof Ben Leong to be a unique experience. The focus on self-reflection combined with practical frameworks for leadership is something I hadn’t encountered before. His engaging style made learning enjoyable, and the class environment felt supportive and safe. Prof Ben Leong's lectures were thoroughly enjoyable and insightful. I gained a lot from the guest speakers he brought in, which showcased practical leadership wisdom. His ability to foster a reflective learning environment really enhanced my understanding of leadership dynamics. I appreciated Prof Ben Leong's method of teaching in the module. Although it required a lot of reflection and writing, it was rewarding. The way he encouraged us to explore our leadership styles really opened my eyes to my strengths and areas for improvement. Prof Ben Long was an engaging speaker who brought a lot of real-world experience into the classroom. I enjoyed his storytelling and the conversational nature of his lectures. The reflective writing assignments felt less like typical assessments and more like opportunities for personal growth. Overall, I appreciated the connections I made in this course and how it helped me reflect on my own leadership journey."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Bhojan Anand",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS3103"
+    },
+    "type": "Professor",
+    "description": "I think Bhojan is an amazing lecturer who explains complex networking concepts really well. I appreciated how he encourages discussions and is always available for questions. The module itself is very engaging, but the assignments can be quite challenging without clear guidance. Overall, I had a lot of fun exploring networking protocols in-depth. Bhojan is friendly and approachable, making it easy for me to clarify doubts after class. I enjoyed the hands-on experiences in the lab, which helped solidify my understanding of networking. However, the workload on assignments was steep at times, especially with the detailed requirements we had to navigate. I really enjoyed my time in Bhojan's module. His interactive teaching style made learning about networking protocols not just informative but also enjoyable. While the weekly quizzes and labs were demanding, they enhanced my learning experience. I appreciated his willingness to answer all sorts of questions, making every student feel valued. Overall, I found this module to be a great way to delve deeper into networking. Bhojan is an engaging lecturer who creates a collaborative atmosphere in class. I loved how he encouraged us to discuss our ideas and learn from each other. The assignments were challenging but rewarding, allowing me to apply theoretical concepts in practical scenarios. I highly recommend this module for anyone interested in networking."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Bimlesh Wadhwa",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2103"
+    },
+    "type": "Professor",
+    "description": "In my experience with Bimlesh, the course heavily emphasized documentation and methodologies, which I found useful. However, I felt that the lectures could have benefited from more engaging content."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Boyd Anderson",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1101S",
+      "1": "CS2030",
+      "2": "CS2030S"
+    },
+    "type": "Professor",
+    "description": "I found Boyd Anderson to be a knowledgeable and genuinely passionate lecturer across CS1101S, CS2030, and CS2030S. In CS1101S, his clarity and enthusiasm really helped me think critically about programming. His lectures were engaging and concise, and his recitation sessions and reflections sections were especially helpful in making tough topics digestible. I appreciated how he encouraged questions and discussion, and even when my Zoom failed, I felt well-prepared thanks to his teaching approach.\n\nIn CS2030, I experienced a different kind of challenge: a lot of Java concepts to master, especially coming from a different programming background. I appreciated the clarity he brought to complex topics and his patience in answering questions, though there were times when he rushed through material. I felt supported throughout the course and left with a solid understanding, even if the pace was brisk at moments.\n\nCS2030S was effective in delivering essential concepts, and I found the material engaging and challenging. I did struggle to stay fully engaged at times, and the workload from the programming assignments was intense, taking a lot of time. Nevertheless, he was responsive to questions and helped clarify doubts when I reached out, and the problem sets helped solidify my understanding. Overall, my takeaway across all modules is that Boyd is a dedicated instructor with strong subject mastery, a willingness to engage and support students, and an ability to spark interest—though pacing and workload varied from module to module."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Bressan Stephane",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1231",
+      "1": "CS2102"
+    },
+    "type": "Professor",
+    "description": "I generally found Stephane to be a nice and approachable professor who keeps students motivated. In CS1231, I appreciated his willingness to help, but I felt the delivery was hampered by lecture notes that weren’t proofread, which made it hard to follow at times. Still, I could sense how much he cares about our understanding and his readiness to support us outside of lectures.\n\nIn CS2102, the experience was more engaging. He tackled crucial concepts and helped me grasp the fundamentals of databases. He was entertaining in a way that included a sprinkle of French-like humor, which kept the lectures enjoyable. The content was well-taught and clear, though some topics remained complex; I would have benefited from more practical examples to connect theory to real-world use.\n\nAcross both modules, common threads stood out: his approachability, willingness to explain things, and ability to make challenging material feel manageable when he’s at his best. The main difference was that CS1231 felt weaker in delivery due to the notes, while CS2102 offered stronger clarity and engagement with a bit more emphasis on theory than application. Overall, I left CS2102 confident in the concepts, and CS1231 reminded me how polished materials can smooth the learning path, all while appreciating his supportive teaching style."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Brett McInnes",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA1512",
+      "1": "MA2101"
+    },
+    "type": "Professor",
+    "description": "I found Brett McInnes to be a knowledgeable lecturer who clearly knows calculus inside out. In MA1512, his lectures could feel quite abstract, which often pushed me toward self-study. He’s demanding and expects us to come prepared, but his explanations when he breaks down complex topics do help resolve the tougher parts—even if I struggled at times. The online quizzes were straightforward, while the final exam demanded speed and precision, so staying sharp was crucial.\n\nIn MA2101, I found him more engaging and approachable, with humor that helped me stay awake for the early 8am sessions. He structured the course in a way that made complex topics understandable, though I did find the lecture notes a bit lengthy. The quizzes were challenging, but I still enjoyed the module and felt I could grasp the material better because of his organized approach.\n\nAcross both modules, common threads emerge: a deep command of the subject, a clear willingness to explain ideas when you put in the effort, and an expectation that you come prepared. The differences mainly show up in tone and pace—MA1512 felt more abstract and exam-driven, while MA2101 felt more engaging and structured, with a touch of humor and longer notes. Overall, I left with a solid understanding of the material, appreciating the rigorous yet approachable balance Brett offered across his modules."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Brett Mciness",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2101"
+    },
+    "type": "Professor",
+    "description": "I enjoyed taking Linear Algebra II under Brett Mciness. His focus on conceptual understanding made the material engaging, and I appreciated his approachable teaching style. The only downside was that his exams were all MCQs, which added a level of difficulty."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Bryan Low",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1231"
+    },
+    "type": "Professor",
+    "description": "I found Prof. Bryan Low to be very good at explaining proofs clearly and making sure we understood the content. He was approachable and encouraged us to clear our doubts after class, which really helped my understanding of the material."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Bu Emma",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAB1201"
+    },
+    "type": "Professor",
+    "description": "I found Bu Emma to be extremely helpful and approachable, which made the learning environment very supportive. She encouraged us to ask questions and explore our understanding of the language, which I really appreciated. The assessments were manageable, and I felt the course was fun, especially with the interactive nature of the lessons."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Cai Zhenning",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2213"
+    },
+    "type": "Professor",
+    "description": "I found Cai Zhenning to be a passionate professor, but I struggled with the course structure and the depth of the material. The first half felt slow, and I didn't grasp some key concepts until late in the semester. However, I appreciated the detailed lecture slides, even though they often overwhelmed me. Cai Zhenning's lectures were detailed and informative, though I often felt lost due to the amount of content covered. While I found some concepts interesting, I struggled significantly with the course, particularly in grasping the computational aspects. I had a mixed experience with Cai Zhenning. I liked that his exams were not lifted straight from past tutorials, which made studying more challenging and engaging. However, I often felt unequipped to handle the content and would have appreciated clearer lecture direction."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chan Chee Yong",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2102"
+    },
+    "type": "Professor",
+    "description": "I found Chan's lectures to be a bit dry and sometimes confusing, especially with the complex topics like ER diagrams. The emphasis on correct SQL queries over efficiency was a bit limiting for my learning."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chan Heng Huat",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA1521"
+    },
+    "type": "Professor",
+    "description": "I found Professor Chan to be an incredible lecturer who genuinely cares about his students. Teaching such a large cohort without any TAs is no easy task, yet he manages to do it effectively. His dedication to live teaching rather than recordings really benefited my learning experience. He provided insightful illustrations and notes, but it's worth noting that some of the tougher proofs aren't examinable, so it can feel overwhelming at times. Overall, I appreciated his efforts, and despite the challenging bell curve, I managed to score well."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chan Mun Choon",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2105"
+    },
+    "type": "Professor",
+    "description": "I found Chan Mun Choon's lectures to be a bit overwhelming at times. I struggled to stay focused during classes, but the assignments were enjoyable and helped solidify my understanding of the material. I ended up relying more on textbooks and webcasts to catch up."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chan Wai Meng",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAG1201",
+      "1": "LAG2201"
+    },
+    "type": "Professor",
+    "description": "I found LAG1201 with Chan Wai Meng to be incredibly interactive and engaging. He didn’t just teach vocabulary; he took us through the origins of words, which made the material much more interesting. The games we played in class kept learning fun, even when the workload felt tough.\n\nIn LAG2201, I appreciated how experienced he is and how he facilitates engaging conversations that keep us alert during tutorials. His anecdotes from his time in Germany added real context to the lessons and helped me connect the material to lived experiences.\n\nAcross both modules, the teaching felt lively, student-centered, and context-rich. The main difference was the approach: LAG1201 leans on etymology and playful activities to build vocabulary, while LAG2201 emphasizes discussion and storytelling to deepen understanding. Overall, I felt supported and engaged in both courses, benefiting from his expertise and ability to spark participation."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chang Ee Chien",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2107"
+    },
+    "type": "Professor",
+    "description": "I found Chang Ee Chien to be a decent lecturer who explains concepts clearly. His lectures were engaging, and I appreciated that he often related to the cohort and cracked some jokes during the sessions. I noticed that his lecture notes were quite important for the quizzes and exams, so I made sure to pay attention. The exams were manageable, but there were a few tricky questions that could confuse you if you weren’t careful. I found this professor to be knowledgeable, but his lectures were often cold and minimalistic. He has a unique sense of humor, but sometimes seemed absent-minded. The workload was not too heavy, but for someone without prior knowledge in security, this module was a struggle for me. I appreciated how Chang Ee Chien covered the module's topics, but sometimes the lectures felt rushed. I had a tough time with the content since I lacked prior knowledge, and I didn’t find his teaching style very engaging. Still, I learned about various security concepts."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chang Yeon Joo",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAK1201"
+    },
+    "type": "Professor",
+    "description": "Thanks to Ms. Chang, I had a wonderful experience in LAK1201. Her engaging classes and structured approach made me feel confident about learning Korean. I found the assignments challenging yet manageable, and her enthusiasm inspired me to want to continue with the language."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Charmaine Sia",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2001",
+      "1": "MA2104"
+    },
+    "type": "Professor",
+    "description": "I took Charmaine Sia for MA2001 and MA2104, and I found her explanations consistently clear across both modules. Her teaching style makes complex ideas feel approachable, and I appreciated the way the lecture videos on Canvas and her overall approach helped me grasp the material more easily.\n\nIn MA2001, the lecture videos were particularly helpful and her explanations clarified the core concepts well. I felt the material became more manageable because of her teaching method and how she structured the topics. The assessments were also manageable, which kept me motivated, though I did notice that a few topics seemed to be skipped in the lectures, requiring me to fill those gaps on my own.\n\nFor MA2104, she was fantastic at explaining complex concepts in a clear and concise way. The handwritten notes were a standout study resource, and I valued that she introduced a few advanced topics that broadened my understanding. The workload in this module was light, which made it easy to keep up and actually absorb what we learned.\n\nOverall, the recurring themes across both modules are clarity, supportive resources, and an approachable teaching style that helps me understand the material without feeling overwhelmed. The main differences I noticed were the depth and extras: MA2104 offered handwritten notes and some advanced topics, while MA2001 focused more on core concepts and left a couple of topics less covered in class. Still, I walked away feeling confident in the material and grateful for her effective teaching."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chen Ingru",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAG1201",
+      "1": "LAG2201"
+    },
+    "type": "Professor",
+    "description": "In LAG1201, I found Chen to be extremely friendly and engaging. Her teaching style made learning German feel approachable, and I really felt comfortable participating in class.\n\nIn LAG2201, I felt she was a fantastic teacher who added personal stories to the material, which made everything more relatable. She was patient and gave timely feedback, which really helped me understand the lessons better while I was catching up on prior knowledge.\n\nOverall, the common thread across both modules is her approachable, student-centered approach: she creates a welcoming atmosphere, keeps the material relatable, and supports learning with timely feedback. The differences I noticed were that LAG1201 leaned more on an engaging, participatory style, while LAG2201 emphasized storytelling and targeted feedback to help fill gaps in prior knowledge. I left both courses feeling supported and more confident in German."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chen Zhixiong",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM3212"
+    },
+    "type": "Professor",
+    "description": "Chen Zhixiong was my favorite lecturer in the module; he was funny and laid back, making the respiratory system topics engaging. I enjoyed his assignments as they allowed for some creativity in exploring the material."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Cheng Holun",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1010E"
+    },
+    "type": "Professor",
+    "description": "Cheng Holun was a humorous lecturer who kept the lectures engaging and informative. I appreciated how approachable he was after class for questions, which helped clarify difficult concepts and boosted my understanding of Python."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Cheong Lee Peng",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAC2201"
+    },
+    "type": "Professor",
+    "description": "Taking the LAC2201 Chinese course with Cheong was a great experience! I enjoyed the interactive practice sessions and the engaging activities in class. Despite the workload, which included regular homework, I found it very manageable and the course invigorating. I appreciated how much fun we had during classes, which made the learning process enjoyable."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chew Tuan Seng",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA1505",
+      "1": "MA1511"
+    },
+    "type": "Professor",
+    "description": "I studied under Chew Tuan Seng for MA1505 and MA1511, and I found him to be a capable lecturer who keeps math approachable. I appreciated his enthusiasm and sense of humor, which made the material less intimidating and helped me stay engaged. I felt he explains concepts with patience, highlights the key points, and repeats them to reinforce understanding. His lecture notes are clear and filled with concrete examples, and I felt guided through the topics with a steady rhythm.\n\nIn MA1505, I found his pace to be slow enough to absorb the material, which I think helped during the webcasts when taking time to digest ideas mattered. The course was manageable, especially since the early topics drew on high school material and eased the transition into the rest of the content. He consistently emphasized important parts and provided notes that reinforced what we learned in lectures. The finals were a bit tricky, but if you keep up with his lectures and hints, you’d have no problem.\n\nIn MA1511, I appreciated his enthusiasm for the subject, which made even the tougher concepts more engaging, though he could be a bit slow at times. I often preferred watching the recorded lectures, which I found clearer than the live sessions. The topics felt quite fast, and I sometimes struggled to keep up, though the structure of the slides helped a lot. Despite the speed, I was pleasantly surprised by my grades, suggesting that consistent practice and using the recorded material paid off. Across both modules, the common thread is an approachable, supportive teaching style with clear notes and plenty of examples; the main differences were the pace and a noticeable preference for recorded content in MA1511."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chiba Satomi",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAJ2202"
+    },
+    "type": "Professor",
+    "description": "Chiba was a tough but fair lecturer. Her rigorous approach made me really push myself in mastering the language, even when it felt overwhelming."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chin Chee Whye",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA1100",
+      "1": "MA1100T",
+      "2": "MA2104",
+      "3": "MA2101S",
+      "4": "MA2108S",
+      "5": "MA2116",
+      "6": "MA2288",
+      "7": "MA2108",
+      "8": "MA3201",
+      "9": "MA2202"
+    },
+    "type": "Professor",
+    "description": "I've taken several of Chin Chee Whye's modules, and his teaching feels relentlessly rigorous and deeply theoretical. In MA1100 and MA1100T, the emphasis on proofs pushes you to build solid foundations, which can be intimidating but ultimately rewarding. MA2104 carried that rigorous, proof-heavy approach, though I felt the grading was fair and his openness to questions helped when the material got tough. Across MA2108S, MA2116, MA3201, MA2288, and MA2202, the same commitment to depth and core concepts came through, with clear notes and high standards shaping how I approached the material.\n\nMA1100's pace was fast and dense, and MA1100T seemed even more challenging with less intuition built in early on. MA2108S was engaging but whirlwind-like, and the absence of tutorials meant I relied heavily on self-study. MA2116 was rigorous, but the incomplete lecture materials sometimes left me feeling a step behind. MA3201 was intensely long—two hours at times—but Chin's explanations were crisp, and the post-lecture notes were indispensable. MA2288 offered a research-style experience; meeting with him could be nerve-wracking, yet the feedback was incredibly instructive. MA2108 (non-S) demonstrated his meticulous notes and clear explanations, and MA2202 benefited from his strong notes and quick forum responses that kept me supported. MA2101S stood out for intuitive explanations and humor, which made linear algebra more approachable within that module.\n\nOverall, common threads emerge: a strong emphasis on rigor, careful development of core concepts, and high standards that push you to think deeply. The differences reflect different aims—MA2101S’s intuitive, engaging style and humor versus the proof-heavy focus of MA1100/MA2104; some modules had robust tutorial and materials support, while others (like MA2116) felt lacking in accessible materials at times. Despite the challenges, I feel more confident in my mathematical abilities and would recommend Chin to math majors who are prepared to commit to long, rigorous courses and substantial problem sets."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chin Wei Ngan",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1231S",
+      "1": "CS2030",
+      "2": "CS2104"
+    },
+    "type": "Professor",
+    "description": "I took CS1231S, CS2030, and CS2104 with Chin Wei Ngan, and my experience varied a lot by module. In CS1231S, his segments were useful and he explained concepts clearly, especially when it came to functions. The tutorials made the ideas easier to follow than the lectures, and his teaching style did help solidify my understanding. However, the module felt overshadowed by Aaron’s teaching style, and I didn’t interact with Chin as much as I did with Aaron. I still felt that, on balance, Chin’s portion was clear and valuable, even if it required a solid grasp of the concepts to keep up.\n\nIn CS2030, I found Chin’s recitations challenging. His slides were hard to decipher and the topics themselves were tough, which made some concepts hard to grasp. I felt more confident during recitations run by Henry, who explained things more clearly and with better structure. So while Chin tackled difficult material, the delivery in this module didn’t click for me as well as I hoped.\n\nCS2104 was the most frustrating for me. The lectures felt slow, reading straight from slides, and I found them poorly organized and sometimes error-prone, which made it hard to follow the programming language material. The tutorials seemed mostly useless, and I often turned to online resources to fill the gaps. Still, I appreciated the hands-on assignments and the breadth of programming languages covered—they kept me engaged and helped me learn in a more practical way, even if the lecture quality was lacking and the exam formats felt overly simplistic. Across modules, the common thread is that engagement and clarity greatly affected my learning: clear explanations and interactive tutorials helped, while slides-heavy, error-prone lectures and hard-to-decipher recitations hindered my progress."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Choi Boreumi",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAK3201"
+    },
+    "type": "Professor",
+    "description": "Choi Boreumi is an excellent lecturer for LAK3201. I really appreciated the energy she brought to each class. She made the content relatable and her explanations were clear, which helped me feel more confident in learning Korean. I ended up getting an A, which was a pleasant surprise!"
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Choi Nuri",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAK1201"
+    },
+    "type": "Professor",
+    "description": "I found Ms. Choi to be an awesome lecturer. She made the fast-paced Korean language module exciting and rewarding. Her clear explanations helped me learn a lot, and I genuinely appreciated how patient she was with all of us, despite the workload being heavy."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chong Kwek Yan",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM4351"
+    },
+    "type": "Professor",
+    "description": "Chong was part of an amazing team teaching LSM4351. I loved the hands-on learning experience in the botanic gardens, which made every lecture a thrilling adventure. I appreciated how he connected the theoretical aspects of botany with practical learning; it made the subject come alive for me. His passion for plants was infectious and really enriched the course. I took LSM4351 with Chong and felt it connected perfectly with my interests in botany. His lectures were packed with information but also engaging, especially because we got to explore the gardens. The integration of theory and practice ensured that I didn’t forget what I learned, and his willingness to answer questions made it easier to grasp complex topics."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chris McMorran",
+    "ratingCount": 0,
+    "tags": {
+      "0": "JS1101E",
+      "1": "JS2234"
+    },
+    "type": "Professor",
+    "description": "From taking JS1101E and JS2234 with Chris McMorran, I came away impressed by how lively, knowledgeable, and genuinely invested he is in his students. His interactive lectures keep me engaged, and I can tell his passion for Japan’s culture, history, and current issues shines through every session. He makes the classes feel welcoming—he remembers our names and connects with us personally—so learning feels intimate and motivating. Across both modules, I found his explanations deep and his insights enlightening, and I left each lecture looking forward to the next.\n\nIn JS1101E, the structure was engaging and informative, the readings were fun, and the coursework felt manageable and relevant to my interests. I appreciated how the material balanced depth with approachability, and how he tied cultural and historical topics to real-world context. His enthusiasm for Japan really comes through, making the subject feel accessible even on tiring days. I would highly recommend taking JS1101E with him.\n\nIn JS2234, his interactive and lively teaching continued to shine, and his insights into Japan’s environmental challenges opened my eyes to issues I hadn’t considered before. He truly encourages student participation and discussion, which deepens understanding and makes complex topics easier to digest. Overall, he’s an excellent professor who makes difficult material accessible and engaging. The common threads across both modules are his energy, his knack for connecting with students, and his commitment to making the content meaningful and enjoyable. If you can, take courses with him."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Christian Go",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA1508E",
+      "1": "MA1512"
+    },
+    "type": "Professor",
+    "description": "I found Christian to be an exceptionally friendly and energetic lecturer who makes math feel approachable across MA1508E and MA1512. His teaching style stays straightforward while turning complex concepts into digestible ideas, and I really appreciated his real-time note-taking during lectures which kept the material clear and easy to revisit. I felt that he genuinely wanted us to understand the material, which made even the tougher topics seem within reach.\n\nIn MA1508E, his approach was especially well-suited to Linear Algebra. The explanations were straightforward and intuitive, and he dedicated time to meet with every student in our tutorial groups. That level of accessibility helped me and my peers who were struggling, and it reinforced my confidence in the subject.\n\nIn MA1512, his enthusiasm shone through and the lectures remained engaging as topics grew more challenging. I valued the real-time illustrations during class, which helped me grasp methods more intuitively, particularly for Differential Equations. The quizzes and tutorial assignments were helpful complements, and he introduced new practices to help us manage our learning. While the finals were tougher than the practice problems and quizzes, I felt well-prepared thanks to his ongoing guidance, and his energy carried over into online classes, keeping the material engaging despite the demanding content. \n\nOverall, the common threads across both modules are his accessibility, engaging delivery, and a genuine focus on helping us understand the material. The differences lie in MA1508E’s emphasis on one-on-one tutorial support and straightforward explanations, versus MA1512’s interactive, note-taking-heavy lectures and online delivery, which came with tougher final assessments."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Christian Von Der Weth",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2102"
+    },
+    "type": "Professor",
+    "description": "Christian's sessions were informative, but I struggled to understand him at times because of his accent. Despite that, he laid out the material clearly, which helped me get through the more technical parts of the course. I found Christian Von Der Weth to be a decent lecturer, though his accent made it a bit hard to follow at times. I often felt that attending his lectures was redundant since the slides were quite comprehensive. However, I appreciated the structured approach he took during the first half, which helped build a good foundation in SQL and the relational model. Christian was approachable and friendly. I felt the course could be challenging at times, but he did a good job of explaining concepts, making it enjoyable overall."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chu Delin",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2213"
+    },
+    "type": "Professor",
+    "description": "I had a really tough time with Chu Delin's module. The content was intense and often repetitive, with many questions recycled from past papers. His approach can make learning harder if you're not prepared. Still, I respected his depth of knowledge and the fact that he actually cares about helping students succeed. Chu Delin was very engaging, and I appreciated how he provided hints for exams. His delivery took time to get used to because of his accent, but overall, I found his lectures helpful. The need for attention to detail made this module quite intense. I felt that Chu Delin was a competent lecturer. He tends to set predictable exam questions, which can be beneficial for students willing to put in the effort to review past papers. The module's focus on computational detail was both challenging and rewarding."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Chua Seng Kee",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA3210"
+    },
+    "type": "Professor",
+    "description": "I found Chua's lectures very disorganized and hard to follow. The lack of continuity and clarity made it difficult to grasp the material. The tutorial sessions were also problematic, as he didn't explain the proof steps well. Overall, while there were some interesting concepts, I felt lost during the course. I think Chua is a nice man but this module was pretty disorganised, and the delivery of material often left me terribly confused. I appreciated the sample papers he provided for midterms and finals, but overall, I did not enjoy this second outing with mathematical analysis."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Colin Tan Keng Yan",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1231",
+      "1": "CS2100",
+      "2": "IT5002"
+    },
+    "type": "Professor",
+    "description": "I found Colin Tan Keng Yan to be a generally engaging and capable lecturer. In CS1231, he delivered the content with clarity, especially in the beginning and end sections, and his humor and personable style helped make the material more approachable. I appreciated how open he was to questions and how the discussions under his lead felt dynamic and interactive. That said, this module could still be tough for me at times, and I occasionally felt lost during lectures, even though my TA was supportive.\n\nFor CS2100, I found him to be a great lecturer whose explanations were clear and who structured the recitations well, which I mostly attended in person. I appreciated his ability to make the material engaging and his evident expertise. The frustration came from the course structure itself and a sense that expectations weren’t communicated as clearly as they could have been, which made it hard to keep up despite his strong teaching.\n\nOverall, common themes across both modules are Colin’s engaging delivery, sense of humor, and willingness to answer questions, which helped make challenging content more approachable. The differences in my experience stem from course organization: CS1231’s pacing occasionally left me feeling lost, whereas CS2100’s challenges were more about how the course was structured and communicated rather than the teaching quality itself. If I had to summarize, Colin is a strong, engaging lecturer who can make difficult material accessible, but the success of the module also depends on how the course is organized and how clearly expectations are conveyed."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Colin Tan Kheng Yan",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2106"
+    },
+    "type": "Professor",
+    "description": "I liked Colin's teaching style, as he often shared insights that went beyond just the syllabus, which I found valuable. However, I noticed that sometimes the content seemed rushed towards the end of the semester. Overall, his lectures were quite informative. I found Colin to be a hyperactive and engaging lecturer who adds a storytelling flair to his classes. Despite his lively teaching style, the content was clearly presented, and I appreciated how he effectively communicated the core concepts of the course. I found Colin to be a knowledgeable and approachable professor. Despite the high difficulty of the module, he created an environment where I felt comfortable asking questions and engaging with the content."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Cristina Carbunaru",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2106"
+    },
+    "type": "Professor",
+    "description": "Cristina was a really approachable and engaging lecturer. She tried to make online classes interactive, which I appreciated during the pandemic. Her teaching helped me grasp the complex subject matter effectively. Cristina was an excellent lecturer who explained concepts very well. I appreciated the extra effort she put into answering queries and making sure we understood the material, especially given the difficulty of the labs."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Damith C. Rajapakse",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2103"
+    },
+    "type": "Professor",
+    "description": "I found Damith to be a passionate and well-prepared lecturer. His structured schedule was helpful, and I appreciated the focus on UML diagrams and coding standards, even though the workload was intense. I enjoyed having Damith as my lecturer. He was very passionate and well-prepared, providing clear guidance on the project requirements. I learned a lot about code quality and the importance of following the module handbook. Taking this module with Damith was an insightful experience. He guided us well through software engineering principles, although the workload was significant and required proper teamwork."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Damith Chatura Rajapakse",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2103T"
+    },
+    "type": "Professor",
+    "description": "I had a decent experience with Damith as a lecturer. He is quite passionate and actively engages with us, particularly during project dry runs. However, I felt the course structure was somewhat flawed, and the emphasis on UML and grading practices made it tricky for collaboration. I can't help but appreciate how nice Damith is. He really cares about his students and makes an effort to answer forum queries promptly. While I wasn't particularly interested in the course content, I think he does his best to support us. Having Damith as my lecturer was a mixed experience. He was great in addressing our concerns, but the course itself often felt cluttered and overwhelming. I hoped for more practical applications rather than theoretical focus, especially in regard to UML. I found Damith to be very approachable and supportive. He was there for us during stressful periods like the TP submissions. However, I also thought the module could use some refinement in terms of workload and relevancy to real-world software engineering practices. I think Damith is a caring lecturer who really tries to help us. However, the course still felt confusing at times, especially with all the group work requirements and the practical examinations that added unnecessary stress. I really enjoyed this module, and much of that is thanks to Damith. He was dedicated and responsive to students, answering forum posts and emails promptly. The course was well-organized and I appreciated his involvement in ensuring we understood the material. It was a grind, but I felt supported throughout, especially in group projects. I had a lot of respect for Damith as he managed the course effectively and took feedback into consideration. He made the experience more pleasant with his approachable demeanor, and I genuinely appreciated how he handled the issues we faced during the project. Overall, it made a tough course feel manageable. Taking CS2103T, I was surprised by how much I learned about software engineering from Damith. His lectures and guidance were insightful, and he encouraged us to think practically. While the workload was heavy, I felt it was worth it because of the skills I gained. He was particularly helpful with project-related queries. I felt that Damith genuinely wanted us to succeed. His feedback during modules was clear and constructive, which really enhanced my learning experience. Even though the module was quite demanding, I appreciated how dedicated he was to our success and how he made himself available to address our concerns. I took this module under Damith, and I found the lectures to be quite helpful. He made the content more relatable through real-life examples, which I really appreciated as it made the theory feel applicable. However, the project workload was intense and time-consuming."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Daniel Chan",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAF1201",
+      "1": "LAF3202"
+    },
+    "type": "Professor",
+    "description": "I found Daniel Chan to create an engaging, interactive learning environment in both LAF1201 and LAF3202. He encouraged everyone to participate, which made learning French more enjoyable and kept me engaged throughout the courses.\n\nIn LAF1201, the workload was manageable, and the frequent quizzes really helped reinforce what I was learning. The quizzes gave me regular checkpoints and prevented concepts from slipping through the cracks. I appreciated how practical and steady the pacing felt.\n\nIn LAF3202, his focus on grammar and the interactive nature of the lessons helped solidify my understanding. I liked how he linked different vocabulary and sentence structures, making it easier to consolidate knowledge and apply it in real sentences. Across both modules, the teaching style felt cohesive: interactive, structured, and oriented toward building a solid foundation through practice and clear connections between grammar, vocabulary, and sentence construction. The main difference was the emphasis—LAF1201 leaned more on participation and frequent quizzes, while LAF3202 emphasized grammar and integrating vocab with structures."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Dara Richard",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2101"
+    },
+    "type": "Professor",
+    "description": "I found Dara Richard to be a great tutor who made the tutorials enjoyable despite my dislike for the fluff content of the module. Although the grading structure seemed a bit random and I don't love presentations, I appreciated the guidance I received."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "David Hansen",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2101S"
+    },
+    "type": "Professor",
+    "description": "In my experience, Prof David Hansen created a unique and engaging classroom environment. His teaching style felt like storytelling, making complex topics easier to digest. I appreciated how he guided us through the material and encouraged us to think critically about the problems presented. Overall, it was a fulfilling learning experience, and I felt I gained a solid understanding of the subject."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Deborah Shamoon",
+    "ratingCount": 0,
+    "tags": {
+      "0": "JS2213"
+    },
+    "type": "Professor",
+    "description": "I found Deborah's lectures to be engaging and interactive. She was approachable and supportive, which made the learning experience enjoyable. Her insights during discussions were particularly helpful, and I felt that I gained a good understanding of the visual analysis of Japanese media through her guidance."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Deng LW",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM4199"
+    },
+    "type": "Professor",
+    "description": "I was quite disturbed by my experience with Prof Deng as a thesis mentor. His behavior was unprofessional, and it created a toxic atmosphere in the class."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Denny Leung",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2108S"
+    },
+    "type": "Professor",
+    "description": "I loved this module under Denny; he built everything from the ground up with rigorous proofs. The challenging problems and the fun discussions about theorems made it an enjoyable and engaging experience. I appreciated the depth he brought to the subject."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Diana Chung",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2101"
+    },
+    "type": "Professor",
+    "description": "Diana Chung was my tutor for this module, and I appreciated her structured approach to teaching. She made the content easy to understand, which helped me during the assessments. The emphasis on teamwork and communication skills was important, and her guidance was instrumental."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Dilip Raghavan",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2001",
+      "1": "MA3205"
+    },
+    "type": "Professor",
+    "description": "I took both MA2001 and MA3205 with Dilip Raghavan, and I found him approachable and friendly in every module. In MA2001, his use of diagrams really clarified many concepts, and the tutorials were a great way to deepen my understanding even when the material was tough. The classes felt engaging, and I appreciated that I could ask questions easily. The course structure was well-organized, and I felt well-prepared for the assessments as a result.\n\nIn MA3205, Dilip proved to be an excellent lecturer who presented complex proofs with notable ease. His diagrams, along with high-quality notes and clear explanations, made abstract ideas much more understandable. I genuinely enjoyed this module—the visuals helped me see the concepts more clearly, and his passion for set theory (and even Maths History) added depth to the lectures. I did struggle at times with grasping the intuition behind some proofs, even though I could follow the logic, but overall the teaching helped me recognize the power and complexity of the ideas.\n\nAcross both modules, common themes stood out: his accessibility, the strong visual approach with diagrams, clear explanations, and engaging lectures. The notes were consistently helpful, and his evident enthusiasm for mathematics made learning feel purposeful rather than daunting. If I had to note a difference, MA2001’s structure and tutorials gave me extra confidence for assessments, whereas MA3205 sometimes required more effort to internalize the intuition behind proofs. Overall, I left both modules feeling more confident in the material and more curious about the subject."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Diptarka Chakraborty",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2040S"
+    },
+    "type": "Professor",
+    "description": "I was part of Diptarka's class and found him to be very knowledgeable. His approach was direct, which I appreciated, but I also noticed that sometimes the content felt a little abstract. Still, I think he did a good job at covering fundamental topics."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Djordje Jevdjic",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2106"
+    },
+    "type": "Professor",
+    "description": "Djordje was a passionate professor who handled questions with care. Though his lectures could sometimes be convoluted, I appreciated his willingness to clarify doubts promptly. The content was challenging, but I learned a lot about the inner workings of operating systems."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Dong Xiaoyu",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA1521"
+    },
+    "type": "Professor",
+    "description": "I didn't have a very positive experience with Dr. Dong. His teaching style and delivery, including his thick accent, made it hard for me to follow along. There were moments in class where he seemed indifferent to students' confusion, which led me to skip future lectures. However, I did hear from others that he has a thorough understanding of the material, but unfortunately, his manner of teaching didn't resonate with me. I had a very disappointing experience with Dong Xiaoyu. His lectures were hard to follow as he sometimes spoke too quickly and struggled with the mic. This made it difficult for students to engage, leading many to walk out. I switched to Wong Yan Loi's lectures and found them to be marginally better, but felt that the course overall lacked the support I needed."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Edward Chow",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM4221"
+    },
+    "type": "Professor",
+    "description": "I appreciated Prof Edward Chow's clarity and laid-back teaching style. He made the complex drug discovery process understandable and engaging."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Edward Webb",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM3255"
+    },
+    "type": "Professor",
+    "description": "I found Edward Webb's module to be content-heavy but easy to understand. However, there were too many lab reports, and the vague instructions made it challenging at times."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Eldon Chung",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2040S",
+      "1": "CS1010"
+    },
+    "type": "Professor",
+    "description": "Eldon Chung is an excellent lecturer who kept my attention throughout his engaging classes. I appreciated how he revamped the assessments to focus on problem-solving instead of just memorizing algorithms, making the learning process more interactive. I felt thankful for Eldon Chung's mercy during my midterms. Even though I struggled to understand the lectures initially, his grading was surprisingly lenient, allowing me to score above expectations despite my inefficient solutions."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Emile Okada",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA3201"
+    },
+    "type": "Professor",
+    "description": "I found Emile to be very approachable and willing to clarify any doubts during the lecture. His lectures and tutorials were good, but I felt the pace was quite fast, and I had to spend a lot of time reviewing the content outside of class. I recommend doing the tutorials as they help in understanding the definitions better. Overall, I found the module interesting but challenging."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Euneee Ko",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAK1201",
+      "1": "LAK3202"
+    },
+    "type": "Professor",
+    "description": "I found Euneee Ko genuinely engaging across both LAK1201 and LAK3202. She makes the material feel relevant and approachable, and she genuinely cares about how we learn. I appreciated how she keeps lessons engaging while keeping stress levels down and ensuring we get solid speaking practice.\n\nIn LAK1201, the course felt like a refreshing break from my core mods: relatable content, a low-stress vibe, and plenty of speaking practice. Her teaching style made it fun to learn and encouraged me to participate more freely.\n\nIn LAK3202, the experience was equally positive—I'd consider her one of the best lecturers in the Korean department. She continues to show genuine care for her students and keeps the class engaging by weaving in contemporary topics. I felt supported throughout my learning journey, and the grading was transparent, so I could track my progress. Across both modules, the common threads are engaging delivery, sincere care for students, and a strong emphasis on practical speaking; the differences lie in LAK1201's lighter, stress-free focus and LAK3202's use of current topics and clear grading."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Finn Wiersig",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA3201"
+    },
+    "type": "Professor",
+    "description": "Finn Wiersig is quite a nice lecturer who took the time to clarify points during the lectures. The content can get abstract, but he makes it easier to grasp. I found the exams to be straightforward, which helped me understand the material better. Overall, I had a good experience in his module. I really liked Finn's lecture style where he wrote on the board, allowing me time to think and digest the material. However, the finals were particularly difficult, and I fell behind during the semester but still managed to score well on homework."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Foo Yong Qi",
+    "ratingCount": 0,
+    "tags": {
+      "0": "IT5100E"
+    },
+    "type": "Professor",
+    "description": "I really enjoyed Yong Qi’s class. He communicated clearly and was very responsive to questions. The course itself offered a practical overview of web security, and I found the assignments manageable, which helped me understand the key issues in a relaxed learning environment."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Francois Bretault",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAF1201"
+    },
+    "type": "Professor",
+    "description": "I found Francois Bretault to be the best French teacher you can ever have. The classes feel like home, and he introduces us to French culture through songs and interactive websites. The lectures are challenging, especially with listening and pronunciation, but his engaging approach makes learning enjoyable. I just wish I had done better on my final grade."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Frank Patrick Rebentrost",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2109S"
+    },
+    "type": "Professor",
+    "description": "I felt that tutorials conducted by Prof Patrick helped me understand the topics slowly, but I still struggled with assessing my preparedness for the assessments. I appreciated his effort to help us understand the material, but sometimes I wished the pace could be faster to cover more content. Having Frank as one of the lecturers made the course informative and engaging. He effectively communicated the concepts, which helped me grasp the essentials of AI and ML without overwhelming me with unnecessary complexity."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Gan Fah Fatt",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2116"
+    },
+    "type": "Professor",
+    "description": "I found Gan Fah Fatt's lectures to be poorly executed, often lacking clarity and structure. He dismissed my questions rather quickly, which made me feel disengaged from the learning process. Overall, it was a frustrating experience."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Gan Yunn Hwen",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM3223",
+      "1": "LSM4222"
+    },
+    "type": "Professor",
+    "description": "I found Prof Gan's teaching across LSM3223 and LSM4222 to be engaging. In LSM3223, I appreciated the interactive approach—Kahoot was used a few times to make learning fun, and the way Prof Gan interacted with us during lectures made the sessions genuinely enjoyable.\n\nIn LSM4222, I found Prof Gan's teaching style clear and easy to grasp. The module felt enjoyable and manageable even though the content was heavy, thanks to the clarity of explanations and a structured delivery.\n\nOverall, the common threads across both modules were accessibility and a knack for encouraging participation. LSM3223 leaned more on interactive activities to reinforce concepts, while LSM4222 focused on clear, straightforward explanations to handle dense content. The differences complemented each other and left me with a coherent, positive overall impression of Prof Gan's teaching."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Goh Jun Le",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA1100T",
+      "1": "MA2001"
+    },
+    "type": "Professor",
+    "description": "Taking MA1100T with Prof Goh Jun Le was a transformative experience for me. He is incredibly patient and explains abstract concepts with remarkable clarity, which really helped me understand proofs and rigorous mathematics. The course was challenging, but his openness to questions and his emphasis on discussion during lectures made difficult topics more approachable. The assignments were demanding but interesting, pushing me to engage deeply with proofs rather than just endless problem-solving. He was always available for questions, creating a supportive learning environment, and the workload, while intense, felt worthwhile for building a solid foundation in pure mathematics and boosting my confidence in proof-writing.\n\nIn MA2001, I appreciated Goh’s structured approach to linear algebra. The course gave me a solid foundation, and I was pleasantly surprised by my final grade even though I occasionally skipped proving questions. I found his recordings particularly helpful; I preferred following the recorded explanations because they were clear and easy to revisit, especially since the live lectures started quite early for me. The effort he put into making the material accessible through recordings made it easy to learn at my own pace and ensured I still got a strong grasp of the concepts.\n\nAcross both modules, the common themes are clear: a strong emphasis on understanding over rote learning, and a genuine dedication to explaining difficult ideas in a way that builds confidence. The teaching style in MA1100T was highly interactive, with tutorials that made tackling tough problems less daunting and fostered my interest in pure mathematics. MA2001 offered a reliable, accessible delivery through well-made recordings, reinforcing fundamentals in linear algebra. The main difference was the delivery mode—MA1100T felt more discussion-based and in-the-moment, while MA2001 leaned on structured recordings for convenience and flexibility. Overall, Prof Goh’s teaching left me more confident with proofs and more comfortable with abstract mathematics."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Han Fei",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2108S",
+      "1": "MA2108",
+      "2": "MA3210"
+    },
+    "type": "Professor",
+    "description": "I found Han Fei to be deeply knowledgeable and approachable across all the modules I took. He has a strong emphasis on proofs and intuitive arguments, which helped me see the concepts, even if at times it felt a bit overwhelming. In MA2108S, I appreciated how he walked through proofs and examples in detail, though I wished there had been more emphasis on the technical nitty-gritty to really seal my understanding. His thoroughness was valuable, but I sometimes needed a clearer balance between rigor and accessibility.\n\nIn MA2108, his tech-savvy approach to online learning during the pandemic stood out. He encouraged participation and made tutorials focus on discussion, and the recaps before each session were really helpful. The final exam was tougher than I expected and the proofs required were heavy, making it challenging even with a good grade. I also wished there had been more feedback on midterm performance, and while some explanations were hard to follow, I appreciated his approachability and the overall engagement of the class.\n\nMA3210 felt different: I mostly watched recordings due to the early lecture time, and the lectures stuck closely to the notes, which could be a bit dry. Yet the tutorials were excellent for sharpening my proof skills and seeing applications, and I left with a solid introduction to analysis. I’d describe Han Fei as a chill lecturer who brings good vibes, even if some lectures felt ad hoc. Across all modules, the common threads are his depth of knowledge, emphasis on proofs, and willingness to engage students; the differences lie in pacing and format—very detailed proofs in MA2108S, online, discussion-forward sessions in MA2108, and note-driven lectures with strong tutorials in MA3210."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Han Ji Won",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAK3201"
+    },
+    "type": "Professor",
+    "description": "Having Han Ji Won as my lecturer was a great experience. Her engagement with the class and clarity in teaching made the rigorous content feel achievable. I enjoyed the assessments, and although challenging, they were very enriching."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Harold Soh",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2040S"
+    },
+    "type": "Professor",
+    "description": "Harold Soh made CS2040S enjoyable and interesting. He managed to make complex topics more digestible, and his lively teaching style kept me engaged. His caring attitude towards students made a big difference in my learning experience."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Henry Chia",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1010E",
+      "1": "CS2030",
+      "2": "CS2103",
+      "3": "CS2103T"
+    },
+    "type": "Professor",
+    "description": "I took four modules with Henry Chia, and I’d describe his teaching as engaging, practical, and student-focused. In CS1010E, I found him to be brilliant at making programming feel accessible and interesting. He emphasized problem-solving over theory, his live interactions and humor kept the lectures lively, and the algorithm-based labs helped me practice what mattered. The notes were clear and the resources helpful, which made my first real programming experience both manageable and enjoyable.\n\nIn CS2030, I still saw his strengths—live coding demos, responsiveness to questions, and a supportive environment that encouraged us to push through challenging topics like Lazy Evaluation and Streams. The assessments were demanding and the labs/projects could feel overwhelming, but I appreciated how he and the TAs were available to help and how the module fostered a strong sense of community. There were a few administrative hiccups (last-minute cancellations and unclear TA communications) that slightly detracted from the experience, though they didn’t overshadow the overall quality of teaching.\n\nCS2103 and CS2103T showed some variation. CS2103 felt less technical and assumed more prior knowledge, which meant I relied more on self-study and found that part quite challenging, even while I still found the material enlightening. CS2103T, on the other hand, was more accessible and well-structured, with a clearer focus on practical programming skills rather than theoretical depth. The workload ramped up mid‑semester, but the course remained engaging and well-organized. Across all modules, the common threads were Henry’s engagement, clarity, and willingness to help, though pacing and structure varied by course."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Henry Mok",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM1301"
+    },
+    "type": "Professor",
+    "description": "I think his slides were quite dense, but I enjoyed the way he presented the material, making even the tough concepts intriguing. I found Prof. Henry Mok to be very chill and laid-back. He taught the first half of the module and made the lectures quite engaging. I appreciated his relaxed approach, which helped ease the pressure of such a challenging course."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Herbert Schwarz",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM3212"
+    },
+    "type": "Professor",
+    "description": "I had Herbert Schwarz for part of my module on blood physiology, and I felt that his portion was a recap of earlier biology concepts with some added complexity. It was fairly straightforward, which helped make the learning experience smooth for me."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Hu Conghui",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2109S"
+    },
+    "type": "Professor",
+    "description": "My experience with Prof Conghui's lectures was mixed. While the content covered in her sessions was essential, I felt her lectures were a bit rushed, making it challenging to fully grasp the topics in the limited time we had. I was fortunate enough to get Conghui for tutorials. She explains the intuition and reasoning behind the theorems or equations, and is very knowledgeable. Although the math-heavy sections made my brain explode at times, being able to follow her thought process gave me a deeper appreciation for the subject."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Hugh Tan",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM3258"
+    },
+    "type": "Professor",
+    "description": "I enjoyed learning from Prof Hugh Tan, who is passionate about botany. Although he can be intimidating at times, he encourages critical thinking and is open to questions, which I appreciated."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Isabel Chew",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2101"
+    },
+    "type": "Professor",
+    "description": "Isabel Chew was a great tutor, keeping our class discussions lively and relevant. I enjoyed her lessons a lot, and I learned a lot about effective communication. However, her strict grading meant that I had to always give my best effort."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Isabel de la Fuente Cobas",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LAS4204"
+    },
+    "type": "Professor",
+    "description": "While I enjoyed the course with Isabel, I found her teaching style to be quite different from Sergio's. She focused more on vocabulary, which was sometimes less engaging for me. However, she was friendly and helped create a positive learning environment."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Janet Chan",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2101"
+    },
+    "type": "Professor",
+    "description": "Having Janet Chan as my lecturer was a fantastic experience. She took the time to connect with each student personally, which made participation easier and less intimidating. The focus on public speaking really helped me gain confidence."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Ji Feng",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA1301"
+    },
+    "type": "Professor",
+    "description": "I took this module with Ji Feng, and I found his pace in teaching quite fast at first. However, I adapted to it over time. I appreciated his thoroughness in covering diverse topics, although some questions in the exam were quite tricky and caught me off-guard. Overall, I felt the course was challenging but manageable with consistent effort."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Jialin Li",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2106"
+    },
+    "type": "Professor",
+    "description": "I found Jialin's lectures to be quite engaging and helpful. He presented the materials clearly, making complex topics easier to understand. I appreciated his enthusiasm for the subject matter, which made the learning experience more enjoyable. Li Jialin was a great lecturer who made a challenging module easier to understand. I appreciated the clear explanations and support offered throughout the course, which made the difficult content more manageable."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Jithin Vachery",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS2105"
+    },
+    "type": "Professor",
+    "description": "I had the pleasure of learning from Dr Jithin Vachery, who taught the later part of the course. His enthusiasm for computer networking is truly inspiring, and I appreciated how he brought topics to life. He made complex concepts easier to understand, and his passion kept my interest throughout the lectures. I would definitely recommend him to other students. Jithin Vachery's lectures were dynamic and engaging, which made the learning experience enjoyable. I particularly appreciated his knack for making complex topics understandable, although I found the exam formats challenging and not reflective of our learning."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "John Ascher",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM2107"
+    },
+    "type": "Professor",
+    "description": "Prof. John Ascher's deep interest in insect research really influenced his lectures, though his monotonous voice sometimes made it difficult for me to stay awake. I appreciated the engaging content, but his delivery could use some improvement."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Jonathon Teo Yi Han",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA1508E",
+      "1": "MA1522",
+      "2": "MA2002",
+      "3": "MA2001"
+    },
+    "type": "Professor",
+    "description": "I've had Jonathon Teo Yi Han as my lecturer across four modules, and his enthusiasm is genuinely contagious. His energy and clear passion for teaching make even the fast-paced material feel doable, especially with the supplementary videos and structured tutorials he provides. He’s always approachable—quick to respond in the Telegram chat and generous with feedback—which kept me motivated through tough topics. The emphasis on conceptual understanding and his habit of tying ideas to practical tools like MATLAB made complex subjects feel engaging rather than overwhelming.\n\nFor MA1508E, linear algebra was fast and dense, but the structured quizzes and continuous assessments helped me stay on track, and the community built through tutorials kept doubts from piling up. MA1522 was a real game-changer for me: the math cafes and pre-lecture quizzes were incredibly helpful, and thinking geometrically clarified difficult concepts; the Telegram chat and interactive sessions made it easy to seek help. MA2002 presented a steeper learning curve as an introduction to calculus with rigorous topics, yet his explanations and manageable assignments made the material more accessible. MA2001 kept the pace brisk, but his lively, engaging lectures helped make linear algebra feel interesting, even if some homework was challenging.\n\nAcross the modules, several themes recur: genuine enthusiasm and dedication to student understanding, approachable and prompt support, and a strong sense of community fostered by quizzes, tutorials, and informal review sessions. He blends theory with practical tools and promotes active participation, which helps me think more deeply and apply what I learn. The main differences seem to be in how much community-building and geometry-focused thinking are emphasized (strong in MA1508E and MA1522) versus the more traditional calculus and fast-paced algebra emphasis in MA2002 and MA2001. Overall, I feel both supported and stretched across these courses, and I’d highly recommend taking any module with him if you can."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Joxan Jaffar",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1010E"
+    },
+    "type": "Professor",
+    "description": "Joxan is experienced but I struggled with his teaching style. I found the lectures to be dry and often too verbose, making it hard for me to stay engaged and grasp the material."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Justin Chu",
+    "ratingCount": 0,
+    "tags": {
+      "0": "LSM3232"
+    },
+    "type": "Professor",
+    "description": "Justin is undeniably my favorite Microbiology lecturer; he is so funny and relatable. The content was enjoyable, and having lectures filled with relatable anecdotes made it much more engaging. Overall, I enjoyed the module very much because the workload was relatively light and easy to understand, plus the fun lab practicals."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "K.L. Ng",
+    "ratingCount": 0,
+    "tags": {
+      "0": "MA2001"
+    },
+    "type": "Professor",
+    "description": "I found K.L. Ng to be approachable and he explained concepts well. Although I encountered some errors in the early lecture videos, I enjoyed his teaching style. The tutorials were manageable and enhanced my understanding despite my reliance on self-study."
+  },
+  {
+    "avgRating": 0,
+    "createdAt": "2026-01-18T01:24:16+08:00",
+    "location": {
+      "latitude": 1.2966,
+      "longitude": 103.7764
+    },
+    "name": "Ket Fah Chong",
+    "ratingCount": 0,
+    "tags": {
+      "0": "CS1010E",
+      "1": "CS2040S",
+      "2": "CS2040"
+    },
+    "type": "Professor",
+    "description": "I’ve taken CS1010E, CS2040S, and CS2040 with Ket Fah Chong, and across these modules I found his teaching to be clear, resource-rich, and very focused on practice. In CS1010E, his lectures felt a bit wordy to me, so I tended to study independently rather than rely on class attendance. That said, the material remained approachable, and I could keep up through self-study and the course resources.\n\nIn CS2040S, I felt the way he presented the concepts helped me grasp the core ideas more easily, especially once I started linking new material to what I’d done before. I didn’t put in maximum effort right away, but recognizing how the topics connected to my past coursework helped me see the value of what I was learning.\n\nFor CS2040, I particularly appreciated his engaging teaching style: clear explanations, a memorable catchphrase, and strong guidance during labs. He explained concepts thoroughly and used helpful visualizations, which made algorithms feel more concrete. The assessments were manageable, and there were plenty of past-year papers to practice with. The Piazza forum was great for getting questions answered, and the lab TAs were supportive. The pace could be fast in the special term, and the workload was heavy, with midterms and ODA submissions posing real challenges. The THAs in this module were extremely challenging, and I leaned on friends to get through tough weeks. Despite the difficulty, the resources he provided, like VisuAlgo, and the practical assignments helped me grow more confident in programming and graph theory. Overall, the common threads across his modules—clarity, approachability, and a strong emphasis on practice—kept me engaged, even when some topics required extra effort."
+  }
+]
