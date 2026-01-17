@@ -1,0 +1,1614 @@
+[
+  {
+    "location": "1.295053 103.77176",
+    "name": "The Deck",
+    "description": "The main canteen for the Faculty of Arts and Social Sciences, situated on a hill with distinctive architecture. Famous for its long-queue Yong Tau Foo and roasted delights.",
+    "tags": [
+      "No Aircon",
+      "FASS",
+      "Halal Options",
+      "Yong Tau Foo",
+      "Crowded"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C01"
+  },
+  {
+    "location": "1.297066 103.779777",
+    "name": "Frontier",
+    "description": "The Science faculty canteen offering a breezy, open-air environment. Popular for its Western food, Ayam Penyet, and Hainanese Chicken Rice.",
+    "tags": [
+      "No Aircon",
+      "Science",
+      "Halal Options",
+      "Western",
+      "Chicken Rice",
+      "Ayam Penyet"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C02"
+  },
+  {
+    "location": "1.297444 103.771253",
+    "name": "Techno Edge",
+    "description": "The primary canteen for the Faculty of Engineering. Features a diverse range of affordable stalls including popular Nasi Padang and Indian cuisine.",
+    "tags": [
+      "Engineering",
+      "Halal Options",
+      "Nasi Padang",
+      "Mixed Rice",
+      "Partially Aircon"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C03"
+  },
+  {
+    "location": "1.294165 103.773722",
+    "name": "The Terrace",
+    "description": "Located between the Business School and School of Computing. A busy lunch spot known for its Western food, Duck Rice, and Vietnamese noodles.",
+    "tags": [
+      "No Aircon",
+      "Business",
+      "Computing",
+      "Western",
+      "Indian",
+      "Vietnamese"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C04"
+  },
+  {
+    "location": "1.303867 103.77395",
+    "name": "Fine Food",
+    "description": "An air-conditioned food court in Town Plaza, UTown. Offers a wide variety of cuisines including Mala Xiang Guo, Korean, and Dim Sum.",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Halal Options",
+      "Mala",
+      "Korean",
+      "Dim Sum"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C05"
+  },
+  {
+    "location": "1.305286 103.772589",
+    "name": "Flavours @ UTown",
+    "description": "The second air-conditioned food court in UTown, located at Stephen Riady Centre. A student favorite for mixed rice, fishball noodles, and local favorites.",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Halal Options",
+      "Mixed Rice",
+      "Fishball Noodles"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C06"
+  },
+  {
+    "location": "1.291176 103.780653",
+    "name": "PGP Canteen",
+    "description": "Located within the Prince George's Park Residences. A go-to spot for residents offering late-night supper options, intense Mala, and Western grills.",
+    "tags": [
+      "Aircon",
+      "Residential",
+      "Late Night",
+      "Mala",
+      "Western",
+      "Halal Options"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C07"
+  },
+  {
+    "location": "1.298516 103.775086",
+    "name": "Yusof Ishak House (YIH) Food Court",
+    "description": "Centrally located at Yusof Ishak House. A convenient air-conditioned stop near the central library, featuring vegetarian options and bubble tea.",
+    "tags": [
+      "Aircon",
+      "Central",
+      "Halal Options",
+      "Bubble Tea",
+      "Vegetarian"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C08"
+  },
+  {
+    "location": "1.304562 103.773538",
+    "name": "Hwang's Korean Restaurant",
+    "description": "A casual, authentic Korean eatery in UTown. Extremely popular for its affordable spicy pork, bibimbap, and kimchi pancakes.",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Korean",
+      "Casual",
+      "Popular"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C09"
+  },
+  {
+    "location": "1.305312 103.772586",
+    "name": "Waa Cow!",
+    "description": "A specialty Japanese beef bowl restaurant in UTown. Famous for its premium flame-torched Wagyu beef bowls and onsen eggs.",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Japanese",
+      "Wagyu Beef",
+      "Premium"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C10"
+  },
+  {
+    "location": "1.305286 103.772589",
+    "name": "SuperSnacks",
+    "description": "A late-night savory snack counter in UTown. The ultimate supper spot for students craving crispy waffles, nuggets, and fries while studying.",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Late Night",
+      "Fast Food",
+      "Waffles"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C11"
+  },
+  {
+    "location": "1.303867 103.77395",
+    "name": "The Royals Bistro",
+    "description": "A Halal-certified bistro in UTown serving Western cuisine, pasta, and cakes. A comfortable spot for casual dining or meetings.",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Halal",
+      "Western",
+      "Cakes"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C12"
+  },
+  {
+    "location": "1.303867 103.77395",
+    "name": "Udon Don Bar",
+    "description": "A Japanese noodle bar in UTown offering fresh Udon and Donburi bowls. A cozy air-conditioned venue for a hearty Japanese meal.",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Japanese",
+      "Noodles",
+      "Bar"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C13"
+  },
+  {
+    "location": "1.294247 103.773926",
+    "name": "Reedz Cafe",
+    "description": "A quiet cafe located in the Mochtar Riady Building. serves freshly brewed coffee, sandwiches, and pastries, ideal for quick bites between classes.",
+    "tags": [
+      "Aircon",
+      "Business",
+      "Coffee",
+      "Sandwiches",
+      "Quiet"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C14"
+  },
+  {
+    "location": "1.303867 103.77395",
+    "name": "Starbucks (UTown)",
+    "description": "A popular 24-hour study spot (outdoor seating) and meeting point in UTown, serving the standard range of coffee, frappuccinos, and pastries.",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Coffee",
+      "Study Spot",
+      "24 Hours (Reading Room nearby)"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C15"
+  },
+  {
+    "location": "1.298516 103.775086",
+    "name": "Burnt Cones",
+    "description": "A premium gelato and waffle cafe at Yusof Ishak House. Known for its distinct ice cream flavors and crispy, buttery cones.",
+    "tags": [
+      "Aircon",
+      "Dessert",
+      "Ice Cream",
+      "Waffles",
+      "Premium"
+    ],
+    "type": "Canteen",
+    "createdAt": "2026-01-17T08:28:38+00:00",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "C16"
+  },
+  {
+    "name": "AS1-0213",
+    "floor": 2,
+    "features": {
+      "aircon": true,
+      "lifting": false,
+      "wheelchair_accessible": false
+    },
+    "description": "Classroom in AS1 block, Faculty of Arts and Social Sciences",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "AS1"
+    },
+    "tags": [
+      "classroom",
+      "lecture"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 0,
+    "building": "AS1",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR001"
+  },
+  {
+    "name": "AS1-0210",
+    "floor": 2,
+    "features": {
+      "aircon": true,
+      "lifting": false,
+      "wheelchair_accessible": false
+    },
+    "description": "Classroom in AS1 block, Faculty of Arts and Social Sciences",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "AS1"
+    },
+    "tags": [
+      "classroom"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 0,
+    "building": "AS1",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR002"
+  },
+  {
+    "name": "AS2-0413",
+    "floor": 4,
+    "features": {
+      "aircon": true,
+      "lifting": false,
+      "wheelchair_accessible": false
+    },
+    "description": "Classroom in AS2 block, Faculty of Arts and Social Sciences",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "AS2"
+    },
+    "tags": [
+      "classroom"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 0,
+    "building": "AS2",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR003"
+  },
+  {
+    "name": "AS3-0314",
+    "floor": 3,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in AS3 block, Faculty of Arts and Social Sciences",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "AS3"
+    },
+    "tags": [
+      "classroom"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 0,
+    "building": "AS3",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR004"
+  },
+  {
+    "name": "AS4-0109",
+    "floor": 1,
+    "features": {
+      "aircon": true,
+      "lifting": false,
+      "wheelchair_accessible": false
+    },
+    "description": "Classroom in AS4 block, home to Centre for Language Studies",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "AS4"
+    },
+    "tags": [
+      "classroom",
+      "language"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 0,
+    "building": "AS4",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR005"
+  },
+  {
+    "name": "AS5-0309",
+    "floor": 3,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in AS5 block, Faculty of Arts and Social Sciences",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "AS5"
+    },
+    "tags": [
+      "classroom"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 0,
+    "building": "AS5",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR006"
+  },
+  {
+    "name": "AS6-0212",
+    "floor": 2,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in AS6 block, Faculty of Arts and Social Sciences",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "AS6"
+    },
+    "tags": [
+      "classroom"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 0,
+    "building": "AS6",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR007"
+  },
+  {
+    "name": "AS7-0106",
+    "floor": 1,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in AS7 (Shaw Foundation Building), Faculty of Arts and Social Sciences. Dean's office located on Level 5",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "5 Arts Link, Singapore 117570",
+      "building_code": "AS7"
+    },
+    "tags": [
+      "classroom"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 0,
+    "building": "AS7",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR008"
+  },
+  {
+    "name": "AS8-0401",
+    "floor": 4,
+    "features": {
+      "aircon": false,
+      "lifting": false,
+      "wheelchair_accessible": false
+    },
+    "description": "Classroom in AS8 block (under construction). Future Faculty of Arts and Social Sciences expansion",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "AS8"
+    },
+    "tags": [
+      "classroom",
+      "under_construction"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 0,
+    "building": "AS8",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR009"
+  },
+  {
+    "name": "BIZ1-0301",
+    "floor": 3,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in BIZ1 (Mochtar Riady Building), NUS Business School",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "15 Kent Ridge Drive, Singapore 119245",
+      "building_code": "BIZ1"
+    },
+    "tags": [
+      "classroom",
+      "business"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Business",
+    "capacity": 0,
+    "building": "BIZ1",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR010"
+  },
+  {
+    "name": "BIZ2-0420",
+    "floor": 4,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in BIZ2, NUS Business School",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "1 Business Link, Singapore 117592",
+      "building_code": "BIZ2"
+    },
+    "tags": [
+      "classroom",
+      "business"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Business",
+    "capacity": 0,
+    "building": "BIZ2",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR011"
+  },
+  {
+    "name": "COM1-0216",
+    "floor": 2,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Tutorial room in COM1, NUS School of Computing. Former NUS Law Building",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "13 Computing Drive, Singapore 117417",
+      "building_code": "COM1"
+    },
+    "tags": [
+      "tutorial",
+      "computing"
+    ],
+    "type": "Tutorial Room",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 30,
+    "building": "COM1",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR012"
+  },
+  {
+    "name": "COM2-0108",
+    "floor": 1,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in COM2, NUS School of Computing. Older building (~20 years old)",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "Computing Drive, Singapore 117417",
+      "building_code": "COM2"
+    },
+    "tags": [
+      "classroom",
+      "computing"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 50,
+    "building": "COM2",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR013"
+  },
+  {
+    "name": "COM3-01-22",
+    "floor": 1,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in COM3 (Sea building), NUS School of Computing. New 3-storey building completed in 2022 with modern facilities. Home to The Terrace food court",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "Computing Drive, Singapore 117417",
+      "building_code": "COM3"
+    },
+    "tags": [
+      "classroom",
+      "computing",
+      "modern"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 80,
+    "building": "COM3",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR014"
+  },
+  {
+    "name": "COM4-02-01",
+    "floor": 2,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in COM4, NUS School of Computing. New building launched in 2023",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "Computing Drive, Singapore 117417",
+      "building_code": "COM4"
+    },
+    "tags": [
+      "classroom",
+      "computing",
+      "modern"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 100,
+    "building": "COM4",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR015"
+  },
+  {
+    "name": "Lecture Theatre 8 (LT8)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true,
+      "sheltered_access": true
+    },
+    "description": "Lecture Theatre 8 - Central lecture theatre on Kent Ridge campus with sheltered access",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT8"
+    },
+    "tags": [
+      "lecture_theatre",
+      "central",
+      "large_capacity",
+      "sheltered_access"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 250,
+    "building": "Central",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR016"
+  },
+  {
+    "name": "Lecture Theatre 9 (LT9)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true,
+      "sheltered_access": true
+    },
+    "description": "Lecture Theatre 9 - Central lecture theatre with sheltered access near AS buildings",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT9"
+    },
+    "tags": [
+      "lecture_theatre",
+      "central",
+      "large_capacity",
+      "sheltered_access"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 250,
+    "building": "Central",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR017"
+  },
+  {
+    "name": "Lecture Theatre 10 (LT10)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true,
+      "sheltered_access": true
+    },
+    "description": "Lecture Theatre 10 - Central lecture theatre with sheltered access near Arts area",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT10"
+    },
+    "tags": [
+      "lecture_theatre",
+      "central",
+      "large_capacity",
+      "sheltered_access"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 250,
+    "building": "Central",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR018"
+  },
+  {
+    "name": "Lecture Theatre 11 (LT11)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Lecture Theatre 11 - Central lecture theatre with some open spaces",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT11"
+    },
+    "tags": [
+      "lecture_theatre",
+      "central",
+      "large_capacity"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 250,
+    "building": "Central",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR019"
+  },
+  {
+    "name": "Lecture Theatre 12 (LT12)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true,
+      "sheltered_access": true
+    },
+    "description": "Lecture Theatre 12 - Central lecture theatre with sheltered access",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT12"
+    },
+    "tags": [
+      "lecture_theatre",
+      "central",
+      "large_capacity",
+      "sheltered_access"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 250,
+    "building": "Central",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR020"
+  },
+  {
+    "name": "NUS Theatrette (LT13)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "NUS Theatrette - Medium-sized theatre for lectures and performances",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT13"
+    },
+    "tags": [
+      "lecture_theatre",
+      "theatre",
+      "central",
+      "medium_capacity"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 400,
+    "building": "Central",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR021"
+  },
+  {
+    "name": "Lecture Theatre 14 (LT14)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Lecture Theatre 14 - Central lecture theatre",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT14"
+    },
+    "tags": [
+      "lecture_theatre",
+      "central",
+      "large_capacity"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 250,
+    "building": "Central",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR022"
+  },
+  {
+    "name": "Lecture Theatre 15 (LT15)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true,
+      "sheltered_access": true
+    },
+    "description": "Lecture Theatre 15 - Central lecture theatre with sheltered access",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT15"
+    },
+    "tags": [
+      "lecture_theatre",
+      "central",
+      "large_capacity",
+      "sheltered_access"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 250,
+    "building": "Central",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR023"
+  },
+  {
+    "name": "Lecture Theatre 16 (LT16)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Lecture Theatre 16 - Located in Business area",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT16"
+    },
+    "tags": [
+      "lecture_theatre",
+      "business",
+      "large_capacity"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Business",
+    "capacity": 300,
+    "building": "Business",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR024"
+  },
+  {
+    "name": "Lecture Theatre 17 (LT17)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Lecture Theatre 17 - Located in Business area",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT17"
+    },
+    "tags": [
+      "lecture_theatre",
+      "business",
+      "large_capacity"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Business",
+    "capacity": 300,
+    "building": "Business",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR025"
+  },
+  {
+    "name": "Lecture Theatre 18 (LT18)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Lecture Theatre 18 - Located in Business area",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT18"
+    },
+    "tags": [
+      "lecture_theatre",
+      "business",
+      "large_capacity"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Business",
+    "capacity": 300,
+    "building": "Business",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR026"
+  },
+  {
+    "name": "Lecture Theatre 19 (LT19)",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Lecture Theatre 19 - Located in Business area",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "LT19"
+    },
+    "tags": [
+      "lecture_theatre",
+      "business",
+      "large_capacity"
+    ],
+    "type": "Lecture Theatre",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Business",
+    "capacity": 300,
+    "building": "Business",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR027"
+  },
+  {
+    "name": "E1-06-04",
+    "floor": 6,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in E1, College of Design and Engineering",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "Engineering Drive 1, Singapore",
+      "building_code": "E1"
+    },
+    "tags": [
+      "classroom",
+      "engineering"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Engineering",
+    "capacity": 0,
+    "building": "E1",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR028"
+  },
+  {
+    "name": "E3-06-03",
+    "floor": 6,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in E3, College of Design and Engineering",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "Engineering Drive 1, Singapore",
+      "building_code": "E3"
+    },
+    "tags": [
+      "classroom",
+      "engineering"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Engineering",
+    "capacity": 0,
+    "building": "E3",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR029"
+  },
+  {
+    "name": "EA-06-05",
+    "floor": 6,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in EA (Centre for Healthcare Innovation), College of Design and Engineering. Key study location with Level 1-3 study spaces",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "Engineering Drive 1, Singapore",
+      "building_code": "EA"
+    },
+    "tags": [
+      "classroom",
+      "engineering"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Engineering",
+    "capacity": 0,
+    "building": "EA",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR030"
+  },
+  {
+    "name": "S16-0437",
+    "floor": 4,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in S16, Faculty of Science",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "Science Drive, Singapore",
+      "building_code": "S16"
+    },
+    "tags": [
+      "classroom",
+      "science"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Science",
+    "capacity": 0,
+    "building": "S16",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR031"
+  },
+  {
+    "name": "S14-0619",
+    "floor": 6,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in S14, Faculty of Science",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "address": "Science Drive, Singapore",
+      "building_code": "S14"
+    },
+    "tags": [
+      "classroom",
+      "science"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Science",
+    "capacity": 0,
+    "building": "S14",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR032"
+  },
+  {
+    "name": "UTSRC-SR5",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Seminar Room 5 in University Town Student Resource Centre",
+    "location": {
+      "campus": "University Town",
+      "address": "University Town, Singapore",
+      "building_code": "UTSRC"
+    },
+    "tags": [
+      "seminar_room",
+      "utown"
+    ],
+    "type": "Seminar Room",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "UTown",
+    "capacity": 30,
+    "building": "UTown SRC",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR033"
+  },
+  {
+    "name": "E-Learn_C",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "E-Learning classroom - Online/hybrid learning space",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "Unknown"
+    },
+    "tags": [
+      "classroom",
+      "elearning",
+      "hybrid"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Other",
+    "capacity": 0,
+    "building": "Unknown",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR034"
+  },
+  {
+    "name": "HSS-03-01",
+    "floor": 3,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in HSS block",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "HSS"
+    },
+    "tags": [
+      "classroom"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 0,
+    "building": "HSS",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR035"
+  },
+  {
+    "name": "CLB-04-01H",
+    "floor": 4,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Classroom in CLB (Central Library Block)",
+    "location": {
+      "campus": "Kent Ridge Campus",
+      "building_code": "CLB"
+    },
+    "tags": [
+      "classroom"
+    ],
+    "type": "Classroom",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "Kent Ridge",
+    "capacity": 0,
+    "building": "CLB",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR036"
+  },
+  {
+    "name": "UTown Auditorium 1",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Auditorium 1 in University Town - event and large lecture venue",
+    "location": {
+      "campus": "University Town",
+      "building_code": "UT-AUD1"
+    },
+    "tags": [
+      "auditorium",
+      "utown",
+      "large_capacity"
+    ],
+    "type": "Auditorium",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "UTown",
+    "capacity": 300,
+    "building": "UTown",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR037"
+  },
+  {
+    "name": "UTown Auditorium 2",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "Auditorium 2 in University Town - event and large lecture venue",
+    "location": {
+      "campus": "University Town",
+      "building_code": "UT-AUD2"
+    },
+    "tags": [
+      "auditorium",
+      "utown",
+      "large_capacity"
+    ],
+    "type": "Auditorium",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "UTown",
+    "capacity": 300,
+    "building": "UTown",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR038"
+  },
+  {
+    "name": "The Ngee Ann Kongsi Auditorium",
+    "floor": 0,
+    "features": {
+      "aircon": true,
+      "lifting": true,
+      "wheelchair_accessible": true
+    },
+    "description": "The Ngee Ann Kongsi Auditorium - Large events auditorium in University Town",
+    "location": {
+      "campus": "University Town",
+      "building_code": "NAK-AUD"
+    },
+    "tags": [
+      "auditorium",
+      "utown",
+      "large_capacity"
+    ],
+    "type": "Auditorium",
+    "createdAt": "2026-01-17T17:00:00+00:00",
+    "zone": "UTown",
+    "capacity": 400,
+    "building": "The Ngee Ann Kongsi",
+    "ratingCount": 0,
+    "avgRating": 0,
+    "id": "CR039"
+  },
+  {
+    "location": "1.306 103.773",
+    "name": "College of Alice & Peter Tan (CAPT)",
+    "description": "A Residential College in UTown with a strong focus on active citizenship and community engagement. Known for its formal dinners and social causes.",
+    "tags": [
+      "Residential College",
+      "Community Engagement",
+      "Aircon",
+      "Active Citizenship",
+      "Meal Plan"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "UTown",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D01"
+  },
+  {
+    "location": "1.305 103.773",
+    "name": "Tembusu College",
+    "description": "One of the first RCs in UTown, known for its 'Home of Possibilities' motto and frequent Rector's Teas with distinguished guests.",
+    "tags": [
+      "Residential College",
+      "Global Affairs",
+      "Aircon",
+      "Seminars",
+      "Meal Plan"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "UTown",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D02"
+  },
+  {
+    "location": "1.307 103.773",
+    "name": "Residential College 4 (RC4)",
+    "description": "Located in UTown, RC4 focuses on systems thinking and sustainable healthcare. It has a close-knit community vibe.",
+    "tags": [
+      "Residential College",
+      "Systems Thinking",
+      "Aircon",
+      "Cognitive Science",
+      "Meal Plan"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "UTown",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D03"
+  },
+  {
+    "location": "1.304 103.773",
+    "name": "Acacia College",
+    "description": "Acacia College’s two-year residency brings together undergraduates from diverse disciplines to explore AI’s impact on society. Through small-group classes, hands-on learning, and student-led activities, students will examine AI’s ethical and cultural implications while building practical skills in Generative AI, AI programming, and Machine Learning. These courses go hand-in-hand with the College’s residential programme, experiential learning opportunities, and student-led activities.",
+    "tags": [
+      "Residential College",
+      "AI & Society",
+      "Aircon",
+      "Interdisciplinary",
+      "Meal Plan"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "UTown",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D04"
+  },
+  {
+    "location": "1.3065 103.774",
+    "name": "UTown Residence",
+    "description": "Apartment-style living in UTown, primarily for graduate students and undergraduates on exchange. Independent living without a meal plan.",
+    "tags": [
+      "Residence",
+      "Apartment Style",
+      "No Meal Plan",
+      "Aircon",
+      "Privacy"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "UTown",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D05"
+  },
+  {
+    "location": "1.2938 103.7705",
+    "name": "Eusoff Hall",
+    "description": "Located near the Faculty of Engineering. Famous for its yellow spirit, excellence in sports, and strong hall heritage.",
+    "tags": [
+      "Hall of Residence",
+      "Sports",
+      "Tradition",
+      "Meal Plan",
+      "Double Rooms"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "Engineering",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D06"
+  },
+  {
+    "location": "1.2925 103.771",
+    "name": "Temasek Hall",
+    "description": "Adjacent to Eusoff Hall. Known for its white identity, strong sporting culture, and friendly rivalry with Eusoff.",
+    "tags": [
+      "Hall of Residence",
+      "Sports",
+      "Communal",
+      "Meal Plan",
+      "Double Rooms"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "Engineering",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D07"
+  },
+  {
+    "location": "1.2915 103.774",
+    "name": "Raffles Hall",
+    "description": "Centrally located near the Museum and YIH. Known for its rich history and heavy involvement in arts and culture productions.",
+    "tags": [
+      "Hall of Residence",
+      "Culture",
+      "Arts",
+      "Central",
+      "Meal Plan"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "Engineering",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D08"
+  },
+  {
+    "location": "1.2905 103.777",
+    "name": "Kent Ridge Hall",
+    "description": "Located near the Business School. Known for its vibrant hall life, media productions, and strong float building culture.",
+    "tags": [
+      "Hall of Residence",
+      "Media",
+      "Social",
+      "Meal Plan",
+      "Single Rooms"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "Business",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D09"
+  },
+  {
+    "location": "1.291 103.7765",
+    "name": "Sheares Hall",
+    "description": "Situated near the Business School. Famous for its orange family culture, strong band/music groups, and tight-knit community.",
+    "tags": [
+      "Hall of Residence",
+      "Music",
+      "Culture",
+      "Meal Plan",
+      "Single Rooms"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "Business",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D10"
+  },
+  {
+    "location": "1.292 103.776",
+    "name": "King Edward VII Hall (KE7)",
+    "description": "The oldest hall in NUS, located near the School of Medicine. It has a rich heritage and a balanced focus on sports and culture.",
+    "tags": [
+      "Hall of Residence",
+      "Heritage",
+      "Sports",
+      "Meal Plan",
+      "Quiet"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "Medicine",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D11"
+  },
+  {
+    "location": "1.2912 103.781",
+    "name": "Prince George's Park Residences (PGPR)",
+    "description": "A massive residential complex at the southern end of campus. Best for independent living, with its own canteens and gym.",
+    "tags": [
+      "Residence",
+      "Independent",
+      "No Meal Plan",
+      "Aircon Options",
+      "Quiet"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "Kent Ridge",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D12"
+  },
+  {
+    "location": "1.2965 103.7705",
+    "name": "Ridge View Residential College (RVRC)",
+    "description": "Located in the heart of Kent Ridge near University Hall. It focuses on sustainability, outdoor education, and workplace readiness.",
+    "tags": [
+      "Residential College",
+      "Sustainability",
+      "Nature",
+      "Meal Plan",
+      "Central"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "Kent Ridge",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D13"
+  },
+  {
+    "location": "1.2915 103.7805",
+    "name": "Helix House",
+    "description": "One of the newer Houses in the PGP area. Offers a balance between hall life and residence privacy with community events.",
+    "tags": [
+      "House",
+      "Community",
+      "New",
+      "Meal Plan",
+      "Modern"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "Kent Ridge",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D14"
+  },
+  {
+    "location": "1.2915 103.78",
+    "name": "LightHouse",
+    "description": "A House located within the PGP precinct. Focuses on leadership and creating a supportive 'beacon' for student life.",
+    "tags": [
+      "House",
+      "Leadership",
+      "Social",
+      "Meal Plan",
+      "Modern"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "Kent Ridge",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D15"
+  },
+  {
+    "location": "1.2915 103.7815",
+    "name": "Pioneer House",
+    "description": "Located in PGP, Pioneer House emphasizes innovation and trying new things. It has a startup-like culture.",
+    "tags": [
+      "House",
+      "Innovation",
+      "Entrepreneurship",
+      "Meal Plan",
+      "Modern"
+    ],
+    "type": "Dorm",
+    "createdAt": "2026-01-17T08:50:00+00:00",
+    "zone": "Kent Ridge",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "id": "D16"
+  }
+]

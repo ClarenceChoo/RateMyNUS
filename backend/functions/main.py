@@ -24,3 +24,5 @@ initialize_app()
 from api.health import healthcheck
 from api.entities import get_entities
 from api.reviews import create_review
+from api.get_reviews import get_reviews
+from api.delete_review import delete_review
