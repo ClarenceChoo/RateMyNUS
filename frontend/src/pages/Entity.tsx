@@ -6,11 +6,10 @@ import { listReviewsForEntity, listImportedProfReviews } from "@/features/review
 import { getApplicableSubratings } from "@/config/subratings";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
-import ReviewForm from "@/features/reviews/ReviewForm";
 import ReviewList from "@/features/reviews/ReviewList";
 import ImportedReviewList from "@/features/reviews/ImportedReviewList";
 
-// Subratings breakdown component
+// Subratings breakdown component (horizontal bars)
 function SubratingsBreakdown({ reviews, entity }: { reviews: Review[]; entity: EntityData }) {
   const applicableSubratings = getApplicableSubratings(entity.type, entity);
   
@@ -18,7 +17,7 @@ function SubratingsBreakdown({ reviews, entity }: { reviews: Review[]; entity: E
   const subratingStats = applicableSubratings.map((subrating) => {
     const ratings = reviews
       .map((r) => r.subratings?.[subrating.key])
-      .filter((v): v is number => v !== null && v !== undefined);
+      .filter((v): v is number => v !== null && v !== undefined && v > 0);
     
     const avg = ratings.length > 0
       ? ratings.reduce((sum, v) => sum + v, 0) / ratings.length
@@ -32,22 +31,18 @@ function SubratingsBreakdown({ reviews, entity }: { reviews: Review[]; entity: E
     };
   });
 
-  // Only show if at least one subrating has data
-  const hasAnyData = subratingStats.some((s) => s.count > 0);
-  if (!hasAnyData) return null;
-
   return (
-    <Card className="space-y-3">
+    <Card className="space-y-3 flex-1">
       <h2 className="font-semibold">Subratings</h2>
-      <div className="space-y-1">
+      <div className="space-y-2">
         {subratingStats.map((stat) => {
           const pct = stat.avg !== null ? (stat.avg / 5) * 100 : 0;
           return (
             <div key={stat.key} className="flex items-center gap-2 text-sm">
-              <span className="w-28 truncate text-zinc-600" title={stat.label}>{stat.label}</span>
-              <div className="h-2 flex-1 overflow-hidden rounded-full bg-zinc-100">
+              <span className="w-32 truncate text-zinc-600" title={stat.label}>{stat.label}</span>
+              <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-zinc-100">
                 <div
-                  className="h-full bg-yellow-400"
+                  className="h-full bg-yellow-400 transition-all"
                   style={{ width: `${pct}%` }}
                 />
               </div>
@@ -68,7 +63,7 @@ function SubratingsBreakdown({ reviews, entity }: { reviews: Review[]; entity: E
   );
 }
 
-// Rating breakdown component
+// Rating breakdown component (5 to 1 stars)
 function RatingBreakdown({ reviews }: { reviews: Review[] }) {
   const counts = [0, 0, 0, 0, 0]; // 1-5 stars
   reviews.forEach((r) => {
@@ -77,25 +72,70 @@ function RatingBreakdown({ reviews }: { reviews: Review[] }) {
   const total = reviews.length || 1;
 
   return (
-    <div className="space-y-1">
-      {[5, 4, 3, 2, 1].map((stars) => {
-        const count = counts[stars - 1];
-        const pct = (count / total) * 100;
-        return (
-          <div key={stars} className="flex items-center gap-2 text-sm">
-            <span className="w-3">{stars}</span>
-            <span className="text-yellow-500">★</span>
-            <div className="h-2 flex-1 overflow-hidden rounded-full bg-zinc-100">
-              <div
-                className="h-full bg-yellow-400"
-                style={{ width: `${pct}%` }}
-              />
+    <Card className="space-y-3">
+      <h2 className="font-semibold">Rating Breakdown</h2>
+      <div className="space-y-2">
+        {[5, 4, 3, 2, 1].map((stars) => {
+          const count = counts[stars - 1];
+          const pct = (count / total) * 100;
+          return (
+            <div key={stars} className="flex items-center gap-2 text-sm">
+              <span className="w-3">{stars}</span>
+              <span className="text-yellow-500">★</span>
+              <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-zinc-100">
+                <div
+                  className="h-full bg-yellow-400 transition-all"
+                  style={{ width: `${pct}%` }}
+                />
+              </div>
+              <span className="w-8 text-right text-xs text-zinc-400">{count}</span>
             </div>
-            <span className="w-8 text-right text-xs text-zinc-400">{count}</span>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </Card>
+  );
+}
+
+// Reviews Summary component
+function ReviewsSummary({ reviews, entity }: { reviews: Review[]; entity: EntityData }) {
+  // Get most common tags
+  const tagCounts: Record<string, number> = {};
+  reviews.forEach((r) => {
+    r.tags?.forEach((tag) => {
+      tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+    });
+  });
+  const topTags = Object.entries(tagCounts)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 5)
+    .map(([tag]) => tag);
+
+  if (reviews.length === 0) return null;
+
+  return (
+    <Card className="space-y-3">
+      <h2 className="flex items-center gap-2 font-semibold">
+        <span>✨</span> Reviews Summary
+      </h2>
+      <p className="text-zinc-600 leading-relaxed">
+        Based on {reviews.length} review{reviews.length !== 1 ? "s" : ""}, {entity.name} has an 
+        average rating of {(reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(1)} stars.
+        {reviews.length >= 3 && " Students have shared their experiences to help you make an informed decision."}
+      </p>
+      {topTags.length > 0 && (
+        <div className="flex flex-wrap gap-2 pt-1">
+          {topTags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-zinc-200 px-3 py-1 text-sm text-zinc-600"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </Card>
   );
 }
 
@@ -194,86 +234,25 @@ export default function Entity() {
           )}
         </div>
 
-        {/* Rating Summary */}
-        <Card className="min-w-[200px] text-center">
-          <div className="text-4xl font-bold text-yellow-600">
-            {avgRating > 0 ? avgRating.toFixed(1) : "—"}
-          </div>
-          <div className="text-yellow-500">
-            {"★".repeat(Math.round(avgRating))}{"☆".repeat(5 - Math.round(avgRating))}
-          </div>
-          <div className="mt-1 text-sm text-zinc-500">
-            {entity.ratingCount ?? reviews.length} reviews
-          </div>
-        </Card>
+        {/* Write a Review Button */}
+        <Link to={`/write/${entity.id}`}>
+          <Button className="px-6 py-3 text-base">Write a Review</Button>
+        </Link>
       </div>
 
-      {/* Details Grid */}
+      {/* Rating Breakdown & Subratings Side by Side */}
       <div className="grid gap-6 md:grid-cols-2">
-        {/* Rating Breakdown */}
-        <Card className="space-y-3">
-          <h2 className="font-semibold">Rating Breakdown</h2>
-          <RatingBreakdown reviews={reviews} />
-        </Card>
-
-        {/* Location / Info */}
-        <Card className="space-y-3">
-          <h2 className="font-semibold">Details</h2>
-          <div className="space-y-2 text-sm">
-            {entity.zone && (
-              <div className="flex justify-between">
-                <span className="text-zinc-500">Zone</span>
-                <span>{entity.zone.replace("_", " ")}</span>
-              </div>
-            )}
-            {entity.type === "TOILET" && (
-              <div className="flex justify-between">
-                <span className="text-zinc-500">Shower</span>
-                <span>{entity.hasShower ? "Yes 🚿" : "No"}</span>
-              </div>
-            )}
-            {entity.location && (
-              <div className="pt-2">
-                <a
-                  href={`https://www.google.com/maps?q=${entity.location.lat},${entity.location.lng}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  📍 View on Google Maps
-                </a>
-              </div>
-            )}
-          </div>
-        </Card>
+        <RatingBreakdown reviews={reviews} />
+        <SubratingsBreakdown reviews={reviews} entity={entity} />
       </div>
 
-      {/* Subratings Breakdown */}
-      <SubratingsBreakdown reviews={reviews} entity={entity} />
-
-      {/* Image Placeholder */}
-      <Card className="flex h-40 items-center justify-center bg-zinc-50 text-zinc-400">
-        📷 Images coming soon
-      </Card>
+      {/* Reviews Summary */}
+      <ReviewsSummary reviews={reviews} entity={entity} />
 
       {/* AI-Extracted Reviews (Professors only) */}
       {entity.type === "PROFESSOR" && importedReviews.length > 0 && (
         <ImportedReviewList reviews={importedReviews} onUpdate={loadImportedReviews} />
       )}
-
-      {/* Write Review Link */}
-      <div className="flex items-center justify-between rounded-xl border bg-zinc-50 p-4">
-        <div>
-          <div className="font-semibold">Have something to say?</div>
-          <div className="text-sm text-zinc-500">Share your experience with others</div>
-        </div>
-        <Link to={`/write/${entity.id}`}>
-          <Button>Write a Review</Button>
-        </Link>
-      </div>
-
-      {/* Inline Review Form */}
-      <ReviewForm entity={entity} onCreated={refresh} />
 
       {/* Reviews List */}
       <div className="space-y-4">
