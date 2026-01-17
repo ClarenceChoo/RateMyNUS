@@ -103,9 +103,13 @@ export default function WriteReview() {
   }
 
   async function handleSubmit() {
-    // Only require overall rating - text is optional
+    // Require overall rating and description
     if (!entityId || rating === 0) {
-      console.log("Validation failed: No overall rating selected");
+      alert("Please select an overall rating.");
+      return;
+    }
+    if (!text.trim()) {
+      alert("Please write a description for your review.");
       return;
     }
     

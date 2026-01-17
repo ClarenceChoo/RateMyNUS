@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { Link, useParams } from "react-router-dom";
 import Card from "@/components/ui/Card";
 import Input from "@/components/ui/Input";
@@ -6,18 +6,20 @@ import Button from "@/components/ui/Button";
 import EntityFilters from "@/components/EntityFilters";
 import { listEntities } from "@/features/entities/entityService";
 import { getCategoryByType } from "@/data/seedCategories";
-import type { Entity, EntityType, EntityFilters as Filters, Paginated } from "@/types";
+import type { Entity, EntityType, EntityFilters as Filters } from "@/types";
 
 export default function Category() {
   const { type: rawType } = useParams<{ type: string }>();
   const type = rawType?.toUpperCase() as EntityType;
   const category = getCategoryByType(type);
 
-  const [data, setData] = useState<Paginated<Entity> | null>(null);
+  const [entities, setEntities] = useState<Entity[]>([]);
+  const [total, setTotal] = useState(0);
+  const [hasMore, setHasMore] = useState(false);
   const [loading, setLoading] = useState(true);
   const [filters, setFilters] = useState<Filters>({ sort: "TOP_RATED" });
   const [searchInput, setSearchInput] = useState("");
-  const [page, setPage] = useState(1);
+  const pageRef = useRef(1);
 
   const load = useCallback(async (pageNum: number, append: boolean = false) => {
     setLoading(true);
@@ -29,15 +31,14 @@ export default function Category() {
         pageSize: 12,
       });
       
-      if (append && data) {
-        setData({
-          ...result,
-          items: [...data.items, ...result.items],
-        });
+      if (append) {
+        setEntities((prev) => [...prev, ...result.items]);
       } else {
-        setData(result);
+        setEntities(result.items);
       }
-      setPage(pageNum);
+      setTotal(result.total);
+      setHasMore(result.hasMore);
+      pageRef.current = pageNum;
     } finally {
       setLoading(false);
     }
@@ -57,8 +58,8 @@ export default function Category() {
   }, [searchInput]);
 
   function loadMore() {
-    if (data?.hasMore) {
-      load(page + 1, true);
+    if (hasMore && !loading) {
+      load(pageRef.current + 1, true);
     }
   }
 
@@ -97,31 +98,31 @@ export default function Category() {
       </div>
 
       {/* Results Count */}
-      {data && (
+      {entities.length > 0 && (
         <div className="text-sm text-zinc-500">
-          Showing {data.items.length} of {data.total} results
+          Showing {entities.length} of {total} results
         </div>
       )}
 
       {/* Entity Grid */}
-      {loading && !data ? (
+      {loading && entities.length === 0 ? (
         <div className="text-zinc-500">Loading...</div>
       ) : (
         <>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {data?.items.map((entity) => (
-              <Link key={entity.id} to={`/entity/${entity.id}`}>
-                <Card className="group h-full cursor-pointer transition hover:border-zinc-300 hover:shadow-sm">
+          <div className="grid gap-4 sm:grid-cols-2">
+            {entities.map((entity) => (
+              <Link key={entity.id} to={`/entity/${entity.id}`} className="flex">
+                <Card className="group flex h-full min-h-[160px] w-full cursor-pointer flex-col transition hover:border-zinc-300 hover:shadow-sm">
                   <div className="flex items-start justify-between">
-                    <div className="flex-1">
+                    <div className="flex-1 pr-2">
                       <div className="font-semibold group-hover:text-zinc-700">
                         {entity.name}
                       </div>
-                      <div className="text-sm text-zinc-500">
+                      <div className="line-clamp-2 text-sm text-zinc-500">
                         {entity.subtitle}
                       </div>
                     </div>
-                    <div className="text-right">
+                    <div className="shrink-0 text-right">
                       {entity.avgRating ? (
                         <>
                           <div className="font-medium text-yellow-600">
@@ -132,14 +133,14 @@ export default function Category() {
                           </div>
                         </>
                       ) : (
-                        <div className="text-xs text-zinc-400">No ratings</div>
+                        <div className="text-xs text-zinc-400">No ratings yet · 0 reviews</div>
                       )}
                     </div>
                   </div>
 
                   {/* Tags */}
                   {entity.tags && entity.tags.length > 0 && (
-                    <div className="mt-3 flex flex-wrap gap-1">
+                    <div className="mt-auto flex flex-wrap gap-1 pt-3">
                       {entity.tags.slice(0, 4).map((tag) => (
                         <span
                           key={tag}
@@ -165,7 +166,7 @@ export default function Category() {
           </div>
 
           {/* Load More */}
-          {data?.hasMore && (
+          {hasMore && (
             <div className="flex justify-center pt-4">
               <Button variant="ghost" onClick={loadMore} disabled={loading}>
                 {loading ? "Loading..." : "Load more"}
@@ -174,7 +175,7 @@ export default function Category() {
           )}
 
           {/* Empty State */}
-          {data?.items.length === 0 && (
+          {entities.length === 0 && !loading && (
             <div className="py-12 text-center text-zinc-500">
               No {category.label.toLowerCase()} found matching your filters.
             </div>

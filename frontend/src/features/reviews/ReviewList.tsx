@@ -34,12 +34,15 @@ export default function ReviewList({ reviews, entityType }: ReviewListProps) {
   const [votes, setVotes] = useState<Map<string, number>>(new Map());
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
 
-  async function handleVote(reviewId: string) {
+  function handleVote(reviewId: string, currentCount: number, entityId?: string) {
     if (votedIds.has(reviewId)) return;
     
-    const helpfulCount = await voteReview(reviewId);
+    // Optimistically update UI immediately (+1)
     setVotedIds((prev) => new Set(prev).add(reviewId));
-    setVotes((prev) => new Map(prev).set(reviewId, helpfulCount));
+    setVotes((prev) => new Map(prev).set(reviewId, currentCount + 1));
+    
+    // Fire API call in background (no await needed)
+    voteReview(reviewId, entityId);
   }
 
   function toggleExpanded(reviewId: string) {
@@ -127,7 +130,7 @@ export default function ReviewList({ reviews, entityType }: ReviewListProps) {
             <div className="flex items-center border-t pt-3">
               <Button
                 variant="ghost"
-                onClick={() => handleVote(r.id)}
+                onClick={() => handleVote(r.id, voteCount, r.entityId)}
                 disabled={hasVoted}
                 className="text-xs"
               >

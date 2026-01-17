@@ -198,9 +198,10 @@ export default function Entity() {
     </div>
   );
 
-  const avgRating = entity.avgRating ?? (reviews.length > 0
+  // Always calculate average from actual reviews (more accurate than entity.avgRating which may not update)
+  const avgRating = reviews.length > 0
     ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
-    : 0);
+    : (entity.avgRating ?? 0);
 
   return (
     <div className="space-y-8">
