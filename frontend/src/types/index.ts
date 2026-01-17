@@ -31,6 +31,11 @@ export type Review = {
   unhelpfulCount?: number;
 
   /**
+   * Module code for professor reviews (e.g. "CS2030S")
+   */
+  moduleCode?: string;
+
+  /**
    * Subratings for specific aspects (1-5 each, null if skipped).
    * Keys depend on entity type - see SUBRATINGS_BY_TYPE config.
    */

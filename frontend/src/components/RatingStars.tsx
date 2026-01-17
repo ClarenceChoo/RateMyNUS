@@ -31,18 +31,21 @@ export function RatingStars({
 
   return (
     <div className="flex items-center gap-1">
-      {[1, 2, 3, 4, 5].map((i) => (
-        <button
-          key={i}
-          type="button"
-          onClick={() => handleClick(i)}
-          className={`${sizeClass} ${onChange ? "cursor-pointer hover:scale-110" : "cursor-default"} transition`}
-          aria-label={`Rate ${i}`}
-          disabled={!onChange}
-        >
-          {value !== null && i <= value ? "★" : "☆"}
-        </button>
-      ))}
+      {[1, 2, 3, 4, 5].map((i) => {
+        const isFilled = value !== null && i <= value;
+        return (
+          <button
+            key={i}
+            type="button"
+            onClick={() => handleClick(i)}
+            className={`${sizeClass} ${onChange ? "cursor-pointer hover:scale-110" : "cursor-default"} transition ${isFilled ? "text-yellow-400" : "text-zinc-300"}`}
+            aria-label={`Rate ${i}`}
+            disabled={!onChange}
+          >
+            {isFilled ? "★" : "☆"}
+          </button>
+        );
+      })}
       {clearable && value !== null && onChange && (
         <button
           type="button"

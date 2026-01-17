@@ -275,12 +275,12 @@ export default function Entity() {
       </div>
 
       {/* Inline Review Form */}
-      <ReviewForm entityId={entity.id} onCreated={refresh} />
+      <ReviewForm entity={entity} onCreated={refresh} />
 
       {/* Reviews List */}
       <div className="space-y-4">
         <h2 className="text-xl font-semibold">Reviews ({reviews.length})</h2>
-        <ReviewList reviews={reviews} />
+        <ReviewList reviews={reviews} entityType={entity.type} />
       </div>
     </div>
   );

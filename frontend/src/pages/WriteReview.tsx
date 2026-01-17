@@ -7,6 +7,7 @@ import { getEntity } from "@/features/entities/entityService";
 import { createReview } from "@/features/reviews/reviewService";
 import { useAuth } from "@/providers/AuthProvider";
 import { getApplicableSubratings } from "@/config/subratings";
+import ModuleSelect from "@/features/modules/ModuleSelect";
 import type { Entity } from "@/types";
 
 const SUGGESTED_TAGS: Record<string, string[]> = {
@@ -31,7 +32,8 @@ export default function WriteReview() {
   const [text, setText] = useState("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [anonymous, setAnonymous] = useState(true);
-  const [subratings, setSubratings] = useState<Record<string, number | null>>({});
+  const [subratings, setSubratings] = useState<Record<string, number>>({});
+  const [moduleCode, setModuleCode] = useState(""); // For professor reviews
 
   useEffect(() => {
     (async () => {
@@ -40,11 +42,11 @@ export default function WriteReview() {
       try {
         const e = await getEntity(entityId);
         setEntity(e);
-        // Initialize subratings to null (skipped by default)
+        // Initialize subratings to 0 (not rated yet)
         if (e) {
           const applicable = getApplicableSubratings(e.type, e);
-          const initial: Record<string, number | null> = {};
-          applicable.forEach((s) => { initial[s.key] = null; });
+          const initial: Record<string, number> = {};
+          applicable.forEach((s) => { initial[s.key] = 0; });
           setSubratings(initial);
         }
       } finally {
@@ -60,14 +62,20 @@ export default function WriteReview() {
   }
 
   function updateSubrating(key: string, value: number | null) {
-    setSubratings((prev) => ({ ...prev, [key]: value }));
+    // Convert null to 0
+    setSubratings((prev) => ({ ...prev, [key]: value ?? 0 }));
   }
 
   async function handleSubmit() {
-    if (!entityId || rating === 0 || !text.trim()) return;
+    // Only require overall rating - text is optional
+    if (!entityId || rating === 0) {
+      console.log("Validation failed: No overall rating selected");
+      return;
+    }
     
     setSubmitting(true);
     try {
+      console.log("Submitting review...", { entityId, rating });
       await createReview({
         entityId,
         rating,
@@ -77,8 +85,13 @@ export default function WriteReview() {
         createdAt: Date.now(),
         authorId: user?.uid,
         anonymous,
+        ...(entity?.type === "PROFESSOR" && moduleCode ? { moduleCode } : {}),
       });
+      console.log("Review submitted successfully!");
       navigate(`/entity/${entityId}`);
+    } catch (error) {
+      console.error("Failed to submit review:", error);
+      alert("Failed to submit review. Please try again.");
     } finally {
       setSubmitting(false);
     }
@@ -94,7 +107,8 @@ export default function WriteReview() {
 
   const suggestedTags = SUGGESTED_TAGS[entity.type] ?? [];
   const applicableSubratings = getApplicableSubratings(entity.type, entity);
-  const isValid = rating > 0 && text.trim().length >= 10;
+  // Only require overall rating
+  const isValid = rating > 0;
 
   return (
     <div className="mx-auto max-w-2xl space-y-6">
@@ -124,12 +138,25 @@ export default function WriteReview() {
           </div>
         </div>
 
+        {/* Module Selection for Professors */}
+        {entity.type === "PROFESSOR" && (
+          <div className="space-y-2">
+            <label className="font-semibold">Module Taken</label>
+            <p className="text-sm text-zinc-500">Which module did you take with this professor?</p>
+            <ModuleSelect
+              value={moduleCode}
+              onChange={setModuleCode}
+              placeholder="Search for a module (e.g. CS1101S)"
+            />
+          </div>
+        )}
+
         {/* Subratings */}
         {applicableSubratings.length > 0 && (
           <div className="space-y-4">
             <div>
               <label className="font-semibold">Rate Specific Aspects</label>
-              <p className="text-sm text-zinc-500">Optional - click stars to rate, click again or "Skip" to clear</p>
+              <p className="text-sm text-zinc-500">Click stars to rate (unrated = 0 stars)</p>
             </div>
             <div className="space-y-3 rounded-lg bg-zinc-50 p-4">
               {applicableSubratings.map((subrating) => (
@@ -140,12 +167,17 @@ export default function WriteReview() {
                       <div className="text-xs text-zinc-400 truncate">{subrating.helperText}</div>
                     )}
                   </div>
-                  <RatingStars
-                    value={subratings[subrating.key]}
-                    onChange={(v) => updateSubrating(subrating.key, v)}
-                    clearable
-                    size="sm"
-                  />
+                  <div className="flex items-center gap-2">
+                    <RatingStars
+                      value={subratings[subrating.key] || null}
+                      onChange={(v) => updateSubrating(subrating.key, v)}
+                      clearable
+                      size="sm"
+                    />
+                    {subratings[subrating.key] === 0 && (
+                      <span className="text-xs text-zinc-400">Not rated</span>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
