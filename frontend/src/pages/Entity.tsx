@@ -3,12 +3,71 @@ import { Link, useParams } from "react-router-dom";
 import type { Entity as EntityData, Review, ImportedProfReview } from "@/types";
 import { getEntity, toggleBookmark, isBookmarked } from "@/features/entities/entityService";
 import { listReviewsForEntity, listImportedProfReviews } from "@/features/reviews/reviewService";
+import { getApplicableSubratings } from "@/config/subratings";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import ReviewForm from "@/features/reviews/ReviewForm";
 import ReviewList from "@/features/reviews/ReviewList";
 import ImportedReviewList from "@/features/reviews/ImportedReviewList";
 import { useAuth } from "@/providers/AuthProvider";
+
+// Subratings breakdown component
+function SubratingsBreakdown({ reviews, entity }: { reviews: Review[]; entity: EntityData }) {
+  const applicableSubratings = getApplicableSubratings(entity.type, entity);
+  
+  // Calculate averages for each subrating
+  const subratingStats = applicableSubratings.map((subrating) => {
+    const ratings = reviews
+      .map((r) => r.subratings?.[subrating.key])
+      .filter((v): v is number => v !== null && v !== undefined);
+    
+    const avg = ratings.length > 0
+      ? ratings.reduce((sum, v) => sum + v, 0) / ratings.length
+      : null;
+    
+    return {
+      key: subrating.key,
+      label: subrating.label,
+      avg,
+      count: ratings.length,
+    };
+  });
+
+  // Only show if at least one subrating has data
+  const hasAnyData = subratingStats.some((s) => s.count > 0);
+  if (!hasAnyData) return null;
+
+  return (
+    <Card className="space-y-3">
+      <h2 className="font-semibold">Subratings</h2>
+      <div className="space-y-1">
+        {subratingStats.map((stat) => {
+          const pct = stat.avg !== null ? (stat.avg / 5) * 100 : 0;
+          return (
+            <div key={stat.key} className="flex items-center gap-2 text-sm">
+              <span className="w-28 truncate text-zinc-600" title={stat.label}>{stat.label}</span>
+              <div className="h-2 flex-1 overflow-hidden rounded-full bg-zinc-100">
+                <div
+                  className="h-full bg-yellow-400"
+                  style={{ width: `${pct}%` }}
+                />
+              </div>
+              {stat.avg !== null ? (
+                <>
+                  <span className="w-8 text-right font-medium">{stat.avg.toFixed(1)}</span>
+                  <span className="text-yellow-500">★</span>
+                  <span className="w-6 text-right text-xs text-zinc-400">{stat.count}</span>
+                </>
+              ) : (
+                <span className="w-20 text-right text-xs text-zinc-400">No data</span>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </Card>
+  );
+}
 
 // Rating breakdown component
 function RatingBreakdown({ reviews }: { reviews: Review[] }) {
@@ -190,6 +249,9 @@ export default function Entity() {
           </div>
         </Card>
       </div>
+
+      {/* Subratings Breakdown */}
+      <SubratingsBreakdown reviews={reviews} entity={entity} />
 
       {/* Image Placeholder */}
       <Card className="flex h-40 items-center justify-center bg-zinc-50 text-zinc-400">

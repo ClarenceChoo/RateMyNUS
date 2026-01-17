@@ -21,7 +21,7 @@ export type Entity = {
 export type Review = {
   id: string;
   entityId: string;
-  rating: number;          // 1..5
+  rating: number;          // 1..5 overall rating
   text: string;
   createdAt: number;       // Date.now()
   authorId?: string;       // uid if logged in / anonymous auth
@@ -29,6 +29,12 @@ export type Review = {
   tags?: string[];
   helpfulCount?: number;
   unhelpfulCount?: number;
+
+  /**
+   * Subratings for specific aspects (1-5 each, null if skipped).
+   * Keys depend on entity type - see SUBRATINGS_BY_TYPE config.
+   */
+  subratings?: Record<string, number | null>;
 
   // Optional AI fields (you can add later)
   ai?: {

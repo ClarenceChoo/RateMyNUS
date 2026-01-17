@@ -6,6 +6,7 @@ import { RatingStars } from "@/components/RatingStars";
 import { getEntity } from "@/features/entities/entityService";
 import { createReview } from "@/features/reviews/reviewService";
 import { useAuth } from "@/providers/AuthProvider";
+import { getApplicableSubratings } from "@/config/subratings";
 import type { Entity } from "@/types";
 
 const SUGGESTED_TAGS: Record<string, string[]> = {
@@ -30,6 +31,7 @@ export default function WriteReview() {
   const [text, setText] = useState("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [anonymous, setAnonymous] = useState(true);
+  const [subratings, setSubratings] = useState<Record<string, number | null>>({});
 
   useEffect(() => {
     (async () => {
@@ -38,6 +40,13 @@ export default function WriteReview() {
       try {
         const e = await getEntity(entityId);
         setEntity(e);
+        // Initialize subratings to null (skipped by default)
+        if (e) {
+          const applicable = getApplicableSubratings(e.type, e);
+          const initial: Record<string, number | null> = {};
+          applicable.forEach((s) => { initial[s.key] = null; });
+          setSubratings(initial);
+        }
       } finally {
         setLoading(false);
       }
@@ -50,6 +59,10 @@ export default function WriteReview() {
     );
   }
 
+  function updateSubrating(key: string, value: number | null) {
+    setSubratings((prev) => ({ ...prev, [key]: value }));
+  }
+
   async function handleSubmit() {
     if (!entityId || rating === 0 || !text.trim()) return;
     
@@ -60,6 +73,7 @@ export default function WriteReview() {
         rating,
         text: text.trim(),
         tags: selectedTags,
+        subratings,
         createdAt: Date.now(),
         authorId: user?.uid,
         anonymous,
@@ -79,6 +93,7 @@ export default function WriteReview() {
   );
 
   const suggestedTags = SUGGESTED_TAGS[entity.type] ?? [];
+  const applicableSubratings = getApplicableSubratings(entity.type, entity);
   const isValid = rating > 0 && text.trim().length >= 10;
 
   return (
@@ -93,11 +108,11 @@ export default function WriteReview() {
       </div>
 
       <Card className="space-y-6">
-        {/* Rating */}
+        {/* Overall Rating */}
         <div className="space-y-2">
           <label className="font-semibold">Overall Rating *</label>
           <div className="flex items-center gap-4">
-            <RatingStars value={rating} onChange={setRating} />
+            <RatingStars value={rating} onChange={(v) => setRating(v ?? 0)} />
             <span className="text-sm text-zinc-500">
               {rating === 0 && "Select a rating"}
               {rating === 1 && "Poor"}
@@ -108,6 +123,34 @@ export default function WriteReview() {
             </span>
           </div>
         </div>
+
+        {/* Subratings */}
+        {applicableSubratings.length > 0 && (
+          <div className="space-y-4">
+            <div>
+              <label className="font-semibold">Rate Specific Aspects</label>
+              <p className="text-sm text-zinc-500">Optional - click stars to rate, click again or "Skip" to clear</p>
+            </div>
+            <div className="space-y-3 rounded-lg bg-zinc-50 p-4">
+              {applicableSubratings.map((subrating) => (
+                <div key={subrating.key} className="flex items-center justify-between gap-4">
+                  <div className="min-w-0 flex-1">
+                    <div className="font-medium text-sm">{subrating.label}</div>
+                    {subrating.helperText && (
+                      <div className="text-xs text-zinc-400 truncate">{subrating.helperText}</div>
+                    )}
+                  </div>
+                  <RatingStars
+                    value={subratings[subrating.key]}
+                    onChange={(v) => updateSubrating(subrating.key, v)}
+                    clearable
+                    size="sm"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Tags */}
         <div className="space-y-2">

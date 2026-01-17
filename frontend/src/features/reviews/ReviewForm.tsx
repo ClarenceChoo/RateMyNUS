@@ -6,6 +6,9 @@ import { RatingStars } from "@/components/RatingStars";
 import { createReview } from "@/features/reviews/reviewService";
 import { useAuth } from "@/providers/AuthProvider";
 
+/**
+ * Inline quick review form. For detailed subratings, use the full WriteReview page.
+ */
 export default function ReviewForm({ entityId, onCreated }: { entityId: string; onCreated: () => void }) {
   const { user } = useAuth();
   const [rating, setRating] = useState(5);
@@ -23,6 +26,8 @@ export default function ReviewForm({ entityId, onCreated }: { entityId: string; 
         createdAt: Date.now(),
         authorId: user?.uid,
         anonymous: user?.isAnonymous ?? true,
+        // TODO: For detailed subratings, direct users to WriteReview page
+        subratings: {},
       });
       setText("");
       setRating(5);
@@ -35,8 +40,8 @@ export default function ReviewForm({ entityId, onCreated }: { entityId: string; 
   return (
     <Card className="space-y-3">
       <div className="flex items-center justify-between">
-        <div className="font-semibold">Leave a review</div>
-        <RatingStars value={rating} onChange={setRating} />
+        <div className="font-semibold">Quick Review</div>
+        <RatingStars value={rating} onChange={(v) => setRating(v ?? 5)} />
       </div>
 
       <Input
