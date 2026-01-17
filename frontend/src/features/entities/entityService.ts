@@ -1,6 +1,6 @@
 import { collection, doc, getDoc, getDocs, limit, query, where } from "firebase/firestore";
 import { db } from "@/lib/firebase";
-import { Entity, EntityType } from "@/types";
+import type { Entity, EntityType } from "@/types";
 
 export async function getEntity(entityId: string): Promise<Entity | null> {
   const snap = await getDoc(doc(db, "entities", entityId));

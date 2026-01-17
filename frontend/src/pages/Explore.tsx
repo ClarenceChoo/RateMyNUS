@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import { listEntitiesByType } from "@/features/entities/entityService";
-import { Entity, EntityType } from "@/types";
+import type { Entity, EntityType } from "@/types";
 import { Link } from "react-router-dom";
 
 const types: EntityType[] = ["DORM", "CLASSROOM", "PROFESSOR", "FOOD_PLACE", "TOILET"];

@@ -1,4 +1,4 @@
-import { EntityType } from "@/types";
+import type { EntityType } from "@/types";
 
 export const categories: { type: EntityType; label: string; desc: string }[] = [
   { type: "DORM", label: "Dorms", desc: "Halls, RCs, Houses" },

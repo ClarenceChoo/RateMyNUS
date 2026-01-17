@@ -1,5 +1,5 @@
 import Card from "@/components/ui/Card";
-import { Review } from "@/types";
+import type { Review } from "@/types";
 
 export default function ReviewList({ reviews }: { reviews: Review[] }) {
   if (reviews.length === 0) return <div className="text-sm text-zinc-600">No reviews yet.</div>;

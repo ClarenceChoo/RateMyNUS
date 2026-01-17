@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Entity as EntityType, Review } from "@/types";
+import type { Entity as EntityType, Review } from "@/types";
 import { getEntity } from "@/features/entities/entityService";
 import { listReviewsForEntity } from "@/features/reviews/reviewService";
 import ReviewForm from "@/features/reviews/ReviewForm";

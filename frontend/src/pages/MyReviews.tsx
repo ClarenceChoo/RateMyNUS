@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "@/providers/AuthProvider";
 import { listReviewsForUser } from "@/features/reviews/reviewService";
-import { Review } from "@/types";
+import type { Review } from "@/types";
 import ReviewList from "@/features/reviews/ReviewList";
 
 export default function MyReviews() {

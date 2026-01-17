@@ -10,7 +10,7 @@ import {
   where,
 } from "firebase/firestore";
 import { db } from "@/lib/firebase";
-import { Review } from "@/types";
+import type { Review } from "@/types";
 
 export async function createReview(review: Omit<Review, "id">) {
   await addDoc(collection(db, "reviews"), review);
