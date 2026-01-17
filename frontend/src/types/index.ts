@@ -19,34 +19,16 @@ export type Entity = {
 };
 
 export type Review = {
-  id: string;
+  id: string;                    // uuid from API
   entityId: string;
-  rating: number;          // 1..5 overall rating
-  text: string;
-  createdAt: number;       // Date.now()
-  authorId?: string;       // uid if logged in / anonymous auth
-  anonymous: boolean;
-  tags?: string[];
-  helpfulCount?: number;
-  unhelpfulCount?: number;
-
-  /**
-   * Module code for professor reviews (e.g. "CS2030S")
-   */
-  moduleCode?: string;
-
-  /**
-   * Subratings for specific aspects (1-5 each, null if skipped).
-   * Keys depend on entity type - see SUBRATINGS_BY_TYPE config.
-   */
-  subratings?: Record<string, number | null>;
-
-  // Optional AI fields (you can add later)
-  ai?: {
-    focusLabel?: "PROF_FOCUSED" | "MODULE_FOCUSED" | "MIXED" | "UNKNOWN";
-    summary?: string;
-    aiRating?: number;
-  };
+  rating: number;                // 1..5 overall rating
+  text: string;                  // description from API
+  createdAt: number;             // timestamp
+  authorName?: string;           // optional display name (like when2meet)
+  tags?: string[];               // array of tag strings
+  voteCount?: number;            // upvote count
+  moduleCode?: string;           // for professor reviews (e.g. "CS2030S")
+  subratings?: Record<string, number | null>;  // subrating key -> value (1-5)
 };
 
 export type ImportedProfReview = {

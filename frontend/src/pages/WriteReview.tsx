@@ -5,7 +5,6 @@ import Button from "@/components/ui/Button";
 import { RatingStars } from "@/components/RatingStars";
 import { getEntity } from "@/features/entities/entityService";
 import { createReview } from "@/features/reviews/reviewService";
-import { useAuth } from "@/providers/AuthProvider";
 import { getApplicableSubratings } from "@/config/subratings";
 import ModuleSelect from "@/features/modules/ModuleSelect";
 import type { Entity } from "@/types";
@@ -59,7 +58,6 @@ const SUGGESTED_TAGS: Record<string, string[]> = {
 export default function WriteReview() {
   const { id: entityId } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { user } = useAuth();
 
   const [entity, setEntity] = useState<Entity | null>(null);
   const [loading, setLoading] = useState(true);
@@ -69,7 +67,7 @@ export default function WriteReview() {
   const [rating, setRating] = useState(0);
   const [text, setText] = useState("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [anonymous, setAnonymous] = useState(true);
+  const [authorName, setAuthorName] = useState(""); // Optional name (like when2meet)
   const [subratings, setSubratings] = useState<Record<string, number>>({});
   const [moduleCode, setModuleCode] = useState(""); // For professor reviews
 
@@ -121,8 +119,7 @@ export default function WriteReview() {
         tags: selectedTags,
         subratings,
         createdAt: Date.now(),
-        authorId: user?.uid,
-        anonymous,
+        authorName: authorName.trim() || undefined, // Optional name (anonymous if empty)
         ...(entity?.type === "PROFESSOR" && moduleCode ? { moduleCode } : {}),
       });
       console.log("Review submitted successfully!");
@@ -245,7 +242,7 @@ export default function WriteReview() {
 
         {/* Review Text */}
         <div className="space-y-2">
-          <label className="font-semibold">Your Review *</label>
+          <label className="font-semibold">Your Review (optional)</label>
           <textarea
             value={text}
             onChange={(e) => setText(e.target.value)}
@@ -253,32 +250,21 @@ export default function WriteReview() {
             rows={5}
             className="w-full rounded-xl border px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-zinc-200"
           />
-          <div className="text-right text-xs text-zinc-400">
-            {text.length} characters (min 10)
-          </div>
         </div>
 
-        {/* Anonymous Toggle */}
-        <div className="flex items-center justify-between rounded-lg bg-zinc-50 p-4">
-          <div>
-            <div className="font-medium">Post Anonymously</div>
-            <div className="text-sm text-zinc-500">
-              {anonymous ? "Your identity will be hidden" : "Your name may be visible"}
-            </div>
-          </div>
-          <button
-            type="button"
-            onClick={() => setAnonymous(!anonymous)}
-            className={`relative h-6 w-11 rounded-full transition ${
-              anonymous ? "bg-zinc-900" : "bg-zinc-300"
-            }`}
-          >
-            <div
-              className={`absolute top-0.5 h-5 w-5 rounded-full bg-white transition ${
-                anonymous ? "left-5" : "left-0.5"
-              }`}
-            />
-          </button>
+        {/* Optional Name Input (like when2meet) */}
+        <div className="space-y-2">
+          <label className="font-semibold">Your Name (optional)</label>
+          <input
+            type="text"
+            value={authorName}
+            onChange={(e) => setAuthorName(e.target.value)}
+            placeholder="Leave blank to post anonymously"
+            className="w-full rounded-xl border px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-zinc-200"
+          />
+          <p className="text-sm text-zinc-500">
+            {authorName.trim() ? `Posting as "${authorName.trim()}"` : "Posting anonymously"}
+          </p>
         </div>
 
         {/* Submit */}

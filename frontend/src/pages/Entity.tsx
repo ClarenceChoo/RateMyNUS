@@ -9,7 +9,6 @@ import Button from "@/components/ui/Button";
 import ReviewForm from "@/features/reviews/ReviewForm";
 import ReviewList from "@/features/reviews/ReviewList";
 import ImportedReviewList from "@/features/reviews/ImportedReviewList";
-import { useAuth } from "@/providers/AuthProvider";
 
 // Subratings breakdown component
 function SubratingsBreakdown({ reviews, entity }: { reviews: Review[]; entity: EntityData }) {
@@ -102,7 +101,6 @@ function RatingBreakdown({ reviews }: { reviews: Review[] }) {
 
 export default function Entity() {
   const { entityId } = useParams();
-  useAuth(); // Ensure auth context is available
   
   const [entity, setEntity] = useState<EntityData | null>(null);
   const [reviews, setReviews] = useState<Review[]>([]);
