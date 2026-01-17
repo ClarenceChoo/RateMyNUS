@@ -118,7 +118,7 @@ export default function Category() {
                       <div className="font-semibold group-hover:text-zinc-700">
                         {entity.name}
                       </div>
-                      <div className="line-clamp-2 text-sm text-zinc-500">
+                      <div className="line-clamp-4 text-sm text-zinc-500">
                         {entity.subtitle}
                       </div>
                     </div>

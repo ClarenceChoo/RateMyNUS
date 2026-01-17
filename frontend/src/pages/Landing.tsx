@@ -65,17 +65,17 @@ export default function Landing() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {topRated.map((entity) => (
               <Link key={entity.id} to={`/entity/${entity.id}`}>
-                <Card className="group cursor-pointer transition hover:border-zinc-300 hover:shadow-sm">
+                <Card className="group flex h-48 cursor-pointer flex-col overflow-hidden transition hover:border-zinc-300 hover:shadow-sm">
                   <div className="flex items-start justify-between">
-                    <div>
+                    <div className="flex-1 pr-2">
                       <div className="font-semibold group-hover:text-zinc-700">
                         {entity.name}
                       </div>
-                      <div className="text-sm text-zinc-500">
+                      <div className="line-clamp-3 text-sm text-zinc-500">
                         {entity.subtitle ?? entity.type}
                       </div>
                     </div>
-                    <div className="text-right">
+                    <div className="shrink-0 text-right">
                       <div className="font-medium text-yellow-600">
                         {entity.avgRating?.toFixed(1)} ★
                       </div>
@@ -85,7 +85,7 @@ export default function Landing() {
                     </div>
                   </div>
                   {entity.tags && entity.tags.length > 0 && (
-                    <div className="mt-2 flex flex-wrap gap-1">
+                    <div className="mt-auto flex flex-wrap gap-1 pt-2">
                       {entity.tags.slice(0, 3).map((tag) => (
                         <span
                           key={tag}

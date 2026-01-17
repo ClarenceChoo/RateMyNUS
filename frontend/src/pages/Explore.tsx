@@ -7,6 +7,14 @@ import { Link } from "react-router-dom";
 
 const types: EntityType[] = ["DORM", "CLASSROOM", "PROFESSOR", "FOOD_PLACE", "TOILET"];
 
+const typeLabels: Record<EntityType, string> = {
+  DORM: "DORM",
+  CLASSROOM: "CLASSROOM",
+  PROFESSOR: "PROFESSOR",
+  FOOD_PLACE: "FOOD PLACE",
+  TOILET: "TOILET",
+};
+
 export default function Explore() {
   const [type, setType] = useState<EntityType>("DORM");
   const [items, setItems] = useState<Entity[]>([]);
@@ -33,7 +41,7 @@ export default function Explore() {
             variant={t === type ? "solid" : "ghost"}
             onClick={() => setType(t)}
           >
-            {t}
+            {typeLabels[t]}
           </Button>
         ))}
       </div>

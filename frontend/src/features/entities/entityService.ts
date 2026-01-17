@@ -8,7 +8,7 @@ type ApiEntity = {
   name: string;
   description?: string;
   type: string;
-  location?: string | { campus?: string; building_code?: string; address?: string };
+  location?: string | { latitude?: number; longitude?: number; campus?: string; building_code?: string; address?: string };
   tags?: string[];
   avgRating?: number;
   ratingCount?: number;
@@ -81,15 +81,20 @@ function mapApiEntity(apiEntity: ApiEntity): Entity {
     zone: mapApiZone(apiEntity.zone),
   };
 
-  // Parse location - can be string "lat lng" or object
+  // Parse location - can be string "lat lng" or object with latitude/longitude
   if (apiEntity.location) {
     if (typeof apiEntity.location === "string") {
       const parts = apiEntity.location.split(" ").map(Number);
       if (parts.length >= 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
         entity.location = { lat: parts[0], lng: parts[1] };
       }
+    } else if (typeof apiEntity.location === "object") {
+      // Handle { latitude, longitude } format from API
+      const loc = apiEntity.location;
+      if (loc.latitude !== undefined && loc.longitude !== undefined) {
+        entity.location = { lat: loc.latitude, lng: loc.longitude };
+      }
     }
-    // If location is an object, we don't have lat/lng so skip
   }
 
   return entity;
