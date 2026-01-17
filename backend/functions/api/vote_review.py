@@ -76,10 +76,9 @@ def vote_review(req: https_fn.Request) -> https_fn.Response:
         })
         
         logger.log_firestore_operation(
-            "update",
-            "reviews",
-            review_id,
-            operation="increment_vote"
+            operation="increment_vote",
+            collection="reviews",
+            document_id=review_id
         )
         
         # Get updated review

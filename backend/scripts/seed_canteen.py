@@ -5,7 +5,7 @@ Reads from data/canteen.json and uploads to the 'entities' collection
 
 import json
 import firebase_admin
-from firebase_admin import credentials, firestore
+from firebase_admin import firestore
 from google.cloud.firestore_v1 import GeoPoint
 from datetime import datetime
 import os

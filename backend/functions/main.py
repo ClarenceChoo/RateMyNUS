@@ -5,6 +5,17 @@
 from firebase_functions.options import set_global_options
 from firebase_admin import initialize_app
 
+# Import all API endpoints
+from api.health import healthcheck
+from api.entities import get_entities
+from api.reviews import create_review
+from api.get_reviews import get_reviews
+from api.delete_review import delete_review
+from api.vote_review import vote_review
+
+# Import Firestore triggers
+from triggers.update_rating import update_entity_rating
+
 # For cost control, you can set the maximum number of containers that can be
 # running at the same time. This helps mitigate the impact of unexpected
 # traffic spikes by instead downgrading performance. This limit is a per-function
@@ -19,14 +30,3 @@ set_global_options(
 )
 
 initialize_app()
-
-# Import all API endpoints
-from api.health import healthcheck
-from api.entities import get_entities
-from api.reviews import create_review
-from api.get_reviews import get_reviews
-from api.delete_review import delete_review
-from api.vote_review import vote_review
-
-# Import Firestore triggers
-from triggers.update_rating import update_entity_rating

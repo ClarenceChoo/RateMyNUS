@@ -6,7 +6,7 @@ Provides structured logging that integrates with Google Cloud Logging
 import logging
 import json
 from datetime import datetime
-from typing import Any, Dict, Optional
+from typing import Optional
 
 
 class StructuredLogger:

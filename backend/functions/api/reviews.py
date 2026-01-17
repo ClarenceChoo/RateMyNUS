@@ -3,7 +3,6 @@ from firebase_admin import firestore
 import json
 import time
 import uuid
-from datetime import datetime
 from utils.logger import logger
 
 

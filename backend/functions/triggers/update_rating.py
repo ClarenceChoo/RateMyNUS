@@ -3,7 +3,10 @@ from firebase_admin import firestore
 from utils.logger import logger
 
 
-@firestore_fn.on_document_written(document="reviews/{reviewId}")
+@firestore_fn.on_document_written(
+    document="reviews/{reviewId}",
+    region="asia-southeast1"
+)
 def update_entity_rating(event: firestore_fn.Event[firestore_fn.Change[firestore_fn.DocumentSnapshot]]) -> None:
     """
     Recalculate entity's average rating when a review is created, updated, or deleted.
@@ -16,13 +19,15 @@ def update_entity_rating(event: firestore_fn.Event[firestore_fn.Change[firestore
     3. Calculates the average rating and count
     4. Updates the entity document with new avgRating and ratingCount
     """
+    # Initialize entity_id outside try block to avoid unbound variable error
+    entity_id = None
+    
     try:
         # Get the review data (before and after)
         before = event.data.before
         after = event.data.after
         
         # Determine the entityId from the review
-        entity_id = None
         
         if after and after.exists:
             # Document was created or updated
@@ -86,7 +91,7 @@ def update_entity_rating(event: firestore_fn.Event[firestore_fn.Change[firestore
             "Error updating entity rating",
             error=e,
             review_id=event.params.get('reviewId'),
-            entity_id=entity_id if 'entity_id' in locals() else None
+            entity_id=entity_id
         )
         # Don't raise exception - we don't want to retry on permanent failures
         # The function will be marked as failed but won't retry indefinitely
