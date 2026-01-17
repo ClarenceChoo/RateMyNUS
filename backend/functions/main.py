@@ -23,3 +23,4 @@ initialize_app()
 # Import all API endpoints
 from api.health import healthcheck
 from api.entities import get_entities
+from api.reviews import create_review

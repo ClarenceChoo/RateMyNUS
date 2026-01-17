@@ -225,6 +225,52 @@ GET /get_entities?limit=10
 }
 ```
 
+### Create Review
+
+**Create a new review:**
+```
+POST /create_review
+Content-Type: application/json
+```
+
+**Request body:**
+```json
+{
+  "authorName": "Bob",
+  "description": "Very nice and tasty!",
+  "entityId": "C01",
+  "rating": 5
+}
+```
+
+**Required fields:**
+- `authorName` (string) - Name of the review author
+- `description` (string) - Review text
+- `entityId` (string) - ID of the entity being reviewed (e.g., C01, D05, CR012)
+- `rating` (number) - Rating value between 0 and 5
+
+**Success Response (201):**
+```json
+{
+  "message": "Review created successfully",
+  "review": {
+    "id": "abc123xyz",
+    "authorName": "Bob",
+    "description": "Very nice and tasty!",
+    "entityId": "C01",
+    "rating": 5,
+    "voteCount": 0,
+    "createdAt": "2026-01-17T00:00:00+08:00"
+  }
+}
+```
+
+**Error Responses:**
+- `400` - Missing required fields or invalid data
+- `404` - Entity with specified ID not found
+- `405` - Method not allowed (use POST)
+- `500` - Server error
+
 ### CORS Support
 
 All endpoints support CORS with the following headers:
