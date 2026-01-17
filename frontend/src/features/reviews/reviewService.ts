@@ -40,8 +40,7 @@ export async function createReview(review: Omit<Review, "id">) {
       const newReview: Review = {
         ...review,
         id: `rev-${Date.now()}`,
-        helpfulCount: 0,
-        unhelpfulCount: 0,
+        voteCount: 0,
       };
       mockReviews.unshift(newReview);
       return newReview;
@@ -68,25 +67,6 @@ export async function listReviewsForEntity(entityId: string, take = 50): Promise
   );
 }
 
-export async function listReviewsForUser(authorId: string, take = 50): Promise<Review[]> {
-  return tryFirebaseOrMock(
-    async () => {
-      const q = query(
-        collection(db, "reviews"),
-        where("authorId", "==", authorId),
-        orderBy("createdAt", "desc"),
-        limit(take)
-      );
-      const snap = await getDocs(q);
-      return snap.docs.map((d) => ({ id: d.id, ...(d.data() as Omit<Review, "id">) }));
-    },
-    async () => {
-      await delay(200);
-      return mockReviews.filter((r) => r.authorId === authorId).slice(0, take);
-    }
-  );
-}
-
 export async function deleteReview(reviewId: string) {
   return tryFirebaseOrMock(
     async () => {
@@ -100,27 +80,17 @@ export async function deleteReview(reviewId: string) {
   );
 }
 
-// New: Vote on a review (helpful / unhelpful)
-export async function voteReview(
-  reviewId: string,
-  voteType: "helpful" | "unhelpful"
-): Promise<{ helpfulCount: number; unhelpfulCount: number }> {
+// Vote on a review (upvote only)
+export async function voteReview(reviewId: string): Promise<number> {
   await delay(150);
   
   const review = mockReviews.find((r) => r.id === reviewId);
   if (review) {
-    if (voteType === "helpful") {
-      review.helpfulCount = (review.helpfulCount ?? 0) + 1;
-    } else {
-      review.unhelpfulCount = (review.unhelpfulCount ?? 0) + 1;
-    }
-    return {
-      helpfulCount: review.helpfulCount ?? 0,
-      unhelpfulCount: review.unhelpfulCount ?? 0,
-    };
+    review.voteCount = (review.voteCount ?? 0) + 1;
+    return review.voteCount;
   }
   
-  return { helpfulCount: 0, unhelpfulCount: 0 };
+  return 0;
 }
 
 // New: List AI-imported professor reviews

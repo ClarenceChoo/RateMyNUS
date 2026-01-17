@@ -36,9 +36,8 @@ export default function Landing() {
           <SearchBar placeholder="Search dorms, professors, food, toilets..." />
         </div>
 
-        <div className="flex justify-center gap-3 pt-2">
+        <div className="flex justify-center pt-2">
           <Link to="/explore"><Button>Start exploring</Button></Link>
-          <Link to="/login"><Button variant="ghost">Login</Button></Link>
         </div>
       </section>
 

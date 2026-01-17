@@ -31,17 +31,15 @@ type ReviewListProps = {
 
 export default function ReviewList({ reviews, entityType }: ReviewListProps) {
   const [votedIds, setVotedIds] = useState<Set<string>>(new Set());
-  const [votes, setVotes] = useState<Map<string, { helpfulCount: number; unhelpfulCount: number }>>(
-    new Map()
-  );
+  const [votes, setVotes] = useState<Map<string, number>>(new Map());
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set());
 
-  async function handleVote(reviewId: string, voteType: "helpful" | "unhelpful") {
+  async function handleVote(reviewId: string) {
     if (votedIds.has(reviewId)) return;
     
-    const result = await voteReview(reviewId, voteType);
+    const helpfulCount = await voteReview(reviewId);
     setVotedIds((prev) => new Set(prev).add(reviewId));
-    setVotes((prev) => new Map(prev).set(reviewId, result));
+    setVotes((prev) => new Map(prev).set(reviewId, helpfulCount));
   }
 
   function toggleExpanded(reviewId: string) {
@@ -64,24 +62,23 @@ export default function ReviewList({ reviews, entityType }: ReviewListProps) {
   return (
     <div className="space-y-3">
       {reviews.map((r) => {
-        const voteData = votes.get(r.id);
-        const helpfulCount = voteData?.helpfulCount ?? r.helpfulCount ?? 0;
+        const voteCount = votes.get(r.id) ?? r.voteCount ?? 0;
         const hasVoted = votedIds.has(r.id);
         const isExpanded = expandedIds.has(r.id);
         const hasSubratings = r.subratings && Object.keys(r.subratings).length > 0;
 
         return (
           <Card key={r.id} className="space-y-3">
-            {/* Header: Overall rating, anonymous badge, date */}
+            {/* Header: Overall rating, author name, date */}
             <div className="flex items-center justify-between text-sm">
               <div className="flex items-center gap-2">
                 <span className="text-yellow-500">
                   {"★".repeat(r.rating)}{"☆".repeat(5 - r.rating)}
                 </span>
                 <span className="font-medium text-zinc-700">{r.rating}/5</span>
-                {r.anonymous && (
-                  <span className="text-xs text-zinc-400">Anonymous</span>
-                )}
+                <span className="text-xs text-zinc-400">
+                  {r.authorName || "Anonymous"}
+                </span>
               </div>
               <div className="text-zinc-500">{new Date(r.createdAt).toLocaleDateString()}</div>
             </div>
@@ -126,31 +123,15 @@ export default function ReviewList({ reviews, entityType }: ReviewListProps) {
             {/* Review text */}
             <div className="text-sm leading-relaxed">{r.text}</div>
 
-            {/* AI summary */}
-            {r.ai?.summary && (
-              <div className="rounded-xl bg-zinc-50 p-3 text-xs text-zinc-700">
-                <div className="font-semibold">AI summary</div>
-                <div>{r.ai.summary}</div>
-              </div>
-            )}
-
-            {/* Vote buttons */}
-            <div className="flex items-center gap-4 border-t pt-3">
+            {/* Vote button */}
+            <div className="flex items-center border-t pt-3">
               <Button
                 variant="ghost"
-                onClick={() => handleVote(r.id, "helpful")}
+                onClick={() => handleVote(r.id)}
                 disabled={hasVoted}
                 className="text-xs"
               >
-                👍 Helpful {helpfulCount > 0 && `(${helpfulCount})`}
-              </Button>
-              <Button
-                variant="ghost"
-                onClick={() => handleVote(r.id, "unhelpful")}
-                disabled={hasVoted}
-                className="text-xs text-zinc-400"
-              >
-                👎
+                👍 Helpful {voteCount > 0 && `(${voteCount})`}
               </Button>
             </div>
           </Card>
