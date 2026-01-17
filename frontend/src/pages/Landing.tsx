@@ -37,7 +37,7 @@ export default function Landing() {
         </div>
 
         <div className="flex justify-center pt-2">
-          <Link to="/explore"><Button>Start exploring</Button></Link>
+          <Link to="/explore"><Button className="cursor-pointer">Start exploring</Button></Link>
         </div>
       </section>
 
