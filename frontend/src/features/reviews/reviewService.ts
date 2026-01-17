@@ -9,70 +9,95 @@ import {
   query,
   where,
 } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import { db, hasRealFirebaseConfig } from "@/lib/firebase";
 import type { Review, ImportedProfReview, Paginated } from "@/types";
 import { mockReviews, mockImportedProfReviews, delay } from "@/features/entities/mockData";
 
-// TODO: Replace mock with real Firebase calls when backend is ready
-const USE_MOCK = true;
+// Helper: Try Firebase first, fall back to mock on failure
+async function tryFirebaseOrMock<T>(
+  firebaseFn: () => Promise<T>,
+  mockFn: () => Promise<T>
+): Promise<T> {
+  if (!hasRealFirebaseConfig) {
+    return mockFn();
+  }
+  try {
+    return await firebaseFn();
+  } catch (error) {
+    console.warn("Firebase call failed, using mock data:", error);
+    return mockFn();
+  }
+}
 
 export async function createReview(review: Omit<Review, "id">) {
-  if (USE_MOCK) {
-    await delay(300);
-    const newReview: Review = {
-      ...review,
-      id: `rev-${Date.now()}`,
-      helpfulCount: 0,
-      unhelpfulCount: 0,
-    };
-    mockReviews.unshift(newReview);
-    return newReview;
-  }
-  await addDoc(collection(db, "reviews"), review);
+  return tryFirebaseOrMock(
+    async () => {
+      const docRef = await addDoc(collection(db, "reviews"), review);
+      return { ...review, id: docRef.id } as Review;
+    },
+    async () => {
+      await delay(300);
+      const newReview: Review = {
+        ...review,
+        id: `rev-${Date.now()}`,
+        helpfulCount: 0,
+        unhelpfulCount: 0,
+      };
+      mockReviews.unshift(newReview);
+      return newReview;
+    }
+  );
 }
 
 export async function listReviewsForEntity(entityId: string, take = 50): Promise<Review[]> {
-  if (USE_MOCK) {
-    await delay(200);
-    return mockReviews
-      .filter((r) => r.entityId === entityId)
-      .slice(0, take);
-  }
-  const q = query(
-    collection(db, "reviews"),
-    where("entityId", "==", entityId),
-    orderBy("createdAt", "desc"),
-    limit(take)
+  return tryFirebaseOrMock(
+    async () => {
+      const q = query(
+        collection(db, "reviews"),
+        where("entityId", "==", entityId),
+        orderBy("createdAt", "desc"),
+        limit(take)
+      );
+      const snap = await getDocs(q);
+      return snap.docs.map((d) => ({ id: d.id, ...(d.data() as Omit<Review, "id">) }));
+    },
+    async () => {
+      await delay(200);
+      return mockReviews.filter((r) => r.entityId === entityId).slice(0, take);
+    }
   );
-  const snap = await getDocs(q);
-  return snap.docs.map((d) => ({ id: d.id, ...(d.data() as Omit<Review, "id">) }));
 }
 
 export async function listReviewsForUser(authorId: string, take = 50): Promise<Review[]> {
-  if (USE_MOCK) {
-    await delay(200);
-    return mockReviews
-      .filter((r) => r.authorId === authorId)
-      .slice(0, take);
-  }
-  const q = query(
-    collection(db, "reviews"),
-    where("authorId", "==", authorId),
-    orderBy("createdAt", "desc"),
-    limit(take)
+  return tryFirebaseOrMock(
+    async () => {
+      const q = query(
+        collection(db, "reviews"),
+        where("authorId", "==", authorId),
+        orderBy("createdAt", "desc"),
+        limit(take)
+      );
+      const snap = await getDocs(q);
+      return snap.docs.map((d) => ({ id: d.id, ...(d.data() as Omit<Review, "id">) }));
+    },
+    async () => {
+      await delay(200);
+      return mockReviews.filter((r) => r.authorId === authorId).slice(0, take);
+    }
   );
-  const snap = await getDocs(q);
-  return snap.docs.map((d) => ({ id: d.id, ...(d.data() as Omit<Review, "id">) }));
 }
 
 export async function deleteReview(reviewId: string) {
-  if (USE_MOCK) {
-    await delay(200);
-    const idx = mockReviews.findIndex((r) => r.id === reviewId);
-    if (idx !== -1) mockReviews.splice(idx, 1);
-    return;
-  }
-  await deleteDoc(doc(db, "reviews", reviewId));
+  return tryFirebaseOrMock(
+    async () => {
+      await deleteDoc(doc(db, "reviews", reviewId));
+    },
+    async () => {
+      await delay(200);
+      const idx = mockReviews.findIndex((r) => r.id === reviewId);
+      if (idx !== -1) mockReviews.splice(idx, 1);
+    }
+  );
 }
 
 // New: Vote on a review (helpful / unhelpful)

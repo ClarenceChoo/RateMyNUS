@@ -1,29 +1,50 @@
 import { collection, doc, getDoc, getDocs, limit, query, where } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import { db, hasRealFirebaseConfig } from "@/lib/firebase";
 import type { Entity, EntityType, EntityFilters, Paginated } from "@/types";
 import { mockEntities, mockBookmarks, delay, filterEntities, getTopRatedThisWeek } from "./mockData";
 
-// TODO: Replace mock with real Firebase calls when backend is ready
-const USE_MOCK = true;
+// Helper: Try Firebase first, fall back to mock on failure
+async function tryFirebaseOrMock<T>(
+  firebaseFn: () => Promise<T>,
+  mockFn: () => Promise<T>
+): Promise<T> {
+  if (!hasRealFirebaseConfig) {
+    return mockFn();
+  }
+  try {
+    return await firebaseFn();
+  } catch (error) {
+    console.warn("Firebase call failed, using mock data:", error);
+    return mockFn();
+  }
+}
 
 export async function getEntity(entityId: string): Promise<Entity | null> {
-  if (USE_MOCK) {
-    await delay(200);
-    return mockEntities.find((e) => e.id === entityId) ?? null;
-  }
-  const snap = await getDoc(doc(db, "entities", entityId));
-  if (!snap.exists()) return null;
-  return { id: snap.id, ...(snap.data() as Omit<Entity, "id">) };
+  return tryFirebaseOrMock(
+    async () => {
+      const snap = await getDoc(doc(db, "entities", entityId));
+      if (!snap.exists()) return null;
+      return { id: snap.id, ...(snap.data() as Omit<Entity, "id">) };
+    },
+    async () => {
+      await delay(200);
+      return mockEntities.find((e) => e.id === entityId) ?? null;
+    }
+  );
 }
 
 export async function listEntitiesByType(type: EntityType, take = 30): Promise<Entity[]> {
-  if (USE_MOCK) {
-    await delay(200);
-    return mockEntities.filter((e) => e.type === type).slice(0, take);
-  }
-  const q = query(collection(db, "entities"), where("type", "==", type), limit(take));
-  const snap = await getDocs(q);
-  return snap.docs.map((d) => ({ id: d.id, ...(d.data() as Omit<Entity, "id">) }));
+  return tryFirebaseOrMock(
+    async () => {
+      const q = query(collection(db, "entities"), where("type", "==", type), limit(take));
+      const snap = await getDocs(q);
+      return snap.docs.map((d) => ({ id: d.id, ...(d.data() as Omit<Entity, "id">) }));
+    },
+    async () => {
+      await delay(200);
+      return mockEntities.filter((e) => e.type === type).slice(0, take);
+    }
+  );
 }
 
 // New: List entities with filters and pagination
