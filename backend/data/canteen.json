@@ -1,0 +1,262 @@
+[
+  {
+    "name": "The Deck",
+    "type": "Canteen",
+    "description": "The main canteen for the Faculty of Arts and Social Sciences, situated on a hill with distinctive architecture. Famous for its long-queue Yong Tau Foo and roasted delights.",
+    "location": "1.295053 103.771760",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "No Aircon",
+      "FASS",
+      "Halal Options",
+      "Yong Tau Foo",
+      "Crowded"
+    ]
+  },
+  {
+    "name": "Frontier",
+    "type": "Canteen",
+    "description": "The Science faculty canteen offering a breezy, open-air environment. Popular for its Western food, Ayam Penyet, and Hainanese Chicken Rice.",
+    "location": "1.297066 103.779777",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "No Aircon",
+      "Science",
+      "Halal Options",
+      "Western",
+      "Chicken Rice",
+      "Ayam Penyet"
+    ]
+  },
+  {
+    "name": "Techno Edge",
+    "type": "Canteen",
+    "description": "The primary canteen for the Faculty of Engineering. Features a diverse range of affordable stalls including popular Nasi Padang and Indian cuisine.",
+    "location": "1.297444 103.771253",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Engineering",
+      "Halal Options",
+      "Nasi Padang",
+      "Mixed Rice",
+      "Partially Aircon"
+    ]
+  },
+  {
+    "name": "The Terrace",
+    "type": "Canteen",
+    "description": "Located between the Business School and School of Computing. A busy lunch spot known for its Western food, Duck Rice, and Vietnamese noodles.",
+    "location": "1.294165 103.773722",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "No Aircon",
+      "Business",
+      "Computing",
+      "Western",
+      "Indian",
+      "Vietnamese"
+    ]
+  },
+  {
+    "name": "Fine Food",
+    "type": "Canteen",
+    "description": "An air-conditioned food court in Town Plaza, UTown. Offers a wide variety of cuisines including Mala Xiang Guo, Korean, and Dim Sum.",
+    "location": "1.303867 103.773950",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Halal Options",
+      "Mala",
+      "Korean",
+      "Dim Sum"
+    ]
+  },
+  {
+    "name": "Flavours @ UTown",
+    "type": "Canteen",
+    "description": "The second air-conditioned food court in UTown, located at Stephen Riady Centre. A student favorite for mixed rice, fishball noodles, and local favorites.",
+    "location": "1.305286 103.772589",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Halal Options",
+      "Mixed Rice",
+      "Fishball Noodles"
+    ]
+  },
+  {
+    "name": "PGP Canteen",
+    "type": "Canteen",
+    "description": "Located within the Prince George's Park Residences. A go-to spot for residents offering late-night supper options, intense Mala, and Western grills.",
+    "location": "1.291176 103.780653",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "Residential",
+      "Late Night",
+      "Mala",
+      "Western",
+      "Halal Options"
+    ]
+  },
+  {
+    "name": "Yusof Ishak House (YIH) Food Court",
+    "type": "Canteen",
+    "description": "Centrally located at Yusof Ishak House. A convenient air-conditioned stop near the central library, featuring vegetarian options and bubble tea.",
+    "location": "1.298516 103.775086",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "Central",
+      "Halal Options",
+      "Bubble Tea",
+      "Vegetarian"
+    ]
+  },
+  {
+    "name": "Hwang's Korean Restaurant",
+    "type": "Canteen",
+    "description": "A casual, authentic Korean eatery in UTown. Extremely popular for its affordable spicy pork, bibimbap, and kimchi pancakes.",
+    "location": "1.304562 103.773538",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Korean",
+      "Casual",
+      "Popular"
+    ]
+  },
+  {
+    "name": "Waa Cow!",
+    "type": "Canteen",
+    "description": "A specialty Japanese beef bowl restaurant in UTown. Famous for its premium flame-torched Wagyu beef bowls and onsen eggs.",
+    "location": "1.305312 103.772586",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Japanese",
+      "Wagyu Beef",
+      "Premium"
+    ]
+  },
+  {
+    "name": "SuperSnacks",
+    "type": "Canteen",
+    "description": "A late-night savory snack counter in UTown. The ultimate supper spot for students craving crispy waffles, nuggets, and fries while studying.",
+    "location": "1.305286 103.772589",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Late Night",
+      "Fast Food",
+      "Waffles"
+    ]
+  },
+  {
+    "name": "The Royals Bistro",
+    "type": "Canteen",
+    "description": "A Halal-certified bistro in UTown serving Western cuisine, pasta, and cakes. A comfortable spot for casual dining or meetings.",
+    "location": "1.303867 103.773950",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Halal",
+      "Western",
+      "Cakes"
+    ]
+  },
+  {
+    "name": "Udon Don Bar",
+    "type": "Canteen",
+    "description": "A Japanese noodle bar in UTown offering fresh Udon and Donburi bowls. A cozy air-conditioned venue for a hearty Japanese meal.",
+    "location": "1.303867 103.773950",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Japanese",
+      "Noodles",
+      "Bar"
+    ]
+  },
+  {
+    "name": "Reedz Cafe",
+    "type": "Canteen",
+    "description": "A quiet cafe located in the Mochtar Riady Building. serves freshly brewed coffee, sandwiches, and pastries, ideal for quick bites between classes.",
+    "location": "1.294247 103.773926",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "Business",
+      "Coffee",
+      "Sandwiches",
+      "Quiet"
+    ]
+  },
+  {
+    "name": "Starbucks (UTown)",
+    "type": "Canteen",
+    "description": "A popular 24-hour study spot (outdoor seating) and meeting point in UTown, serving the standard range of coffee, frappuccinos, and pastries.",
+    "location": "1.303867 103.773950",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "UTown",
+      "Coffee",
+      "Study Spot",
+      "24 Hours (Reading Room nearby)"
+    ]
+  },
+  {
+    "name": "Burnt Cones",
+    "type": "Canteen",
+    "description": "A premium gelato and waffle cafe at Yusof Ishak House. Known for its distinct ice cream flavors and crispy, buttery cones.",
+    "location": "1.298516 103.775086",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:28:38+08:00",
+    "tags": [
+      "Aircon",
+      "Dessert",
+      "Ice Cream",
+      "Waffles",
+      "Premium"
+    ]
+  }
+]
