@@ -236,7 +236,7 @@ export default function Entity() {
 
         {/* Write a Review Button */}
         <Link to={`/write/${entity.id}`}>
-          <Button className="px-6 py-3 text-base">Write a Review</Button>
+          <Button className="px-6 py-3 text-base cursor-pointer">Write a Review</Button>
         </Link>
       </div>
 

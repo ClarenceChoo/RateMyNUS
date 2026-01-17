@@ -3,7 +3,7 @@ import SearchBar from "@/components/SearchBar";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-10 border-b bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-10 border-b bg-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Link to="/" className="shrink-0 font-bold tracking-tight">
           RateMyNUS
