@@ -11,11 +11,49 @@ import ModuleSelect from "@/features/modules/ModuleSelect";
 import type { Entity } from "@/types";
 
 const SUGGESTED_TAGS: Record<string, string[]> = {
-  DORM: ["quiet", "clean", "friendly", "study-friendly", "active", "good-food"],
-  CLASSROOM: ["good-audio", "spacious", "cold", "well-equipped", "outlets"],
-  PROFESSOR: ["engaging", "helpful", "tough-grader", "organized", "approachable"],
-  FOOD_PLACE: ["cheap", "fast", "variety", "crowded", "halal", "vegetarian"],
-  TOILET: ["clean", "quiet", "hidden-gem", "accessible", "shower"],
+  // Toilet Tags
+  TOILET: [
+    "🚽 Hidden gem",
+    "🚫 Avoid at all costs",
+    "🧼 Very clean",
+    "🛠️ Poorly maintained",
+  ],
+
+  // Food Tags
+  FOOD_PLACE: [
+    "🔥 Worth the queue",
+    "💸 Overpriced",
+    "🥗 Healthy-ish",
+    "🍛 Comfort food",
+    "🧂 Inconsistent quality",
+  ],
+
+  // Professor Tags
+  PROFESSOR: [
+    "🎯 Clear explanations",
+    "💤 Hard to follow",
+    "📚 Heavy workload",
+    "🤝 Very approachable",
+    "🧪 Theory-heavy / Practical-heavy",
+  ],
+
+  // Dorm Tags
+  DORM: [
+    "🎉 Very happening",
+    "📖 Good for studying",
+    "🧘 Quiet & chill",
+    "🏃 Far from everything",
+    "🤝 Strong community",
+  ],
+
+  // Classroom Tags
+  CLASSROOM: [
+    "🔌 Power sockets everywhere",
+    "🧊 Freezing cold",
+    "🔊 Mic issues",
+    "👀 Bad sightlines",
+    "💺 Uncomfortable seats",
+  ],
 };
 
 export default function WriteReview() {
