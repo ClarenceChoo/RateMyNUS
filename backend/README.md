@@ -42,6 +42,9 @@ backend/
 │   │   ├── get_reviews.py   # Get reviews endpoint
 │   │   ├── delete_review.py # Delete review endpoint
 │   │   └── vote_review.py   # Vote on review endpoint
+│   ├── triggers/         # Firestore event triggers
+│   │   ├── __init__.py
+│   │   └── update_rating.py # Auto-update entity ratings
 │   └── utils/            # Utility functions
 │       ├── __init__.py
 │       └── logger.py     # Structured logging utility
@@ -401,7 +404,56 @@ All endpoints support CORS with the following headers:
 ### CORS Support
 
 All endpoints support CORS with the following headers:
-- `Access-Control-Allow-Origin: *` (configurable)
+## Firestore Triggers
+
+### Auto-Update Entity Ratings
+
+**Function**: `update_entity_rating`  
+**Trigger**: Firestore document write (create/update/delete) on `reviews/{reviewId}`
+
+This background function automatically recalculates entity ratings whenever a review is created, updated, or deleted:
+
+1. Extracts `entityId` from the review document
+2. Queries all reviews for that entity
+3. Calculates average rating and review count
+4. Updates the entity document with `avgRating` and `ratingCount`
+
+**Deployment:**
+```bash
+firebase deploy --only functions:update_entity_rating
+```
+
+**First-Time Setup:**
+
+When deploying Firestore triggers for the first time, you may encounter an Eventarc permission error. Wait 5-10 minutes for permissions to propagate, then redeploy.
+
+If the error persists, manually grant permissions:
+
+```bash
+# Get your project number
+gcloud projects describe ratemynus --format="value(projectNumber)"
+
+# Grant Eventarc Service Agent role (replace PROJECT_NUMBER)
+gcloud projects add-iam-policy-binding ratemynus \
+  --member="serviceAccount:service-PROJECT_NUMBER@gcp-sa-eventarc.iam.gserviceaccount.com" \
+  --role="roles/eventarc.serviceAgent"
+
+# Enable required APIs
+gcloud services enable eventarc.googleapis.com
+gcloud services enable eventarcpublishing.googleapis.com
+```
+
+**Monitoring:**
+
+View trigger logs:
+```bash
+firebase functions:log --only update_entity_rating
+```
+
+The function logs:
+- Review creation/update/deletion events
+- Entity rating calculations
+- Update confirmations with new avgRating and ratingCount- `Access-Control-Allow-Origin: *` (configurable)
 - `Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS`
 - `Access-Control-Allow-Headers: Content-Type, Authorization`
 
@@ -527,13 +579,29 @@ def get_reviews(req: https_fn.Request) -> https_fn.Response:
     return https_fn.Response(
         json.dumps({"reviews": []}),
         status=200,
-        headers=get_cors_headers()
-    )
+        headers=get_cors_hwritten(document="reviews/{reviewId}")
+def on_review_written(event: firestore_fn.Event):
+    """Trigger when a review is created, updated, or deleted"""
+    before = event.data.before  # Document before change
+    after = event.data.after    # Document after change
+    
+    if after and after.exists:
+        # Document was created or updated
+        review_data = after.to_dict()
+        entity_id = review_data.get('entityId')
+        # Process the review
+    elif before and before.exists:
+        # Document was deleted
+        review_data = before.to_dict()
+        entity_id = review_data.get('entityId')
+        # Handle deletion
 ```
 
-2. **Import in main.py**:
-```python
-# functions/main.py
+**Available Firestore Triggers:**
+- `@firestore_fn.on_document_created()` - Only on creation
+- `@firestore_fn.on_document_updated()` - Only on updates
+- `@firestore_fn.on_document_deleted()` - Only on deletion
+- `@firestore_fn.on_document_written()` - All operations (create/update/delete)unctions/main.py
 from api.reviews import get_reviews
 ```
 
@@ -680,6 +748,11 @@ curl http://localhost:5001/PROJECT_ID/asia-southeast1/get_entities
 cd functions
 python -m pytest tests/
 ```
+
+8. **Eventarc Permission Errors**: When deploying Firestore triggers
+   - Wait 5-10 minutes for automatic permission propagation
+   - Or manually grant Eventarc Service Agent role (see Firestore Triggers section)
+   - Enable required APIs: eventarc.googleapis.com, eventarcpublishing.googleapis.com
 
 ### Integration Tests
 
