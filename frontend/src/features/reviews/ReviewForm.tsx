@@ -5,6 +5,7 @@ import { RatingStars } from "@/components/RatingStars";
 import { createReview } from "@/features/reviews/reviewService";
 import { useAuth } from "@/providers/AuthProvider";
 import { getApplicableSubratings, type SubratingDefinition } from "@/config/subratings";
+import ModuleSelect from "@/features/modules/ModuleSelect";
 import type { Entity, EntityType } from "@/types";
 
 // ============================================================================
@@ -96,6 +97,9 @@ type CategoryFormProps = {
   onTextChange: (v: string) => void;
   anonymous: boolean;
   onAnonymousChange: (v: boolean) => void;
+  // Professor-specific
+  moduleCode?: string;
+  onModuleCodeChange?: (code: string) => void;
 };
 
 function DormForm(props: CategoryFormProps) {
@@ -166,7 +170,7 @@ function ClassroomForm(props: CategoryFormProps) {
 }
 
 function ProfessorForm(props: CategoryFormProps) {
-  const { config, subratings, subratingValues, onSubratingChange, rating, onRatingChange, text, onTextChange } = props;
+  const { config, subratings, subratingValues, onSubratingChange, rating, onRatingChange, text, onTextChange, moduleCode, onModuleCodeChange } = props;
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
@@ -186,14 +190,16 @@ function ProfessorForm(props: CategoryFormProps) {
         ))}
       </div>
 
-      {/* Professor-specific: Module field */}
-      <div className="flex items-center gap-2">
-        <span className="text-sm text-zinc-500">📚 Module taken:</span>
-        <input
-          type="text"
-          placeholder="e.g. CS2030S"
-          className="flex-1 rounded-lg border px-3 py-1.5 text-sm outline-none focus:ring-2 focus:ring-purple-200"
+      {/* Professor-specific: Module dropdown */}
+      <div className="space-y-1">
+        <label className="text-sm font-medium text-zinc-700">📚 Module taken</label>
+        <ModuleSelect
+          value={moduleCode ?? ""}
+          onChange={onModuleCodeChange ?? (() => {})}
+          placeholder="Search or select a module..."
+          className="w-full"
         />
+        <p className="text-xs text-zinc-400">Search by code (e.g. CS2030S) or title</p>
       </div>
 
       <textarea
@@ -315,6 +321,7 @@ export default function ReviewForm({ entity, onCreated, compact = false }: Revie
   const [text, setText] = useState("");
   const [anonymous, setAnonymous] = useState(true);
   const [submitting, setSubmitting] = useState(false);
+  const [moduleCode, setModuleCode] = useState(""); // For professor reviews
   const [subratingValues, setSubratingValues] = useState<Record<string, number>>(() => {
     const initial: Record<string, number> = {};
     applicableSubratings.forEach((s) => { initial[s.key] = 0; });
@@ -335,7 +342,7 @@ export default function ReviewForm({ entity, onCreated, compact = false }: Revie
     
     setSubmitting(true);
     try {
-      console.log("Submitting review...", { entityId: entity.id, rating });
+      console.log("Submitting review...", { entityId: entity.id, rating, moduleCode });
       await createReview({
         entityId: entity.id,
         rating,
@@ -344,6 +351,8 @@ export default function ReviewForm({ entity, onCreated, compact = false }: Revie
         createdAt: Date.now(),
         authorId: user?.uid,
         anonymous,
+        // Include module code for professor reviews
+        ...(entity.type === "PROFESSOR" && moduleCode ? { moduleCode } : {}),
       });
       
       console.log("Review submitted successfully!");
@@ -351,6 +360,7 @@ export default function ReviewForm({ entity, onCreated, compact = false }: Revie
       // Reset form
       setRating(0);
       setText("");
+      setModuleCode("");
       setSubratingValues(() => {
         const reset: Record<string, number> = {};
         applicableSubratings.forEach((s) => { reset[s.key] = 0; });
@@ -378,6 +388,9 @@ export default function ReviewForm({ entity, onCreated, compact = false }: Revie
     onTextChange: setText,
     anonymous,
     onAnonymousChange: setAnonymous,
+    // Professor-specific
+    moduleCode,
+    onModuleCodeChange: setModuleCode,
   };
 
   // Only require overall rating

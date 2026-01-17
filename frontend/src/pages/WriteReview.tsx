@@ -7,6 +7,7 @@ import { getEntity } from "@/features/entities/entityService";
 import { createReview } from "@/features/reviews/reviewService";
 import { useAuth } from "@/providers/AuthProvider";
 import { getApplicableSubratings } from "@/config/subratings";
+import ModuleSelect from "@/features/modules/ModuleSelect";
 import type { Entity } from "@/types";
 
 const SUGGESTED_TAGS: Record<string, string[]> = {
@@ -32,6 +33,7 @@ export default function WriteReview() {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [anonymous, setAnonymous] = useState(true);
   const [subratings, setSubratings] = useState<Record<string, number>>({});
+  const [moduleCode, setModuleCode] = useState(""); // For professor reviews
 
   useEffect(() => {
     (async () => {
@@ -83,6 +85,7 @@ export default function WriteReview() {
         createdAt: Date.now(),
         authorId: user?.uid,
         anonymous,
+        ...(entity?.type === "PROFESSOR" && moduleCode ? { moduleCode } : {}),
       });
       console.log("Review submitted successfully!");
       navigate(`/entity/${entityId}`);
@@ -134,6 +137,19 @@ export default function WriteReview() {
             </span>
           </div>
         </div>
+
+        {/* Module Selection for Professors */}
+        {entity.type === "PROFESSOR" && (
+          <div className="space-y-2">
+            <label className="font-semibold">Module Taken</label>
+            <p className="text-sm text-zinc-500">Which module did you take with this professor?</p>
+            <ModuleSelect
+              value={moduleCode}
+              onChange={setModuleCode}
+              placeholder="Search for a module (e.g. CS1101S)"
+            />
+          </div>
+        )}
 
         {/* Subratings */}
         {applicableSubratings.length > 0 && (
