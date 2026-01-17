@@ -1,0 +1,632 @@
+[
+  {
+    "entityId": "T001",
+    "authorName": "anon-soC-01",
+    "createdAt": "2026-01-17T09:12:18+00:00",
+    "uuid": "f3d2b8e7-5f2c-4d1c-9b73-1f2f0d8c0a11",
+    "rating": 4,
+    "voteCount": 3,
+    "tags": [
+      "clean",
+      "near-lift",
+      "aircon"
+    ],
+    "description": "Pretty reliable most days. Good for quick stops between tutorials, but it gets crowded after lectures.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 4,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T001",
+    "authorName": "anon-ctf-02",
+    "createdAt": "2026-01-17T10:05:44+00:00",
+    "uuid": "7d9cc5b2-1d6d-4a6a-8c2b-8cbf9b9f1c22",
+    "rating": 3,
+    "voteCount": 1,
+    "tags": [
+      "high-traffic",
+      "ok",
+      "no-bidet"
+    ],
+    "description": "Decent overall, but the cubicles feel a bit tight. Peak hour = queue.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 3,
+      "maintainence": 3,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T001",
+    "authorName": "anon-lab-03",
+    "createdAt": "2026-01-17T11:27:09+00:00",
+    "uuid": "1b5c2f99-0b90-4e24-9c8c-34a1c4f3d333",
+    "rating": 4,
+    "voteCount": 2,
+    "tags": [
+      "consistent",
+      "aircon",
+      "clean"
+    ],
+    "description": "Usually clean and smells neutral. Best time is mid-morning before lunch rush.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 4,
+      "privacy": 3,
+      "accessibility": 4
+    }
+  },
+  {
+    "entityId": "T001",
+    "authorName": "anon-soC-04",
+    "createdAt": "2026-01-17T12:58:30+00:00",
+    "uuid": "ad2c8f1a-5a44-4d9c-8d0a-1d3f4b5c4444",
+    "rating": 5,
+    "voteCount": 5,
+    "tags": [
+      "clean",
+      "well-maintained",
+      "near-lift"
+    ],
+    "description": "One of the better SoC toilets. Fixtures work, cleaning seems frequent, never really had issues.",
+    "subratings": {
+      "cleanliness": 5,
+      "smell": 5,
+      "maintainence": 5,
+      "privacy": 4,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T001",
+    "authorName": "anon-tut-05",
+    "createdAt": "2026-01-17T14:41:02+00:00",
+    "uuid": "c8d7a6b5-2e1f-4c3d-9a8b-6f5e4d3c5555",
+    "rating": 3,
+    "voteCount": 0,
+    "tags": [
+      "crowded",
+      "average",
+      "no-bidet"
+    ],
+    "description": "Okay if you just need to go. Privacy is average and it can feel busy after classes end.",
+    "subratings": {
+      "cleanliness": 3,
+      "smell": 3,
+      "maintainence": 4,
+      "privacy": 3,
+      "accessibility": 4
+    }
+  },
+  {
+    "entityId": "T002",
+    "authorName": "anon-utown-01",
+    "createdAt": "2026-01-17T09:25:11+00:00",
+    "uuid": "0f1e2d3c-4b5a-6978-8899-aabbccdde601",
+    "rating": 5,
+    "voteCount": 8,
+    "tags": [
+      "spotless",
+      "modern",
+      "spacious"
+    ],
+    "description": "Actually feels like a hotel toilet. Clean, bright, and the cubicles are spacious.",
+    "subratings": {
+      "cleanliness": 5,
+      "smell": 5,
+      "maintainence": 5,
+      "privacy": 5,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T002",
+    "authorName": "anon-rc-02",
+    "createdAt": "2026-01-17T10:49:33+00:00",
+    "uuid": "11223344-5566-7788-9900-aabbccdde602",
+    "rating": 5,
+    "voteCount": 6,
+    "tags": [
+      "clean",
+      "near-food",
+      "aircon"
+    ],
+    "description": "My go-to in UTown. Even during lunch it stays pretty clean. Easy to find too.",
+    "subratings": {
+      "cleanliness": 5,
+      "smell": 5,
+      "maintainence": 5,
+      "privacy": 4,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T002",
+    "authorName": "anon-utown-03",
+    "createdAt": "2026-01-17T12:10:07+00:00",
+    "uuid": "22334455-6677-8899-0000-aabbccdde603",
+    "rating": 4,
+    "voteCount": 2,
+    "tags": [
+      "clean",
+      "busy",
+      "near-food"
+    ],
+    "description": "Very clean but can get busy during events. If you come off-peak it’s perfect.",
+    "subratings": {
+      "cleanliness": 5,
+      "smell": 5,
+      "maintainence": 4,
+      "privacy": 4,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T002",
+    "authorName": "anon-seminar-04",
+    "createdAt": "2026-01-17T13:33:40+00:00",
+    "uuid": "33445566-7788-9900-a111-bbccdde60444",
+    "rating": 5,
+    "voteCount": 4,
+    "tags": [
+      "quiet",
+      "spacious",
+      "modern"
+    ],
+    "description": "Clean and quiet when there aren’t big classes. The lighting and space makes it feel less gross.",
+    "subratings": {
+      "cleanliness": 5,
+      "smell": 5,
+      "maintainence": 5,
+      "privacy": 4,
+      "accessibility": 4
+    }
+  },
+  {
+    "entityId": "T002",
+    "authorName": "anon-utown-05",
+    "createdAt": "2026-01-17T15:02:18+00:00",
+    "uuid": "44556677-8899-0000-a222-bbccdde60555",
+    "rating": 4,
+    "voteCount": 1,
+    "tags": [
+      "clean",
+      "modern",
+      "no-bidet"
+    ],
+    "description": "Really good overall. Only downside is no bidet (would be legendary if it had).",
+    "subratings": {
+      "cleanliness": 5,
+      "smell": 4,
+      "maintainence": 5,
+      "privacy": 4,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T006",
+    "authorName": "anon-yih-01",
+    "createdAt": "2026-01-17T09:41:55+00:00",
+    "uuid": "55667788-9900-a111-b333-ccdde60666",
+    "rating": 3,
+    "voteCount": 1,
+    "tags": [
+      "crowded",
+      "near-food",
+      "ok"
+    ],
+    "description": "Works fine but gets crowded fast. Smell can be a bit off during peak lunch hours.",
+    "subratings": {
+      "cleanliness": 3,
+      "smell": 3,
+      "maintainence": 3,
+      "privacy": 3,
+      "accessibility": 4
+    }
+  },
+  {
+    "entityId": "T006",
+    "authorName": "anon-lunch-02",
+    "createdAt": "2026-01-17T11:58:12+00:00",
+    "uuid": "66778899-0000-a222-b444-ccdde60777",
+    "rating": 2,
+    "voteCount": 0,
+    "tags": [
+      "crowded",
+      "smelly",
+      "old"
+    ],
+    "description": "Went during lunch rush and it was not great. Queue + lingering smell.",
+    "subratings": {
+      "cleanliness": 2,
+      "smell": 2,
+      "maintainence": 3,
+      "privacy": 3,
+      "accessibility": 4
+    }
+  },
+  {
+    "entityId": "T006",
+    "authorName": "anon-yih-03",
+    "createdAt": "2026-01-17T13:15:28+00:00",
+    "uuid": "77889900-a111-b333-c555-dde60888aa",
+    "rating": 3,
+    "voteCount": 2,
+    "tags": [
+      "average",
+      "near-food",
+      "no-bidet"
+    ],
+    "description": "Average toilet. Fine if you’re already in YIH, but I wouldn’t go out of my way for it.",
+    "subratings": {
+      "cleanliness": 3,
+      "smell": 3,
+      "maintainence": 3,
+      "privacy": 3,
+      "accessibility": 4
+    }
+  },
+  {
+    "entityId": "T006",
+    "authorName": "anon-yih-04",
+    "createdAt": "2026-01-17T14:22:09+00:00",
+    "uuid": "88990011-a222-b444-c666-dde60999bb",
+    "rating": 4,
+    "voteCount": 3,
+    "tags": [
+      "ok",
+      "accessible",
+      "less-crowded"
+    ],
+    "description": "Off-peak it’s actually pretty okay. Easy to access and decent privacy when it’s not packed.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 3,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T006",
+    "authorName": "anon-yih-05",
+    "createdAt": "2026-01-17T16:05:31+00:00",
+    "uuid": "99001122-a333-b555-c777-dde61000cc",
+    "rating": 3,
+    "voteCount": 1,
+    "tags": [
+      "old",
+      "functional",
+      "crowded"
+    ],
+    "description": "Functional but dated. If you’re picky about cleanliness, go elsewhere during peak hours.",
+    "subratings": {
+      "cleanliness": 3,
+      "smell": 3,
+      "maintainence": 3,
+      "privacy": 3,
+      "accessibility": 4
+    }
+  },
+  {
+    "entityId": "T007",
+    "authorName": "anon-clb-01",
+    "createdAt": "2026-01-17T09:18:02+00:00",
+    "uuid": "a1001122-b333-c444-d555-e666f7778001",
+    "rating": 4,
+    "voteCount": 4,
+    "tags": [
+      "quiet",
+      "private",
+      "library"
+    ],
+    "description": "Quiet and good for privacy. Slightly harder to reach, but worth it during long study sessions.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 4,
+      "privacy": 5,
+      "accessibility": 3
+    }
+  },
+  {
+    "entityId": "T007",
+    "authorName": "anon-study-02",
+    "createdAt": "2026-01-17T10:37:50+00:00",
+    "uuid": "a2001122-b333-c444-d555-e666f7778002",
+    "rating": 5,
+    "voteCount": 5,
+    "tags": [
+      "clean",
+      "quiet",
+      "good-for-study-break"
+    ],
+    "description": "One of my favourites in CLB. Clean, quiet, and rarely crowded compared to other floors.",
+    "subratings": {
+      "cleanliness": 5,
+      "smell": 5,
+      "maintainence": 4,
+      "privacy": 5,
+      "accessibility": 3
+    }
+  },
+  {
+    "entityId": "T007",
+    "authorName": "anon-clb-03",
+    "createdAt": "2026-01-17T12:44:17+00:00",
+    "uuid": "a3001122-b333-c444-d555-e666f7778003",
+    "rating": 4,
+    "voteCount": 1,
+    "tags": [
+      "aircon",
+      "quiet",
+      "hidden-gem"
+    ],
+    "description": "Feels like a hidden gem. Not the easiest to find, but it’s calmer than the busy levels.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 4,
+      "privacy": 4,
+      "accessibility": 3
+    }
+  },
+  {
+    "entityId": "T007",
+    "authorName": "anon-clb-04",
+    "createdAt": "2026-01-17T14:09:58+00:00",
+    "uuid": "a4001122-b333-c444-d555-e666f7778004",
+    "rating": 3,
+    "voteCount": 0,
+    "tags": [
+      "ok",
+      "basement",
+      "hard-to-find"
+    ],
+    "description": "Decent but the basement navigation is annoying. Clean enough though.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 3,
+      "maintainence": 4,
+      "privacy": 4,
+      "accessibility": 2
+    }
+  },
+  {
+    "entityId": "T007",
+    "authorName": "anon-clb-05",
+    "createdAt": "2026-01-17T15:33:21+00:00",
+    "uuid": "a5001122-b333-c444-d555-e666f7778005",
+    "rating": 4,
+    "voteCount": 2,
+    "tags": [
+      "quiet",
+      "clean",
+      "library"
+    ],
+    "description": "Good balance of cleanliness and privacy. Great when you want to avoid the crowded toilets near entrances.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 4,
+      "privacy": 5,
+      "accessibility": 3
+    }
+  },
+  {
+    "entityId": "T009",
+    "authorName": "anon-pgpr-01",
+    "createdAt": "2026-01-17T09:53:10+00:00",
+    "uuid": "b1002233-c444-d555-e666-f77780010001",
+    "rating": 4,
+    "voteCount": 2,
+    "tags": [
+      "residential",
+      "shower",
+      "late-night"
+    ],
+    "description": "Convenient for residents and late-night use. Not fancy but generally clean and practical.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 4,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T009",
+    "authorName": "anon-hall-02",
+    "createdAt": "2026-01-17T11:06:39+00:00",
+    "uuid": "b2002233-c444-d555-e666-f77780010002",
+    "rating": 5,
+    "voteCount": 4,
+    "tags": [
+      "shower",
+      "clean",
+      "reliable"
+    ],
+    "description": "Solid for hostel use. Showers are a big plus, and it’s usually well-maintained.",
+    "subratings": {
+      "cleanliness": 5,
+      "smell": 4,
+      "maintainence": 5,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T009",
+    "authorName": "anon-pgpr-03",
+    "createdAt": "2026-01-17T12:52:07+00:00",
+    "uuid": "b3002233-c444-d555-e666-f77780010003",
+    "rating": 3,
+    "voteCount": 1,
+    "tags": [
+      "residential",
+      "average",
+      "no-bidet"
+    ],
+    "description": "Pretty standard hostel toilet. Clean enough, but privacy depends on timing.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 3,
+      "maintainence": 4,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T009",
+    "authorName": "anon-pgpr-04",
+    "createdAt": "2026-01-17T14:18:41+00:00",
+    "uuid": "b4002233-c444-d555-e666-f77780010004",
+    "rating": 4,
+    "voteCount": 0,
+    "tags": [
+      "late-night",
+      "convenient",
+      "shower"
+    ],
+    "description": "Really useful late at night when academic buildings are closed. Shower option is clutch.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 4,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T009",
+    "authorName": "anon-pgpr-05",
+    "createdAt": "2026-01-17T16:14:22+00:00",
+    "uuid": "b5002233-c444-d555-e666-f77780010005",
+    "rating": 4,
+    "voteCount": 3,
+    "tags": [
+      "residential",
+      "clean",
+      "practical"
+    ],
+    "description": "Not glamorous but it does the job. Cleaning seems consistent and it’s easy to access.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 4,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T005",
+    "authorName": "anon-com1-01",
+    "createdAt": "2026-01-17T09:07:33+00:00",
+    "uuid": "c1003344-d555-e666-f777-800100020001",
+    "rating": 4,
+    "voteCount": 2,
+    "tags": [
+      "near-entrance",
+      "convenient",
+      "high-traffic"
+    ],
+    "description": "Super convenient location. Clean most times, but gets messy when crowds spike.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 3,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T005",
+    "authorName": "anon-soC-02",
+    "createdAt": "2026-01-17T10:22:06+00:00",
+    "uuid": "c2003344-d555-e666-f777-800100020002",
+    "rating": 3,
+    "voteCount": 1,
+    "tags": [
+      "high-traffic",
+      "average",
+      "no-bidet"
+    ],
+    "description": "Average overall. Great accessibility, but you can feel the traffic during class changeovers.",
+    "subratings": {
+      "cleanliness": 3,
+      "smell": 3,
+      "maintainence": 3,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T005",
+    "authorName": "anon-com1-03",
+    "createdAt": "2026-01-17T12:06:54+00:00",
+    "uuid": "c3003344-d555-e666-f777-800100020003",
+    "rating": 4,
+    "voteCount": 3,
+    "tags": [
+      "convenient",
+      "ok",
+      "near-entrance"
+    ],
+    "description": "Good for quick stops before heading out. Maintenance is okay though some fixtures feel older.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 3,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T005",
+    "authorName": "anon-soC-04",
+    "createdAt": "2026-01-17T13:49:27+00:00",
+    "uuid": "c4003344-d555-e666-f777-800100020004",
+    "rating": 2,
+    "voteCount": 0,
+    "tags": [
+      "crowded",
+      "inconsistent",
+      "high-traffic"
+    ],
+    "description": "Caught it at a bad timing—crowded and cleanliness dipped. Would use COM2 toilets if possible.",
+    "subratings": {
+      "cleanliness": 2,
+      "smell": 3,
+      "maintainence": 3,
+      "privacy": 2,
+      "accessibility": 5
+    }
+  },
+  {
+    "entityId": "T005",
+    "authorName": "anon-soC-05",
+    "createdAt": "2026-01-17T15:11:40+00:00",
+    "uuid": "c5003344-d555-e666-f777-800100020005",
+    "rating": 4,
+    "voteCount": 2,
+    "tags": [
+      "near-entrance",
+      "reliable",
+      "accessible"
+    ],
+    "description": "Still a dependable choice when you need something near the entrance. Just avoid the peak crowd windows.",
+    "subratings": {
+      "cleanliness": 4,
+      "smell": 4,
+      "maintainence": 3,
+      "privacy": 3,
+      "accessibility": 5
+    }
+  }
+]
