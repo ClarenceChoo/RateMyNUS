@@ -1,0 +1,244 @@
+[
+  {
+    "name": "College of Alice & Peter Tan (CAPT)",
+    "type": "Dorm",
+    "description": "A Residential College in UTown with a strong focus on active citizenship and community engagement. Known for its formal dinners and social causes.",
+    "location": "1.306000 103.773000",
+    "zone": "UTown",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": [
+      "Residential College",
+      "Community Engagement",
+      "Aircon",
+      "Active Citizenship",
+      "Meal Plan"
+    ]
+  },
+  {
+    "name": "Tembusu College",
+    "type": "Dorm",
+    "description": "One of the first RCs in UTown, known for its 'Home of Possibilities' motto and frequent Rector's Teas with distinguished guests.",
+    "location": "1.305000 103.773000",
+    "zone": "UTown",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": [
+      "Residential College",
+      "Global Affairs",
+      "Aircon",
+      "Seminars",
+      "Meal Plan"
+    ]
+  },
+  {
+    "name": "Residential College 4 (RC4)",
+    "type": "Dorm",
+    "description": "Located in UTown, RC4 focuses on systems thinking and sustainable healthcare. It has a close-knit community vibe.",
+    "location": "1.307000 103.773000",
+    "zone": "UTown",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": [
+      "Residential College",
+      "Systems Thinking",
+      "Aircon",
+      "Cognitive Science",
+      "Meal Plan"
+    ]
+  },
+  {
+    "name": "Acacia College",
+    "type": "Dorm",
+    "description": "Acacia College’s two-year residency brings together undergraduates from diverse disciplines to explore AI’s impact on society. Through small-group classes, hands-on learning, and student-led activities, students will examine AI’s ethical and cultural implications while building practical skills in Generative AI, AI programming, and Machine Learning. These courses go hand-in-hand with the College’s residential programme, experiential learning opportunities, and student-led activities.",
+    "location": "1.304000 103.773000",
+    "zone": "UTown",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": [
+      "Residential College",
+      "AI & Society",
+      "Aircon",
+      "Interdisciplinary",
+      "Meal Plan"
+    ]
+  },
+  {
+    "name": "UTown Residence",
+    "type": "Dorm",
+    "description": "Apartment-style living in UTown, primarily for graduate students and undergraduates on exchange. Independent living without a meal plan.",
+    "location": "1.306500 103.774000",
+    "zone": "UTown",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": [
+      "Residence",
+      "Apartment Style",
+      "No Meal Plan",
+      "Aircon",
+      "Privacy"
+    ]
+  },
+  {
+    "name": "Eusoff Hall",
+    "type": "Dorm",
+    "description": "Located near the Faculty of Engineering. Famous for its yellow spirit, excellence in sports, and strong hall heritage.",
+    "location": "1.293800 103.770500",
+    "zone": "Engineering",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": [
+      "Hall of Residence",
+      "Sports",
+      "Tradition",
+      "Meal Plan",
+      "Double Rooms"
+    ]
+  },
+  {
+    "name": "Temasek Hall",
+    "type": "Dorm",
+    "description": "Adjacent to Eusoff Hall. Known for its white identity, strong sporting culture, and friendly rivalry with Eusoff.",
+    "location": "1.292500 103.771000",
+    "zone": "Engineering",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": [
+      "Hall of Residence",
+      "Sports",
+      "Communal",
+      "Meal Plan",
+      "Double Rooms"
+    ]
+  },
+  {
+    "name": "Raffles Hall",
+    "type": "Dorm",
+    "description": "Centrally located near the Museum and YIH. Known for its rich history and heavy involvement in arts and culture productions.",
+    "location": "1.291500 103.774000",
+    "zone": "Engineering",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": ["Hall of Residence", "Culture", "Arts", "Central", "Meal Plan"]
+  },
+  {
+    "name": "Kent Ridge Hall",
+    "type": "Dorm",
+    "description": "Located near the Business School. Known for its vibrant hall life, media productions, and strong float building culture.",
+    "location": "1.290500 103.777000",
+    "zone": "Business",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": [
+      "Hall of Residence",
+      "Media",
+      "Social",
+      "Meal Plan",
+      "Single Rooms"
+    ]
+  },
+  {
+    "name": "Sheares Hall",
+    "type": "Dorm",
+    "description": "Situated near the Business School. Famous for its orange family culture, strong band/music groups, and tight-knit community.",
+    "location": "1.291000 103.776500",
+    "zone": "Business",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": [
+      "Hall of Residence",
+      "Music",
+      "Culture",
+      "Meal Plan",
+      "Single Rooms"
+    ]
+  },
+  {
+    "name": "King Edward VII Hall (KE7)",
+    "type": "Dorm",
+    "description": "The oldest hall in NUS, located near the School of Medicine. It has a rich heritage and a balanced focus on sports and culture.",
+    "location": "1.292000 103.776000",
+    "zone": "Medicine",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": ["Hall of Residence", "Heritage", "Sports", "Meal Plan", "Quiet"]
+  },
+  {
+    "name": "Prince George's Park Residences (PGPR)",
+    "type": "Dorm",
+    "description": "A massive residential complex at the southern end of campus. Best for independent living, with its own canteens and gym.",
+    "location": "1.291200 103.781000",
+    "zone": "Kent Ridge",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": [
+      "Residence",
+      "Independent",
+      "No Meal Plan",
+      "Aircon Options",
+      "Quiet"
+    ]
+  },
+  {
+    "name": "Ridge View Residential College (RVRC)",
+    "type": "Dorm",
+    "description": "Located in the heart of Kent Ridge near University Hall. It focuses on sustainability, outdoor education, and workplace readiness.",
+    "location": "1.296500 103.770500",
+    "zone": "Kent Ridge",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": [
+      "Residential College",
+      "Sustainability",
+      "Nature",
+      "Meal Plan",
+      "Central"
+    ]
+  },
+  {
+    "name": "Helix House",
+    "type": "Dorm",
+    "description": "One of the newer Houses in the PGP area. Offers a balance between hall life and residence privacy with community events.",
+    "location": "1.291500 103.780500",
+    "zone": "Kent Ridge",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": ["House", "Community", "New", "Meal Plan", "Modern"]
+  },
+  {
+    "name": "LightHouse",
+    "type": "Dorm",
+    "description": "A House located within the PGP precinct. Focuses on leadership and creating a supportive 'beacon' for student life.",
+    "location": "1.291500 103.780000",
+    "zone": "Kent Ridge",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": ["House", "Leadership", "Social", "Meal Plan", "Modern"]
+  },
+  {
+    "name": "Pioneer House",
+    "type": "Dorm",
+    "description": "Located in PGP, Pioneer House emphasizes innovation and trying new things. It has a startup-like culture.",
+    "location": "1.291500 103.781500",
+    "zone": "Kent Ridge",
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T16:50:00+08:00",
+    "tags": ["House", "Innovation", "Entrepreneurship", "Meal Plan", "Modern"]
+  }
+]

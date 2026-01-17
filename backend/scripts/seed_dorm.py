@@ -1,6 +1,6 @@
 """
-Script to seed entities data into Firestore
-Reads from data/canteen.json and uploads to the 'entities' collection
+Script to seed dorm data into Firestore
+Reads from data/dorm.json and uploads to the 'entities' collection
 """
 
 import json
@@ -35,9 +35,9 @@ def parse_timestamp(timestamp_str: str) -> datetime:
     return datetime.fromisoformat(timestamp_str)
 
 
-def seed_canteen_data():
+def seed_dorm_data():
     """
-    Read canteen.json and upload data to Firestore
+    Read dorm.json and upload data to Firestore
     """
     # Initialize Firebase Admin SDK
     if not firebase_admin._apps:
@@ -45,49 +45,52 @@ def seed_canteen_data():
     
     db = firestore.client()
     
-    # Read canteen data
-    data_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'canteen.json')
-    logger.info("Reading canteen data", file=data_file)
+    # Read dorm data
+    data_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'dorm.json')
+    logger.info("Reading dorm data", file=data_file)
     
     with open(data_file, 'r') as f:
-        canteens = json.load(f)
+        dorms = json.load(f)
     
-    logger.info(f"Found {len(canteens)} canteens to upload")
+    logger.info(f"Found {len(dorms)} dorms to upload")
     
-    # Upload each canteen to Firestore
+    # Upload each dorm to Firestore
     batch = db.batch()
     batch_count = 0
     total_uploaded = 0
     
-    for index, canteen in enumerate(canteens, start=1):
+    for index, dorm in enumerate(dorms, start=1):
         try:
-            # Create a reference with custom ID (C01, C02, C03, etc.)
-            doc_id = f"C{index:02d}"
+            # Create a reference with custom ID (D01, D02, D03, etc.)
+            doc_id = f"D{index:02d}"
             doc_ref = db.collection('entities').document(doc_id)
             
             # Prepare data with proper types
             entity_data = {
-                'name': canteen['name'],
-                'type': canteen['type'],
-                'location': parse_location(canteen['location']),
-                'avgRating': canteen['avgRating'],
-                'ratingCount': canteen['ratingCount'],
-                'createdAt': parse_timestamp(canteen['createdAt']),
-                'tags': canteen['tags']
+                'name': dorm['name'],
+                'type': dorm['type'],
+                'location': parse_location(dorm['location']),
+                'avgRating': dorm['avgRating'],
+                'ratingCount': dorm['ratingCount'],
+                'createdAt': parse_timestamp(dorm['createdAt']),
+                'tags': dorm['tags']
             }
             
-            # Add description if exists
-            if 'description' in canteen:
-                entity_data['description'] = canteen['description']
+            # Add optional fields if they exist
+            if 'description' in dorm:
+                entity_data['description'] = dorm['description']
+            
+            if 'zone' in dorm:
+                entity_data['zone'] = dorm['zone']
             
             # Add to batch
             batch.set(doc_ref, entity_data)
             batch_count += 1
             
             logger.info(
-                f"Added to batch: {canteen['name']} (ID: {doc_id})",
-                entity_name=canteen['name'],
-                entity_type=canteen['type'],
+                f"Added to batch: {dorm['name']} (ID: {doc_id})",
+                entity_name=dorm['name'],
+                entity_type=dorm['type'],
                 document_id=doc_id
             )
             
@@ -101,9 +104,9 @@ def seed_canteen_data():
         
         except Exception as e:
             logger.error(
-                f"Error processing {canteen['name']}",
+                f"Error processing {dorm['name']}",
                 error=e,
-                entity_name=canteen['name']
+                entity_name=dorm['name']
             )
             continue
     
@@ -124,10 +127,10 @@ def seed_canteen_data():
 
 if __name__ == "__main__":
     try:
-        logger.info("Starting canteen data seeding process")
-        count = seed_canteen_data()
+        logger.info("Starting dorm data seeding process")
+        count = seed_dorm_data()
         logger.info(f"Successfully seeded {count} entities!")
-        print(f"\n✅ Successfully seeded {count} canteen entities to Firestore!")
+        print(f"\n✅ Successfully seeded {count} dorm entities to Firestore!")
     except Exception as e:
         logger.error("Seeding failed", error=e)
         print(f"\n❌ Error seeding data: {e}")

@@ -1,0 +1,917 @@
+[
+  {
+    "id": "AS1-0213",
+    "name": "AS1-0213",
+    "building": "AS1",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 2,
+    "capacity": 0,
+    "description": "Classroom in AS1 block, Faculty of Arts and Social Sciences",
+    "tags": ["classroom", "lecture"],
+    "location": {
+      "building_code": "AS1",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": false,
+      "lifting": false
+    }
+  },
+  {
+    "id": "AS1-0210",
+    "name": "AS1-0210",
+    "building": "AS1",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 2,
+    "capacity": 0,
+    "description": "Classroom in AS1 block, Faculty of Arts and Social Sciences",
+    "tags": ["classroom"],
+    "location": {
+      "building_code": "AS1",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": false,
+      "lifting": false
+    }
+  },
+  {
+    "id": "AS2-0413",
+    "name": "AS2-0413",
+    "building": "AS2",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 4,
+    "capacity": 0,
+    "description": "Classroom in AS2 block, Faculty of Arts and Social Sciences",
+    "tags": ["classroom"],
+    "location": {
+      "building_code": "AS2",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": false,
+      "lifting": false
+    }
+  },
+  {
+    "id": "AS3-0314",
+    "name": "AS3-0314",
+    "building": "AS3",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 3,
+    "capacity": 0,
+    "description": "Classroom in AS3 block, Faculty of Arts and Social Sciences",
+    "tags": ["classroom"],
+    "location": {
+      "building_code": "AS3",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "AS4-0109",
+    "name": "AS4-0109",
+    "building": "AS4",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 1,
+    "capacity": 0,
+    "description": "Classroom in AS4 block, home to Centre for Language Studies",
+    "tags": ["classroom", "language"],
+    "location": {
+      "building_code": "AS4",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": false,
+      "lifting": false
+    }
+  },
+  {
+    "id": "AS5-0309",
+    "name": "AS5-0309",
+    "building": "AS5",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 3,
+    "capacity": 0,
+    "description": "Classroom in AS5 block, Faculty of Arts and Social Sciences",
+    "tags": ["classroom"],
+    "location": {
+      "building_code": "AS5",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "AS6-0212",
+    "name": "AS6-0212",
+    "building": "AS6",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 2,
+    "capacity": 0,
+    "description": "Classroom in AS6 block, Faculty of Arts and Social Sciences",
+    "tags": ["classroom"],
+    "location": {
+      "building_code": "AS6",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "AS7-0106",
+    "name": "AS7-0106",
+    "building": "AS7",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 1,
+    "capacity": 0,
+    "description": "Classroom in AS7 (Shaw Foundation Building), Faculty of Arts and Social Sciences. Dean's office located on Level 5",
+    "tags": ["classroom"],
+    "location": {
+      "building_code": "AS7",
+      "campus": "Kent Ridge Campus",
+      "address": "5 Arts Link, Singapore 117570"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "AS8-0401",
+    "name": "AS8-0401",
+    "building": "AS8",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 4,
+    "capacity": 0,
+    "description": "Classroom in AS8 block (under construction). Future Faculty of Arts and Social Sciences expansion",
+    "tags": ["classroom", "under_construction"],
+    "location": {
+      "building_code": "AS8",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": false,
+      "wheelchair_accessible": false,
+      "lifting": false
+    }
+  },
+  {
+    "id": "BIZ1-0301",
+    "name": "BIZ1-0301",
+    "building": "BIZ1",
+    "type": "Classroom",
+    "zone": "Business",
+    "floor": 3,
+    "capacity": 0,
+    "description": "Classroom in BIZ1 (Mochtar Riady Building), NUS Business School",
+    "tags": ["classroom", "business"],
+    "location": {
+      "building_code": "BIZ1",
+      "campus": "Kent Ridge Campus",
+      "address": "15 Kent Ridge Drive, Singapore 119245"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "BIZ2-0420",
+    "name": "BIZ2-0420",
+    "building": "BIZ2",
+    "type": "Classroom",
+    "zone": "Business",
+    "floor": 4,
+    "capacity": 0,
+    "description": "Classroom in BIZ2, NUS Business School",
+    "tags": ["classroom", "business"],
+    "location": {
+      "building_code": "BIZ2",
+      "campus": "Kent Ridge Campus",
+      "address": "1 Business Link, Singapore 117592"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "COM1-0216",
+    "name": "COM1-0216",
+    "building": "COM1",
+    "type": "Tutorial Room",
+    "zone": "Kent Ridge",
+    "floor": 2,
+    "capacity": 30,
+    "description": "Tutorial room in COM1, NUS School of Computing. Former NUS Law Building",
+    "tags": ["tutorial", "computing"],
+    "location": {
+      "building_code": "COM1",
+      "campus": "Kent Ridge Campus",
+      "address": "13 Computing Drive, Singapore 117417"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "COM2-0108",
+    "name": "COM2-0108",
+    "building": "COM2",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 1,
+    "capacity": 50,
+    "description": "Classroom in COM2, NUS School of Computing. Older building (~20 years old)",
+    "tags": ["classroom", "computing"],
+    "location": {
+      "building_code": "COM2",
+      "campus": "Kent Ridge Campus",
+      "address": "Computing Drive, Singapore 117417"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "COM3-01-22",
+    "name": "COM3-01-22",
+    "building": "COM3",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 1,
+    "capacity": 80,
+    "description": "Classroom in COM3 (Sea building), NUS School of Computing. New 3-storey building completed in 2022 with modern facilities. Home to The Terrace food court",
+    "tags": ["classroom", "computing", "modern"],
+    "location": {
+      "building_code": "COM3",
+      "campus": "Kent Ridge Campus",
+      "address": "Computing Drive, Singapore 117417"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "COM4-02-01",
+    "name": "COM4-02-01",
+    "building": "COM4",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 2,
+    "capacity": 100,
+    "description": "Classroom in COM4, NUS School of Computing. New building launched in 2023",
+    "tags": ["classroom", "computing", "modern"],
+    "location": {
+      "building_code": "COM4",
+      "campus": "Kent Ridge Campus",
+      "address": "Computing Drive, Singapore 117417"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "LT8",
+    "name": "Lecture Theatre 8 (LT8)",
+    "building": "Central",
+    "type": "Lecture Theatre",
+    "zone": "Kent Ridge",
+    "floor": 0,
+    "capacity": 250,
+    "description": "Lecture Theatre 8 - Central lecture theatre on Kent Ridge campus with sheltered access",
+    "tags": ["lecture_theatre", "central", "large_capacity", "sheltered_access"],
+    "location": {
+      "building_code": "LT8",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true,
+      "sheltered_access": true
+    }
+  },
+  {
+    "id": "LT9",
+    "name": "Lecture Theatre 9 (LT9)",
+    "building": "Central",
+    "type": "Lecture Theatre",
+    "zone": "Kent Ridge",
+    "floor": 0,
+    "capacity": 250,
+    "description": "Lecture Theatre 9 - Central lecture theatre with sheltered access near AS buildings",
+    "tags": ["lecture_theatre", "central", "large_capacity", "sheltered_access"],
+    "location": {
+      "building_code": "LT9",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true,
+      "sheltered_access": true
+    }
+  },
+  {
+    "id": "LT10",
+    "name": "Lecture Theatre 10 (LT10)",
+    "building": "Central",
+    "type": "Lecture Theatre",
+    "zone": "Kent Ridge",
+    "floor": 0,
+    "capacity": 250,
+    "description": "Lecture Theatre 10 - Central lecture theatre with sheltered access near Arts area",
+    "tags": ["lecture_theatre", "central", "large_capacity", "sheltered_access"],
+    "location": {
+      "building_code": "LT10",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true,
+      "sheltered_access": true
+    }
+  },
+  {
+    "id": "LT11",
+    "name": "Lecture Theatre 11 (LT11)",
+    "building": "Central",
+    "type": "Lecture Theatre",
+    "zone": "Kent Ridge",
+    "floor": 0,
+    "capacity": 250,
+    "description": "Lecture Theatre 11 - Central lecture theatre with some open spaces",
+    "tags": ["lecture_theatre", "central", "large_capacity"],
+    "location": {
+      "building_code": "LT11",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "LT12",
+    "name": "Lecture Theatre 12 (LT12)",
+    "building": "Central",
+    "type": "Lecture Theatre",
+    "zone": "Kent Ridge",
+    "floor": 0,
+    "capacity": 250,
+    "description": "Lecture Theatre 12 - Central lecture theatre with sheltered access",
+    "tags": ["lecture_theatre", "central", "large_capacity", "sheltered_access"],
+    "location": {
+      "building_code": "LT12",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true,
+      "sheltered_access": true
+    }
+  },
+  {
+    "id": "LT13",
+    "name": "NUS Theatrette (LT13)",
+    "building": "Central",
+    "type": "Lecture Theatre",
+    "zone": "Kent Ridge",
+    "floor": 0,
+    "capacity": 400,
+    "description": "NUS Theatrette - Medium-sized theatre for lectures and performances",
+    "tags": ["lecture_theatre", "theatre", "central", "medium_capacity"],
+    "location": {
+      "building_code": "LT13",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "LT14",
+    "name": "Lecture Theatre 14 (LT14)",
+    "building": "Central",
+    "type": "Lecture Theatre",
+    "zone": "Kent Ridge",
+    "floor": 0,
+    "capacity": 250,
+    "description": "Lecture Theatre 14 - Central lecture theatre",
+    "tags": ["lecture_theatre", "central", "large_capacity"],
+    "location": {
+      "building_code": "LT14",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "LT15",
+    "name": "Lecture Theatre 15 (LT15)",
+    "building": "Central",
+    "type": "Lecture Theatre",
+    "zone": "Kent Ridge",
+    "floor": 0,
+    "capacity": 250,
+    "description": "Lecture Theatre 15 - Central lecture theatre with sheltered access",
+    "tags": ["lecture_theatre", "central", "large_capacity", "sheltered_access"],
+    "location": {
+      "building_code": "LT15",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true,
+      "sheltered_access": true
+    }
+  },
+  {
+    "id": "LT16",
+    "name": "Lecture Theatre 16 (LT16)",
+    "building": "Business",
+    "type": "Lecture Theatre",
+    "zone": "Business",
+    "floor": 0,
+    "capacity": 300,
+    "description": "Lecture Theatre 16 - Located in Business area",
+    "tags": ["lecture_theatre", "business", "large_capacity"],
+    "location": {
+      "building_code": "LT16",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "LT17",
+    "name": "Lecture Theatre 17 (LT17)",
+    "building": "Business",
+    "type": "Lecture Theatre",
+    "zone": "Business",
+    "floor": 0,
+    "capacity": 300,
+    "description": "Lecture Theatre 17 - Located in Business area",
+    "tags": ["lecture_theatre", "business", "large_capacity"],
+    "location": {
+      "building_code": "LT17",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "LT18",
+    "name": "Lecture Theatre 18 (LT18)",
+    "building": "Business",
+    "type": "Lecture Theatre",
+    "zone": "Business",
+    "floor": 0,
+    "capacity": 300,
+    "description": "Lecture Theatre 18 - Located in Business area",
+    "tags": ["lecture_theatre", "business", "large_capacity"],
+    "location": {
+      "building_code": "LT18",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "LT19",
+    "name": "Lecture Theatre 19 (LT19)",
+    "building": "Business",
+    "type": "Lecture Theatre",
+    "zone": "Business",
+    "floor": 0,
+    "capacity": 300,
+    "description": "Lecture Theatre 19 - Located in Business area",
+    "tags": ["lecture_theatre", "business", "large_capacity"],
+    "location": {
+      "building_code": "LT19",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "E1-06-04",
+    "name": "E1-06-04",
+    "building": "E1",
+    "type": "Classroom",
+    "zone": "Engineering",
+    "floor": 6,
+    "capacity": 0,
+    "description": "Classroom in E1, College of Design and Engineering",
+    "tags": ["classroom", "engineering"],
+    "location": {
+      "building_code": "E1",
+      "campus": "Kent Ridge Campus",
+      "address": "Engineering Drive 1, Singapore"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "E3-06-03",
+    "name": "E3-06-03",
+    "building": "E3",
+    "type": "Classroom",
+    "zone": "Engineering",
+    "floor": 6,
+    "capacity": 0,
+    "description": "Classroom in E3, College of Design and Engineering",
+    "tags": ["classroom", "engineering"],
+    "location": {
+      "building_code": "E3",
+      "campus": "Kent Ridge Campus",
+      "address": "Engineering Drive 1, Singapore"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "EA-06-05",
+    "name": "EA-06-05",
+    "building": "EA",
+    "type": "Classroom",
+    "zone": "Engineering",
+    "floor": 6,
+    "capacity": 0,
+    "description": "Classroom in EA (Centre for Healthcare Innovation), College of Design and Engineering. Key study location with Level 1-3 study spaces",
+    "tags": ["classroom", "engineering"],
+    "location": {
+      "building_code": "EA",
+      "campus": "Kent Ridge Campus",
+      "address": "Engineering Drive 1, Singapore"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "S16-0437",
+    "name": "S16-0437",
+    "building": "S16",
+    "type": "Classroom",
+    "zone": "Science",
+    "floor": 4,
+    "capacity": 0,
+    "description": "Classroom in S16, Faculty of Science",
+    "tags": ["classroom", "science"],
+    "location": {
+      "building_code": "S16",
+      "campus": "Kent Ridge Campus",
+      "address": "Science Drive, Singapore"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "S14-0619",
+    "name": "S14-0619",
+    "building": "S14",
+    "type": "Classroom",
+    "zone": "Science",
+    "floor": 6,
+    "capacity": 0,
+    "description": "Classroom in S14, Faculty of Science",
+    "tags": ["classroom", "science"],
+    "location": {
+      "building_code": "S14",
+      "campus": "Kent Ridge Campus",
+      "address": "Science Drive, Singapore"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "UTSRC-SR5",
+    "name": "UTSRC-SR5",
+    "building": "UTown SRC",
+    "type": "Seminar Room",
+    "zone": "UTown",
+    "floor": 0,
+    "capacity": 30,
+    "description": "Seminar Room 5 in University Town Student Resource Centre",
+    "tags": ["seminar_room", "utown"],
+    "location": {
+      "building_code": "UTSRC",
+      "campus": "University Town",
+      "address": "University Town, Singapore"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "E-Learn_C",
+    "name": "E-Learn_C",
+    "building": "Unknown",
+    "type": "Classroom",
+    "zone": "Other",
+    "floor": 0,
+    "capacity": 0,
+    "description": "E-Learning classroom - Online/hybrid learning space",
+    "tags": ["classroom", "elearning", "hybrid"],
+    "location": {
+      "building_code": "Unknown",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "HSS-03-01",
+    "name": "HSS-03-01",
+    "building": "HSS",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 3,
+    "capacity": 0,
+    "description": "Classroom in HSS block",
+    "tags": ["classroom"],
+    "location": {
+      "building_code": "HSS",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "CLB-04-01H",
+    "name": "CLB-04-01H",
+    "building": "CLB",
+    "type": "Classroom",
+    "zone": "Kent Ridge",
+    "floor": 4,
+    "capacity": 0,
+    "description": "Classroom in CLB (Central Library Block)",
+    "tags": ["classroom"],
+    "location": {
+      "building_code": "CLB",
+      "campus": "Kent Ridge Campus"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "UT-AUD1",
+    "name": "UTown Auditorium 1",
+    "building": "UTown",
+    "type": "Auditorium",
+    "zone": "UTown",
+    "floor": 0,
+    "capacity": 300,
+    "description": "Auditorium 1 in University Town - event and large lecture venue",
+    "tags": ["auditorium", "utown", "large_capacity"],
+    "location": {
+      "building_code": "UT-AUD1",
+      "campus": "University Town"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "UT-AUD2",
+    "name": "UTown Auditorium 2",
+    "building": "UTown",
+    "type": "Auditorium",
+    "zone": "UTown",
+    "floor": 0,
+    "capacity": 300,
+    "description": "Auditorium 2 in University Town - event and large lecture venue",
+    "tags": ["auditorium", "utown", "large_capacity"],
+    "location": {
+      "building_code": "UT-AUD2",
+      "campus": "University Town"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  },
+  {
+    "id": "NAK-AUD",
+    "name": "The Ngee Ann Kongsi Auditorium",
+    "building": "The Ngee Ann Kongsi",
+    "type": "Auditorium",
+    "zone": "UTown",
+    "floor": 0,
+    "capacity": 400,
+    "description": "The Ngee Ann Kongsi Auditorium - Large events auditorium in University Town",
+    "tags": ["auditorium", "utown", "large_capacity"],
+    "location": {
+      "building_code": "NAK-AUD",
+      "campus": "University Town"
+    },
+    "avgRating": 0,
+    "ratingCount": 0,
+    "createdAt": "2026-01-17T17:00:00Z",
+    "features": {
+      "aircon": true,
+      "wheelchair_accessible": true,
+      "lifting": true
+    }
+  }
+]
