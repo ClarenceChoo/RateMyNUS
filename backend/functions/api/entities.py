@@ -96,8 +96,8 @@ def get_entities(req: https_fn.Request) -> https_fn.Response:
             query = query.where('type', '==', entity_type)
             logger.info("Filtering entities by type", entity_type=entity_type)
         
-        # Get limit from query params (default: 100)
-        limit = int(req.args.get('limit', 100))
+        # Get limit from query params (default: 300)
+        limit = int(req.args.get('limit', 200))
         query = query.limit(limit)
         
         logger.log_firestore_operation("query", "entities", limit=limit)
