@@ -1,4 +1,4 @@
-import { cn } from "@/lib/util";
+import { cn } from "@/lib/utils";
 
 export default function Input(props: React.InputHTMLAttributes<HTMLInputElement>) {
   return (

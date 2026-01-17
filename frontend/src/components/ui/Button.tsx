@@ -1,4 +1,4 @@
-import { cn } from "@/lib/util";
+import { cn } from "@/lib/utils";
 
 type Props = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: "solid" | "ghost";
