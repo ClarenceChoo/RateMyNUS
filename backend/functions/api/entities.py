@@ -5,6 +5,17 @@ import time
 from utils.logger import logger
 
 
+def get_cors_headers():
+    """Return CORS headers for API responses"""
+    return {
+        "Access-Control-Allow-Origin": "*",  # Allow all origins (change to specific domain in production)
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        "Access-Control-Max-Age": "3600",
+        "Content-Type": "application/json"
+    }
+
+
 @https_fn.on_request()
 def get_entities(req: https_fn.Request) -> https_fn.Response:
     """
@@ -14,6 +25,14 @@ def get_entities(req: https_fn.Request) -> https_fn.Response:
         - type: Filter entities by type (e.g., "Canteen")
         - limit: Maximum number of entities to return (default: 100)
     """
+    # Handle CORS preflight request
+    if req.method == "OPTIONS":
+        return https_fn.Response(
+            "",
+            status=204,
+            headers=get_cors_headers()
+        )
+    
     start_time = time.time()
     
     try:
@@ -40,7 +59,7 @@ def get_entities(req: https_fn.Request) -> https_fn.Response:
                 return https_fn.Response(
                     json.dumps({"error": "Entity not found"}),
                     status=404,
-                    headers={"Content-Type": "application/json"}
+                    headers=get_cors_headers()
                 )
             
             entity_data = doc.to_dict()
@@ -50,12 +69,14 @@ def get_entities(req: https_fn.Request) -> https_fn.Response:
             if 'createdAt' in entity_data and entity_data['createdAt']:
                 entity_data['createdAt'] = entity_data['createdAt'].isoformat()
             
-            # Convert geopoint to dict
+            # Convert geopoint to dict (if it's a GeoPoint object)
             if 'location' in entity_data and entity_data['location']:
-                entity_data['location'] = {
-                    'latitude': entity_data['location'].latitude,
-                    'longitude': entity_data['location'].longitude
-                }
+                if hasattr(entity_data['location'], 'latitude'):
+                    entity_data['location'] = {
+                        'latitude': entity_data['location'].latitude,
+                        'longitude': entity_data['location'].longitude
+                    }
+                # If location is already a dict, leave it as-is
             
             duration = (time.time() - start_time) * 1000
             logger.log_response(req.method, req.path, 200, duration)
@@ -63,7 +84,7 @@ def get_entities(req: https_fn.Request) -> https_fn.Response:
             return https_fn.Response(
                 json.dumps(entity_data),
                 status=200,
-                headers={"Content-Type": "application/json"}
+                headers=get_cors_headers()
             )
         
         # Build query with optional filters
@@ -93,12 +114,14 @@ def get_entities(req: https_fn.Request) -> https_fn.Response:
             if 'createdAt' in entity_data and entity_data['createdAt']:
                 entity_data['createdAt'] = entity_data['createdAt'].isoformat()
             
-            # Convert geopoint to dict
+            # Convert geopoint to dict (if it's a GeoPoint object)
             if 'location' in entity_data and entity_data['location']:
-                entity_data['location'] = {
-                    'latitude': entity_data['location'].latitude,
-                    'longitude': entity_data['location'].longitude
-                }
+                if hasattr(entity_data['location'], 'latitude'):
+                    entity_data['location'] = {
+                        'latitude': entity_data['location'].latitude,
+                        'longitude': entity_data['location'].longitude
+                    }
+                # If location is already a dict, leave it as-is
             
             entities.append(entity_data)
         
@@ -117,7 +140,7 @@ def get_entities(req: https_fn.Request) -> https_fn.Response:
                 "entities": entities
             }),
             status=200,
-            headers={"Content-Type": "application/json"}
+            headers=get_cors_headers()
         )
         
     except Exception as e:
@@ -132,5 +155,5 @@ def get_entities(req: https_fn.Request) -> https_fn.Response:
         return https_fn.Response(
             json.dumps({"error": str(e)}),
             status=500,
-            headers={"Content-Type": "application/json"}
+            headers=get_cors_headers()
         )
