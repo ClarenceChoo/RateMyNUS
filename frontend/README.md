@@ -147,5 +147,20 @@ See [backend README](../backend/README.md) for full API documentation.
 - **Reviews**: Submit ratings with subratings and tags
 - **Create Entities**: Add new professors, dorms, classrooms, etc.
 - **Voting**: Upvote helpful reviews
+- **Location**: View entities on Google Maps (except professors)
+- **AI Summaries**: Entity review summaries generated from API
 - **Responsive**: Mobile-friendly design with Tailwind CSS
 
+## Deployment
+
+The app is configured for Vercel deployment with `vercel.json` for SPA routing.
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+The `vercel.json` rewrites all routes to `index.html` so React Router handles client-side routing correctly.
