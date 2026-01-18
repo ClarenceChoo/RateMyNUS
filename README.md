@@ -1,12 +1,12 @@
 ![](https://github.com/ClarenceChoo/RateMyNUS/blob/main/assets/main-screenshot.jpeg)
 
-## Inspiration and Motivation
+## 💡 Inspiration and Motivation
 
 RateMyNUS takes inspiration from Rate My Professors. We recognise that both current and incoming students often have questions about different aspects of university life — and while NUS provides official descriptions (for example, of each hostel), students are often looking for more grounded insights from people with real experience. RateMyNUS is a student-driven rating platform where users can review and rate key parts of campus life. The five main categories are professors, classrooms, hostels, canteens, and as a fun bonus… toilets!
 
 ---
 
-## What it does
+## 🎯 What it does
 
 RateMyNUS is a campus review platform that allows students to share ratings and written feedback across five main categories: **professors, classrooms, hostels, canteens, and toilets**.
 
@@ -20,9 +20,9 @@ By collecting real student opinions in one place, RateMyNUS helps students make 
 
 ---
 
-## How we built it
+## 🏗️ How we built it
 
-### Professor reviews scraping + processing pipeline
+### 🕷️ Professor reviews scraping + processing pipeline
 We scraped module reviews from NUSMods using a Playwright-based scraper that navigates to each module page, opens the Reviews section, and extracts review text (including handling lazy-loading and cases where reviews are rendered inside an iframe).
 
 These scraped reviews are then passed into an LLM pipeline, where the model’s job is to:
@@ -33,7 +33,7 @@ Afterwards, we run a Python cleanup script to remove duplicate professor names, 
 
 ---
 
-### Frontend
+### 🎨 Frontend
 We built the frontend as a modern single-page application using **React 19 + TypeScript**, bundled with **Vite**, styled with **Tailwind CSS**, and routed using **React Router v7**. Authentication and backend integration are handled through **Firebase**.
 
 The frontend supports 5 entity types:
@@ -48,11 +48,9 @@ Core features include:
 
 ---
 
-### Backend
+### ☁️ Backend
 
 A modern, AI-powered serverless backend built on Firebase Cloud Functions (Python 3.13) for rating and reviewing NUS entities including professors, canteens, dormitories, classrooms, and facilities.
-
-### Notable Features
 
 🤖 AI-Powered Review Summarization
 
@@ -77,14 +75,14 @@ Tech Stack: Python 3.13, Firebase Functions, Firestore, OpenAI API, Cloud Schedu
 
 ---
 
-## Challenges we ran into
+## 🚧 Challenges we ran into
 
-### Data processing
+### 💾 Data processing
 Professor names appear in many different formats (partial names, typos, titles, or inconsistent ordering), which made reliable name extraction difficult. We went through multiple iterations of our parsing and cleanup scripts—especially around fuzzy matching and name-variant handling—to minimise duplicates and wrongly identified names.
 
 ---
 
-### Deployment and infrastructure issues
+### 🚀 Deployment and infrastructure issues
 Because our backend relies on Firestore triggers, we ran into deployment friction such as Eventarc permission issues during first-time trigger setup. This required waiting for permission propagation or manually granting the correct Eventarc service roles before redeploying successfully.
 
 We also had to be careful about common backend integration pitfalls such as:
@@ -94,7 +92,7 @@ We also had to be careful about common backend integration pitfalls such as:
 
 ---
 
-## Accomplishments that we're proud of
+## 🏆 Accomplishments that we're proud of
 - **Built a complete end-to-end platform**: from data scraping + processing, to a full frontend experience and a deployed backend API.
 - **Successfully extracted and cleaned professor data at scale**, turning messy, unstructured NUSMods review text into usable professor entries with summaries and deduplicated names.
 - **Implemented a fully functional review ecosystem**, including:
@@ -106,7 +104,7 @@ We also had to be careful about common backend integration pitfalls such as:
 
 ---
 
-## What we learned
+## 🧠 What we learned
 - **Data cleaning is harder than scraping**: extracting professor names reliably required multiple iterations due to inconsistent naming formats, typos, and false positives.
 - **Backend design matters for UX**: having well-defined schemas for entities/reviews (with tags + subratings) made the frontend experience much smoother.
 - **Firebase Cloud Functions deployment has real-world gotchas**, especially around:
@@ -117,7 +115,7 @@ We also had to be careful about common backend integration pitfalls such as:
 
 ---
 
-## What's next for RateMyNUS
+## 🔮 What's next for RateMyNUS
 - **Improve professor matching accuracy** by linking professors to module codes more reliably and reducing remaining duplicate identities.
 - **Add moderation + reporting tools** to prevent spam, abuse, and low-quality reviews.
 - **Enhance discovery features**, such as:
@@ -127,7 +125,7 @@ We also had to be careful about common backend integration pitfalls such as:
 - **Expand beyond ratings** with richer content like photos, tips, and “things to know before you choose this dorm/classroom”.
 - **Stronger authentication and user profiles**, enabling review history, saved entities, and trusted reviewer badges.
 
-## Connect with us !
+## 🤝 Connect with us !
 
 - Ryan Yong (Frontend Engineer/Product Manager) - [linkedin](https://www.linkedin.com/in/ryan-yong-974ab2210/)
 - Clarence Choo (Frontend Engineer/UIUX Designer) - [linkedin](https://www.linkedin.com/in/clarence-choo/)
