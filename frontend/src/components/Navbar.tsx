@@ -10,6 +10,12 @@ export default function Navbar() {
 
         <nav className="flex shrink-0 items-center gap-3 text-sm">
           <Link to="/explore" className="hover:underline">Explore</Link>
+          <Link 
+            to="/create" 
+            className="rounded-xl bg-zinc-900 px-3 py-1.5 text-white hover:bg-zinc-800 transition"
+          >
+            + Add New
+          </Link>
         </nav>
       </div>
     </header>

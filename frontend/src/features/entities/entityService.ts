@@ -2,6 +2,10 @@ import type { Entity, EntityType, EntityFilters, Paginated, Zone } from "@/types
 import { env } from "@/config/env";
 import { mockBookmarks, delay } from "./mockData";
 
+// ============================================================================
+// API Types
+// ============================================================================
+
 // API response type from backend - flexible to handle different entity types
 type ApiEntity = {
   id: string;
@@ -19,6 +23,22 @@ type ApiEntity = {
   floor?: number;
   features?: Record<string, boolean>;
 };
+
+// Request type for creating a new entity
+export type CreateEntityRequest = {
+  name: string;
+  type: EntityType;
+  description?: string;
+  tags?: string[];
+  location?: {
+    latitude: number;
+    longitude: number;
+  };
+};
+
+// ============================================================================
+// Type Mapping Functions
+// ============================================================================
 
 // Convert API entity type to frontend EntityType
 function mapApiType(apiType: string): EntityType {
@@ -286,6 +306,33 @@ export async function searchEntities(searchQuery: string, searchLimit = 10): Pro
         e.tags?.some((t) => t.toLowerCase().includes(q))
     )
     .slice(0, searchLimit);
+}
+
+// ============================================================================
+// Create Entity
+// ============================================================================
+
+export async function createEntity(request: CreateEntityRequest): Promise<string> {
+  const response = await fetch(env.api.createEntity, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(request),
+  });
+
+  if (!response.ok) {
+    const errorData = await response.json().catch(() => ({}));
+    throw new Error(errorData.error || `Failed to create entity: ${response.status}`);
+  }
+
+  const data = await response.json();
+  
+  // Clear cache so the new entity appears
+  clearEntityCache();
+  
+  // Return the new entity ID
+  return data.id || data.entityId;
 }
 
 // Bookmark management (local only for now)
