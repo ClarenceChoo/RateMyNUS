@@ -1,6 +1,6 @@
 # RateMyNUS Firebase Backend
 
-Backend service for RateMyNUS built with Firebase Cloud Functions (Python 3.13) and Firestore.
+A modern, AI-powered serverless backend built on Firebase Cloud Functions (Python 3.13) with Firestore, featuring intelligent review summarization using OpenAI GPT-4o-mini with scheduled automation, smart entity management with auto-generated IDs, and secure RESTful APIs.
 
 **Base URL**: `https://asia-southeast1-ratemynus.cloudfunctions.net`
 
