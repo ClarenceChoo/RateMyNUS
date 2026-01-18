@@ -310,10 +310,8 @@ export const mockReviews: Review[] = [
     rating: 4,
     text: "Flavours has good halal options. A bit pricier than other canteens.",
     createdAt: Date.now() - 2073600000,
-    
-    authorId: "user-6",
+    authorName: "Anonymous",
     voteCount: 13,
-    
     subratings: { taste: 4, valueForMoney: 3, queueTime: 4, variety: 5, cleanliness: 4 },
   },
   {
@@ -353,11 +351,11 @@ export const mockReviews: Review[] = [
 
 // AI-extracted professor reviews (mock)
 export const mockImportedProfReviews: ImportedProfReview[] = [
-  { id: "ai-1", profEntityId: "prof-1", sourceModuleCode: "CS1010", summary: "Students praised the clear explanations and well-structured lectures. Many found the pace appropriate for beginners.", confidence: "HIGH", inferredRating: 4, voteCount: 12, markedIrrelevant: false, extractedAt: Date.now() - 86400000 * 30 },
-  { id: "ai-2", profEntityId: "prof-1", sourceModuleCode: "CS2030S", summary: "Mixed feedback on workload. Some felt assignments were too challenging, others appreciated the rigor.", confidence: "MEDIUM", inferredRating: 3, voteCount: 8, markedIrrelevant: false, extractedAt: Date.now() - 86400000 * 60 },
-  { id: "ai-3", profEntityId: "prof-2", sourceModuleCode: "CS2040S", summary: "Overwhelmingly positive feedback. Students describe the teaching as transformative and highly engaging.", confidence: "HIGH", inferredRating: 5, voteCount: 45, markedIrrelevant: false, extractedAt: Date.now() - 86400000 * 45 },
-  { id: "ai-4", profEntityId: "prof-2", sourceModuleCode: "CS3230", summary: "Challenging material but well-taught. Office hours were particularly helpful.", confidence: "MEDIUM", voteCount: 23, markedIrrelevant: false, extractedAt: Date.now() - 86400000 * 90 },
-  { id: "ai-5", profEntityId: "prof-3", sourceModuleCode: "BT1101", summary: "Practical examples from industry. Some students wanted more theoretical depth.", confidence: "LOW", inferredRating: 4, voteCount: 6, markedIrrelevant: false, extractedAt: Date.now() - 86400000 * 20 },
+  { id: "ai-1", profEntityId: "prof-1", sourceModuleCode: "CS1010", summary: "Students praised the clear explanations and well-structured lectures. Many found the pace appropriate for beginners.", confidence: "HIGH", inferredRating: 4, helpfulCount: 12, markedIrrelevant: false, extractedAt: Date.now() - 86400000 * 30 },
+  { id: "ai-2", profEntityId: "prof-1", sourceModuleCode: "CS2030S", summary: "Mixed feedback on workload. Some felt assignments were too challenging, others appreciated the rigor.", confidence: "MEDIUM", inferredRating: 3, helpfulCount: 8, markedIrrelevant: false, extractedAt: Date.now() - 86400000 * 60 },
+  { id: "ai-3", profEntityId: "prof-2", sourceModuleCode: "CS2040S", summary: "Overwhelmingly positive feedback. Students describe the teaching as transformative and highly engaging.", confidence: "HIGH", inferredRating: 5, helpfulCount: 45, markedIrrelevant: false, extractedAt: Date.now() - 86400000 * 45 },
+  { id: "ai-4", profEntityId: "prof-2", sourceModuleCode: "CS3230", summary: "Challenging material but well-taught. Office hours were particularly helpful.", confidence: "MEDIUM", helpfulCount: 23, markedIrrelevant: false, extractedAt: Date.now() - 86400000 * 90 },
+  { id: "ai-5", profEntityId: "prof-3", sourceModuleCode: "BT1101", summary: "Practical examples from industry. Some students wanted more theoretical depth.", confidence: "LOW", inferredRating: 4, helpfulCount: 6, markedIrrelevant: false, extractedAt: Date.now() - 86400000 * 20 },
 ];
 
 // In-memory bookmarks (per-session mock)

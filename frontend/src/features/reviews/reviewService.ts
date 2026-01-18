@@ -226,3 +226,10 @@ export async function listReviews(
     hasMore: start + pageSize < allReviews.length,
   };
 }
+
+// List reviews by user (stub - returns empty for now since API doesn't support this)
+export async function listReviewsForUser(_userId: string): Promise<Review[]> {
+  await delay(100);
+  // TODO: Implement when API supports fetching reviews by user
+  return [];
+}

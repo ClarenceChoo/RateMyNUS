@@ -206,11 +206,6 @@ export default function Entity() {
     </div>
   );
 
-  // Always calculate average from actual reviews (more accurate than entity.avgRating which may not update)
-  const avgRating = reviews.length > 0
-    ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
-    : (entity.avgRating ?? 0);
-
   // Google Maps URL for location - use coordinates if available, otherwise search by building
   const googleMapsUrl = (() => {
     if (entity.location) {

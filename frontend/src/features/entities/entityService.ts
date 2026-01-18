@@ -358,7 +358,9 @@ export async function toggleBookmark(entityId: string): Promise<boolean> {
 
 export async function listBookmarks(): Promise<Entity[]> {
   await delay(200);
-  return mockEntities.filter((e) => mockBookmarks.has(e.id));
+  // Return bookmarked entities from cache
+  const entities = cachedEntities ?? [];
+  return entities.filter((e) => mockBookmarks.has(e.id));
 }
 
 export async function isBookmarked(entityId: string): Promise<boolean> {
