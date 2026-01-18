@@ -2,7 +2,7 @@
 
 > A student-driven rating platform for NUS professors, hostels, classrooms, canteens, and toilets.
 
-[![Frontend Screenshot](./assets/frontend-screenshot.png)](https://ratemynus.com)
+[![Frontend Screenshot](./assets/main-screenshot.jpeg)](https://ratemynus.com)
 
 ## Inspiration and Motivation
 
