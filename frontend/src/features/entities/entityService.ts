@@ -107,6 +107,10 @@ const CACHE_TS_KEY = "ratemynus_entities_ts";
 // In-memory cache (faster than localStorage for same session)
 let cachedEntities: Entity[] | null = null;
 
+// Clear cache on page load/refresh
+localStorage.removeItem(CACHE_KEY);
+localStorage.removeItem(CACHE_TS_KEY);
+
 // Load from localStorage on init
 function loadFromLocalStorage(): Entity[] | null {
   try {
