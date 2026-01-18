@@ -1,8 +1,4 @@
-# RateMyNUS
-
-> A student-driven rating platform for NUS professors, hostels, classrooms, canteens, and toilets.
-
-[![Frontend Screenshot](./assets/main-screenshot.jpeg)](https://ratemynus.com)
+![](https://github.com/ClarenceChoo/RateMyNUS/blob/main/assets/main-screenshot.jpeg)
 
 ## Inspiration and Motivation
 
@@ -55,6 +51,8 @@ Core features include:
 ### Backend
 
 A modern, AI-powered serverless backend built on Firebase Cloud Functions (Python 3.13) for rating and reviewing NUS entities including professors, canteens, dormitories, classrooms, and facilities.
+
+### Notable Features
 
 🤖 AI-Powered Review Summarization
 
@@ -128,3 +126,10 @@ We also had to be careful about common backend integration pitfalls such as:
   - personalized recommendations
 - **Expand beyond ratings** with richer content like photos, tips, and “things to know before you choose this dorm/classroom”.
 - **Stronger authentication and user profiles**, enabling review history, saved entities, and trusted reviewer badges.
+
+## Connect with us !
+
+- Ryan Yong (Frontend Engineer/Product Manager) - [linkedin](https://www.linkedin.com/in/ryan-yong-974ab2210/)
+- Clarence Choo (Frontend Engineer/UIUX Designer) - [linkedin](https://www.linkedin.com/in/clarence-choo/)
+- Tan Yu Hoe (Backend Engineer/DevOps Engineer/Database Administrator) - [linkedin](https://www.linkedin.com/in/yu-hoe-tan)
+- Lim Shau Shee (Backend Engineer/AI Specialist/QA Analyst) - [linkedin](https://www.linkedin.com/in/lim-shau-shee-065b59308)
