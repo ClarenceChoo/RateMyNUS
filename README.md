@@ -1,259 +1,130 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a id="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![project_license][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-<h3 align="center">project_title</h3>
-
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
-</div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+# RateMyNUS
 
+> A student-driven rating platform for NUS professors, hostels, classrooms, canteens, and toilets.
 
+[![Frontend Screenshot](./assets/frontend-screenshot.png)](https://ratemynus.com)
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+## Inspiration and Motivation
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+RateMyNUS takes inspiration from Rate My Professors. We recognise that both current and incoming students often have questions about different aspects of university life — and while NUS provides official descriptions (for example, of each hostel), students are often looking for more grounded insights from people with real experience. RateMyNUS is a student-driven rating platform where users can review and rate key parts of campus life. The five main categories are professors, classrooms, hostels, canteens, and as a fun bonus… toilets!
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
+---
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## What it does
 
+RateMyNUS is a campus review platform that allows students to share ratings and written feedback across five main categories: **professors, classrooms, hostels, canteens, and toilets**.
 
+Users can:
+- Browse ratings and reviews to get a clearer picture of what to expect in different parts of NUS life  
+- Search and filter entries to quickly find relevant information (e.g., a specific professor or hostel)  
+- Submit their own reviews, rating multiple aspects and leaving comments based on personal experience  
+- Compare options (such as different hostels or canteens) using community feedback rather than only official descriptions  
 
-### Built With
+By collecting real student opinions in one place, RateMyNUS helps students make more informed decisions and feel more confident navigating university life.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+---
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## How we built it
 
+### Professor reviews scraping + processing pipeline
+We scraped module reviews from NUSMods using a Playwright-based scraper that navigates to each module page, opens the Reviews section, and extracts review text (including handling lazy-loading and cases where reviews are rendered inside an iframe).
 
+These scraped reviews are then passed into an LLM pipeline, where the model’s job is to:
+- extract the professor’s name (ignoring prefixes like “Prof.” / “Dr.”), and  
+- summarise their teaching based on the review content.
 
-<!-- GETTING STARTED -->
-## Getting Started
+Afterwards, we run a Python cleanup script to remove duplicate professor names, resolve misspellings, and reduce false positives using fuzzy matching. The cleaned output is written into a final JSON file for seeding and use in the application.
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+---
 
-### Prerequisites
+### Frontend
+We built the frontend as a modern single-page application using **React 19 + TypeScript**, bundled with **Vite**, styled with **Tailwind CSS**, and routed using **React Router v7**. Authentication and backend integration are handled through **Firebase**.
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+The frontend supports 5 entity types:
+**PROFESSOR, DORM, CLASSROOM, FOOD_PLACE, TOILET**, allowing users to explore categories, view entity pages, and submit reviews.
 
-### Installation
+Core features include:
+- browsing and filtering entities
+- writing reviews with tags + subratings
+- creating new entities
+- upvoting helpful reviews
+- responsive UI for mobile users
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+---
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Backend
 
+A modern, AI-powered serverless backend built on Firebase Cloud Functions (Python 3.13) for rating and reviewing NUS entities including professors, canteens, dormitories, classrooms, and facilities.
 
+🤖 AI-Powered Review Summarization
 
-<!-- USAGE EXAMPLES -->
-## Usage
+Integrates OpenAI's GPT-4o-mini to automatically generate intelligent summaries from student reviews
+Runs twice daily via Cloud Scheduler (6 AM & 6 PM SGT) to keep summaries fresh
+Manual API trigger available for on-demand processing
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+🔧 Smart Entity Management
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Auto-generated entity IDs with type-specific prefixes (P001 for professors, T001 for toilets, etc.)
+Intelligent indexing system that finds the next available ID
+Comprehensive CRUD operations with proper validation
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+🔐 Production-Ready Architecture
 
+Firebase Secret Manager integration for secure API key storage
+2nd generation Cloud Functions with optimized memory allocation (512MB for AI tasks)
+Region-optimized deployment (asia-southeast1) for low latency
+Structured codebase with separation of concerns (api/, scheduled/, utils/, config/)
 
+Tech Stack: Python 3.13, Firebase Functions, Firestore, OpenAI API, Cloud Scheduler
 
-<!-- ROADMAP -->
-## Roadmap
+---
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+## Challenges we ran into
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+### Data processing
+Professor names appear in many different formats (partial names, typos, titles, or inconsistent ordering), which made reliable name extraction difficult. We went through multiple iterations of our parsing and cleanup scripts—especially around fuzzy matching and name-variant handling—to minimise duplicates and wrongly identified names.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
 
+### Deployment and infrastructure issues
+Because our backend relies on Firestore triggers, we ran into deployment friction such as Eventarc permission issues during first-time trigger setup. This required waiting for permission propagation or manually granting the correct Eventarc service roles before redeploying successfully.
 
+We also had to be careful about common backend integration pitfalls such as:
+- CORS handling for browser requests
+- correct Firebase project configuration (`GOOGLE_CLOUD_PROJECT`)
+- matching Python runtime versions during deployment
 
-<!-- CONTRIBUTING -->
-## Contributing
+---
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Top contributors:
-
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
-</a>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the project_license. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
-<!-- Shields.io badges. You can a comprehensive list with many more badges at: https://github.com/inttter/md-badges -->
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+## Accomplishments that we're proud of
+- **Built a complete end-to-end platform**: from data scraping + processing, to a full frontend experience and a deployed backend API.
+- **Successfully extracted and cleaned professor data at scale**, turning messy, unstructured NUSMods review text into usable professor entries with summaries and deduplicated names.
+- **Implemented a fully functional review ecosystem**, including:
+  - creating entities (professors, dorms, classrooms, canteens, toilets)
+  - submitting reviews with subratings + tags
+  - upvoting helpful reviews
+- **Designed a clean, responsive UI** that supports browsing, searching, and filtering across all 5 categories.
+- **Automated rating updates** using Firestore triggers so entity average ratings and counts stay consistent whenever reviews change.
+
+---
+
+## What we learned
+- **Data cleaning is harder than scraping**: extracting professor names reliably required multiple iterations due to inconsistent naming formats, typos, and false positives.
+- **Backend design matters for UX**: having well-defined schemas for entities/reviews (with tags + subratings) made the frontend experience much smoother.
+- **Firebase Cloud Functions deployment has real-world gotchas**, especially around:
+  - CORS + preflight handling
+  - permissions / Eventarc issues for Firestore triggers
+  - keeping runtime + environment configs consistent
+- **Frontend-backend integration requires careful coordination**, from route structure to API endpoint consistency.
+
+---
+
+## What's next for RateMyNUS
+- **Improve professor matching accuracy** by linking professors to module codes more reliably and reducing remaining duplicate identities.
+- **Add moderation + reporting tools** to prevent spam, abuse, and low-quality reviews.
+- **Enhance discovery features**, such as:
+  - better sorting (most helpful / highest rated / trending)
+  - smarter filters (faculty, location, building)
+  - personalized recommendations
+- **Expand beyond ratings** with richer content like photos, tips, and “things to know before you choose this dorm/classroom”.
+- **Stronger authentication and user profiles**, enabling review history, saved entities, and trusted reviewer badges.
