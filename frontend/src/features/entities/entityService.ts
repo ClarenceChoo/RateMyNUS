@@ -16,6 +16,7 @@ type ApiEntity = {
   tags?: string[];
   avgRating?: number;
   ratingCount?: number;
+  reviewSummary?: string;
   createdAt?: string;
   zone?: string;
   building?: string;
@@ -99,6 +100,7 @@ function mapApiEntity(apiEntity: ApiEntity): Entity {
     avgRating: apiEntity.avgRating ?? 0,
     ratingCount: apiEntity.ratingCount ?? 0,
     zone: mapApiZone(apiEntity.zone),
+    reviewSummary: apiEntity.reviewSummary,
   };
 
   // Parse location - can be string "lat lng" or object with latitude/longitude

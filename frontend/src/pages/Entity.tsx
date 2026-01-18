@@ -111,7 +111,17 @@ function ReviewsSummary({ reviews, entity }: { reviews: Review[]; entity: Entity
     .slice(0, 5)
     .map(([tag]) => tag);
 
-  if (reviews.length === 0) return null;
+  // Don't show if no reviews and no API summary
+  if (reviews.length === 0 && !entity.reviewSummary) return null;
+
+  // Fallback text if no API summary
+  const fallbackSummary = reviews.length > 0
+    ? `Based on ${reviews.length} review${reviews.length !== 1 ? "s" : ""}, ${entity.name} has an average rating of ${(reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(1)} stars.${reviews.length >= 3 ? " Students have shared their experiences to help you make an informed decision." : ""}`
+    : null;
+
+  const summaryText = entity.reviewSummary || fallbackSummary;
+
+  if (!summaryText) return null;
 
   return (
     <Card className="space-y-3">
@@ -119,9 +129,7 @@ function ReviewsSummary({ reviews, entity }: { reviews: Review[]; entity: Entity
         <span>✨</span> Reviews Summary
       </h2>
       <p className="text-zinc-600 leading-relaxed">
-        Based on {reviews.length} review{reviews.length !== 1 ? "s" : ""}, {entity.name} has an 
-        average rating of {(reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(1)} stars.
-        {reviews.length >= 3 && " Students have shared their experiences to help you make an informed decision."}
+        {summaryText}
       </p>
       {topTags.length > 0 && (
         <div className="flex flex-wrap gap-2 pt-1">

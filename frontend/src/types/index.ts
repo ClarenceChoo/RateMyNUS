@@ -17,6 +17,7 @@ export type Entity = {
   zone?: Zone;
   hasShower?: boolean;     // for toilets
   imageUrls?: string[];
+  reviewSummary?: string;  // AI-generated summary from API
 };
 
 export type Review = {
