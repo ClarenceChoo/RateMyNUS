@@ -11,6 +11,7 @@ export type Entity = {
   subtitle?: string;       // e.g. "UTown", "COM2", "YIH"
   tags?: string[];         // e.g. ["clean", "quiet"]
   location?: { lat: number; lng: number };
+  buildingInfo?: { campus?: string; buildingCode?: string };  // for classrooms
   avgRating?: number;
   ratingCount?: number;
   zone?: Zone;

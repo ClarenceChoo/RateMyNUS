@@ -114,6 +114,13 @@ function mapApiEntity(apiEntity: ApiEntity): Entity {
       if (loc.latitude !== undefined && loc.longitude !== undefined) {
         entity.location = { lat: loc.latitude, lng: loc.longitude };
       }
+      // Handle { campus, building_code } format for classrooms
+      if (loc.campus || loc.building_code) {
+        entity.buildingInfo = {
+          campus: loc.campus,
+          buildingCode: loc.building_code,
+        };
+      }
     }
   }
 

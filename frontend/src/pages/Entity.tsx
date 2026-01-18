@@ -203,6 +203,20 @@ export default function Entity() {
     ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
     : (entity.avgRating ?? 0);
 
+  // Google Maps URL for location - use coordinates if available, otherwise search by building
+  const googleMapsUrl = (() => {
+    if (entity.location) {
+      return `https://www.google.com/maps/search/?api=1&query=${entity.location.lat},${entity.location.lng}`;
+    }
+    if (entity.buildingInfo?.buildingCode) {
+      const searchQuery = encodeURIComponent(
+        `NUS ${entity.buildingInfo.buildingCode} ${entity.buildingInfo.campus || ""}`.trim()
+      );
+      return `https://www.google.com/maps/search/?api=1&query=${searchQuery}`;
+    }
+    return null;
+  })();
+
   return (
     <div className="space-y-8">
       {/* Header */}
@@ -217,6 +231,18 @@ export default function Entity() {
             >
               {bookmarked ? "🔖" : "📑"}
             </Button>
+            {/* Location button - show for all types except PROFESSOR */}
+            {entity.type !== "PROFESSOR" && googleMapsUrl && (
+              <a
+                href={googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-xl bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700 hover:bg-blue-100 transition"
+                title="View on Google Maps"
+              >
+                📍 View on Map
+              </a>
+            )}
           </div>
           <div className="text-lg text-zinc-600">{entity.subtitle}</div>
           
