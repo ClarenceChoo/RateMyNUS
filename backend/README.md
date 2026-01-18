@@ -2,6 +2,18 @@
 
 Backend service for RateMyNUS built with Firebase Cloud Functions (Python 3.13) and Firestore.
 
+**Base URL**: `https://asia-southeast1-ratemynus.cloudfunctions.net`
+
+## Features
+
+- ✅ Entity management (Canteens, Dorms, Classrooms, Professors, Toilets)
+- ✅ Review system with ratings and subratings
+- ✅ Automatic rating aggregation
+- ✅ AI-powered review summaries (OpenAI GPT-4o-mini)
+- ✅ Scheduled summary updates (2x daily)
+- ✅ Vote system for reviews
+- ✅ CORS support for web clients
+
 ## Tech Stack
 
 - **Runtime**: Python 3.13
@@ -31,9 +43,17 @@ backend/
     │   ├── reviews.py        # Create review
     │   ├── get_reviews.py    # Get reviews
     │   ├── delete_review.py  # Delete review
-    │   └── vote_review.py    # Vote on review
-    └── triggers/         # Background triggers
-        └── update_rating.py  # Auto-update entity ratings
+    │   ├── vote_review.py    # Vote on review
+    │   └── trigger_summaries.py # Manual summary generation
+    ├── scheduled/        # Scheduled functions
+    │   └── generate_summaries.py # Auto summary generation (2x daily)
+    ├── triggers/         # Background triggers
+    │   └── update_rating.py  # Auto-update entity ratings
+    ├── config/           # Configuration
+    │   └── prompts.py        # AI prompt templates
+    └── utils/
+        ├── logger.py         # Logging utility
+        └── summarizer.py     # OpenAI summary generation
 ```
 
 ## Database Overview
@@ -61,6 +81,7 @@ backend/
     latitude: number;
     longitude: number;
   };
+  reviewSummary?: string;  // AI-generated summary (updated 2x daily)
   createdAt: string;       // ISO 8601 timestamp
 }
 ```
@@ -366,6 +387,52 @@ DELETE /delete_review?id=review_doc_id
 ```
 
 **Note**: Entity ratings are automatically recalculated when a review is deleted.
+
+---
+
+### Generate Review Summaries
+
+```
+GET /trigger_summaries
+GET /trigger_summaries?limit=10
+```
+
+**Query Parameters:**
+- `limit` (optional): Max entities to process
+
+**Description:**
+Manually triggers AI-generated summary generation for all entity reviews using OpenAI's GPT-4o-mini. Summaries are stored in the `reviewSummary` field of each entity.
+
+**Note:** Summaries are also automatically generated twice daily (6 AM & 6 PM SGT) via scheduled function.
+
+**Response (200):**
+```json
+{
+  "message": "Summary generation completed",
+  "stats": {
+    "success_count": 150,
+    "error_count": 2,
+    "skipped_count": 30
+  },
+  "duration_ms": 45230.5
+}
+```
+
+**Example Entity with Summary:**
+```json
+{
+  "id": "P001",
+  "name": "Dr. Sarah Chen",
+  "type": "PROFESSOR",
+  "avgRating": 4.5,
+  "ratingCount": 12,
+  "reviewSummary": "Students appreciate the clear teaching style and well-organized lectures. The professor is noted for being approachable during office hours and providing helpful feedback on assignments.",
+  ...
+}
+```
+
+**Setup Required:**
+See `SUMMARY_FEATURE.md` for OpenAI API key configuration.
 
 ---
 

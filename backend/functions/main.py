@@ -29,6 +29,10 @@ from api.reviews import create_review
 from api.get_reviews import get_reviews
 from api.delete_review import delete_review
 from api.vote_review import vote_review
+from api.trigger_summaries import trigger_summaries
 
 # Import Firestore triggers
 from triggers.update_rating import update_entity_rating
+
+# Import scheduled functions
+from scheduled.generate_summaries import generate_summaries
