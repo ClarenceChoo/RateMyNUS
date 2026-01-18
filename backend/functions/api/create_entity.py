@@ -18,17 +18,69 @@ def get_cors_headers():
     }
 
 
+def generate_entity_id(db, entity_type):
+    """Generate next available ID for entity type"""
+    # Define prefix for each type
+    prefix_map = {
+        'CANTEEN': 'C',
+        'DORM': 'D',
+        'CLASSROOM': 'CR',
+        'PROFESSOR': 'P',
+        'TOILET': 'T'
+    }
+    
+    prefix = prefix_map[entity_type]
+    entities_ref = db.collection('entities')
+    
+    # Query all entities of this type to find the highest index
+    query = entities_ref.where('type', '==', entity_type).stream()
+    
+    max_index = 0
+    for doc in query:
+        doc_id = doc.id
+        # Extract numeric part from ID
+        if doc_id.startswith(prefix):
+            try:
+                # For CLASSROOM (CR001), remove 'CR' and parse the rest
+                # For others (P001, T001, etc.), remove single letter prefix
+                numeric_part = doc_id[len(prefix):]
+                index = int(numeric_part)
+                max_index = max(max_index, index)
+            except ValueError:
+                continue
+    
+    # Generate next ID
+    next_index = max_index + 1
+    
+    # Format with appropriate padding
+    if entity_type == 'CLASSROOM':
+        # CR001, CR002, etc.
+        return f"{prefix}{next_index:03d}"
+    elif entity_type in ['PROFESSOR', 'TOILET']:
+        # P001, T001, etc.
+        return f"{prefix}{next_index:03d}"
+    else:
+        # C01, D01, etc.
+        return f"{prefix}{next_index:02d}"
+
+
 @https_fn.on_request()
 def create_entity(req: https_fn.Request) -> https_fn.Response:
     """
-    Create a new entity in Firestore
+    Create a new entity in Firestore with auto-generated ID
     Request body:
-        - id: Entity ID (required)
         - name: Entity name (required)
         - type: Entity type (required - CANTEEN, DORM, CLASSROOM, PROFESSOR, TOILET)
         - description: Description text (optional)
         - tags: Array of tags (optional)
         - location: Object with latitude and longitude (optional)
+    
+    ID is automatically generated based on type:
+        - PROFESSOR: P001, P002, ...
+        - TOILET: T001, T002, ...
+        - CANTEEN: C01, C02, ...
+        - DORM: D01, D02, ...
+        - CLASSROOM: CR001, CR002, ...
     """
     # Handle CORS preflight request
     if req.method == "OPTIONS":
@@ -54,8 +106,8 @@ def create_entity(req: https_fn.Request) -> https_fn.Response:
                 headers=get_cors_headers()
             )
         
-        # Validate required fields
-        required_fields = ['id', 'name', 'type']
+        # Validate required fields (removed 'id' from required)
+        required_fields = ['name', 'type']
         missing_fields = [field for field in required_fields if field not in data]
         
         if missing_fields:
@@ -83,8 +135,10 @@ def create_entity(req: https_fn.Request) -> https_fn.Response:
         db = firestore.client()
         entities_ref = db.collection('entities')
         
-        # Check if entity already exists
-        entity_id = data['id']
+        # Generate entity ID automatically
+        entity_id = generate_entity_id(db, data['type'])
+        
+        # Check if generated ID already exists (shouldn't happen, but safety check)
         existing_doc = entities_ref.document(entity_id).get()
         
         if existing_doc.exists:
